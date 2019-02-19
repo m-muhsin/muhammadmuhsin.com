@@ -6,8 +6,18 @@ import SEO from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Full Stack Engineer, Writer, Speaker and Open Source Contributor</h1>
+    <SEO
+      title="Home"
+      keywords={[
+        `muhammad muhsin`,
+        `full stack developer`,
+        `wordpress`,
+        `react`,
+      ]}
+    />
+    <h1 style={{ fontSize: '2em' }}>
+      Full Stack Engineer, Writer, Speaker and Open Source Contributor
+    </h1>
     <p>
       I'm a freelance developer focusing on front-end technologies. I work with
       React, React Native, Gatsby, WordPress and Next.js.

@@ -680,3 +680,7 @@ pre tt:after {
   margin-left: 60px;
   padding: 0 18px;
 }
+
+.work-logo {
+  height: 60px;
+}
