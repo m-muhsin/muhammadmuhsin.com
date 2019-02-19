@@ -10,8 +10,10 @@ const IndexPage = () => (
     <h1>Full Stack Engineer, Writer, Speaker and Open Source Contributor</h1>
     <p>
       I'm a freelance developer focusing on front-end technologies. I work with
-      React, React Native, Gatsby, WordPress and Next.js. Find out more about my
-      work or get in touch with me!
+      React, React Native, Gatsby, WordPress and Next.js.
+      <br />
+      Find out more about <Link to="/work">my work</Link> or{' '}
+      <Link to="/contact">get in touch with me!</Link>
     </p>
     <Testimonials />
     <Link to="/page-2/">Go to page 2</Link>
@@ -23,7 +25,7 @@ export default IndexPage
 const Testimonials = () => (
   <div className="testimonials">
     <blockquote className="quote">
-      <p>
+      <p className="testimonial-text">
         Muhammad is an excellent, reliable author. He has a keen passion for all
         things tech and is extremely knowledgeable about the web industry. A
         pleasure to work with!
@@ -37,7 +39,7 @@ const Testimonials = () => (
       />
     </blockquote>
     <blockquote className="quote">
-      <p>
+      <p className="testimonial-text">
         Muhammad is an excellent, reliable author. He has a keen passion for all
         things tech and is extremely knowledgeable about the web industry. A
         pleasure to work with!

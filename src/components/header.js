@@ -5,13 +5,14 @@ import React from 'react'
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      marginBottom: `1.45rem`,
+      margin: '0 auto 1.45rem',
+      maxWidth: 1200,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0.5rem 1.0875rem`,
       }}
     >
       <Link
@@ -21,20 +22,28 @@ const Header = ({ siteTitle }) => (
           textDecoration: `none`,
         }}
       >
-        {siteTitle}
+        <img
+          src={require('../images/muhammad-muhsin-logo.svg')}
+          alt="muhammad muhsin logo"
+          style={{
+            width: 180,
+            marginBottom: 0,
+          }}
+        />
       </Link>
-      <ul class="nav-menu" id="menu">
-        <li class="nav-item">
-          <a href="/work/">Work</a>
+      <ul className="nav-menu" id="menu">
+        <li className="nav-item">
+          <Link to="/work/">Work</Link>
         </li>
 
-        <li class="nav-item">
-          <a href="/blog/">Blog</a>
+        <li className="nav-item">
+          <Link to="/blog/">Blog</Link>
         </li>
 
-        <li class="nav-item">
-          <a href="/contact/">Contact</a>
+        <li className="nav-item">
+          <Link to="/contact/">Contact</Link>
         </li>
+        <li className="nav-item dark-switch">switch</li>
       </ul>
     </div>
   </header>

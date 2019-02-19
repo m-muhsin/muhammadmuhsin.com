@@ -2,7 +2,7 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 html {
-  background: #f8f8f8;
+  background: #f9f9f9;
   color: #111;
   font-family: 'Fira Sans', arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -636,7 +636,6 @@ pre tt:after {
   font-size: 60px;
   position: absolute;
   z-index: -1;
-  margin-left: -60px;
   margin-top: 20px;
 }
 
@@ -645,8 +644,9 @@ pre tt:after {
 }
 
 .nav-menu {
-  display: inline;
+  display: inline-block;
   float: right;
+  margin-top: 1rem;
 }
 
 .nav-item {
@@ -662,4 +662,21 @@ pre tt:after {
 .nav-item a:hover,
 .nav-item a:focus. .nav-item a:active {
   border-bottom: 1px solid;
+}
+
+@media (max-width: 991px) {
+  .nav-item.dark-switch {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+  }
+}
+
+.nav-item.dark-switch {
+  margin-left: 4em;
+}
+
+.testimonial-text {
+  margin-left: 60px;
+  padding: 0 18px;
 }

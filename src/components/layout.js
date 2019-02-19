@@ -21,15 +21,16 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
-            margin: `0 auto`,
-            // maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
+            maxWidth: 1200,
+            margin: '0 auto 1.45rem',
             paddingTop: 0,
+            clear: 'right',
           }}
         >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
+          <main style={{ padding: '0.5rem 1.0875rem' }}>{children}</main>
+          <footer style={{ padding: '0.5rem 1.0875rem' }}>
+            © Muhammad Muhsin <br /> {new Date().getFullYear()}, Built with{' '}
+            <i className="fa fa-heart" /> and
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
