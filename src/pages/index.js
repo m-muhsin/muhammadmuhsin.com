@@ -26,7 +26,6 @@ const IndexPage = () => (
       <Link to="/contact">get in touch with me!</Link>
     </p>
     <Testimonials />
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
@@ -48,7 +47,7 @@ const Testimonials = () => (
         alt="Smashing Magazine"
       />
     </blockquote>
-    <blockquote className="quote">
+    {/* <blockquote className="quote">
       <p className="testimonial-text">
         Muhammad is an excellent, reliable author. He has a keen passion for all
         things tech and is extremely knowledgeable about the web industry. A
@@ -61,6 +60,6 @@ const Testimonials = () => (
         src={require('../images/jatstudio.svg')}
         alt="Jatstudio"
       />
-    </blockquote>
+    </blockquote> */}
   </div>
 )

@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main style={{ padding: '0.5rem 1.0875rem' }}>{children}</main>
-          <footer style={{ padding: '0.5rem 1.0875rem' }}>
+          <footer style={{ padding: '0.5rem 1.0875rem', textAlign: 'center' }}>
             © Muhammad Muhsin <br /> {new Date().getFullYear()}, Built with{' '}
             <i className="fa fa-heart" /> and
             {` `}

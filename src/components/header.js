@@ -37,13 +37,16 @@ const Header = ({ siteTitle }) => (
         </li>
 
         <li className="nav-item">
-          <Link to="/blog/">Blog</Link>
+          <Link to="/contact/">Contact</Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/contact/">Contact</Link>
+          <a href="http://mtwoblog.com/">Blog</a>
         </li>
-        <li className="nav-item dark-switch">switch</li>
+
+        <li style={{ display: 'none' }} className="nav-item dark-switch">
+          switch
+        </li>
       </ul>
     </div>
   </header>
