@@ -15,7 +15,7 @@ const IndexPage = () => (
         `react`,
       ]}
     />
-    <h1 style={{ fontSize: '2em' }}>
+    <h1 className="main-title">
       Full Stack Engineer, Writer, Speaker and Open Source Contributor
     </h1>
     <p>

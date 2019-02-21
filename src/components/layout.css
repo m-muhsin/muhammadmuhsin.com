@@ -618,6 +618,10 @@ pre tt:after {
   }
 }
 
+.main-title {
+  font-size: 2em;
+}
+
 .testimonials {
   margin-bottom: 1.45rem;
   display: flex;
@@ -657,6 +661,10 @@ pre tt:after {
   padding: 5px 10px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.nav-item a {
+  color: #666;
 }
 
 .nav-item a:hover,
