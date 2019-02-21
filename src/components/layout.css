@@ -748,3 +748,9 @@ pre tt:after {
   border-radius: 50%;
   width: 300px;
 }
+
+@media(min-width: 992px) {
+  .half-width {
+    width: 50%;
+  }
+}

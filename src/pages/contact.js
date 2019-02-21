@@ -15,7 +15,7 @@ const ContactPage = () => (
       ]}
     />
     <div style={{ display: 'flex' }}>
-      <section style={{ width: '50%' }} className="contact" id="contact">
+      <section className="contact half-width" id="contact">
         <div className="container">
           <h2 className="text-uppercase">Got a question?</h2>
           <p>Feel free to reach out to me via the form below!</p>
@@ -25,7 +25,7 @@ const ContactPage = () => (
             method="POST"
             data-netlify="true"
           >
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="bot-field" />
             <div className="form-field">
               <input type="text" name="name" placeholder="Name" />
             </div>
@@ -43,7 +43,7 @@ const ContactPage = () => (
           </form>
         </div>
       </section>
-      <section className="muhammad-photo" style={{ width: '50%' }}>
+      <section className="muhammad-photo half-width">
         <img src={require('../images/muhammad-muhsin.jpg')} alt="Muhammad" />
       </section>
     </div>
