@@ -635,7 +635,7 @@ pre tt:after {
 
 .quote:before {
   content: '\F10D';
-  color: rgba(0, 0, 0, 0.5);
+  color: #139fc9;
   font-family: 'FontAwesome';
   font-size: 60px;
   position: absolute;
