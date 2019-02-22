@@ -19,8 +19,12 @@ const IndexPage = () => (
       Full Stack Engineer, Writer, Speaker and Open Source Contributor
     </h1>
     <p>
+      Hi!{' '}
+      <span role="img" aria-label="hi">
+        👋
+      </span>{' '}
       I'm a freelance developer focusing on front-end technologies. I work with
-      React, React Native, Gatsby, WordPress and Next.js.
+      React, React Native, WordPress, Gatsby, GraphQL and Next.js.
       <br />
       Find out more about <Link to="/work">my work</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
