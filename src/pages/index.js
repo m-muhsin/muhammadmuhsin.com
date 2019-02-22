@@ -37,6 +37,9 @@ export default IndexPage
 
 const Testimonials = () => (
   <div className="testimonials">
+    <h2 style={{ marginTop: 20 }}>
+      Folks have said good things about my work!
+    </h2>
     <blockquote className="quote">
       <p className="testimonial-text">
         Muhammad is a real pleasure to work with. He is really kind, patient,
