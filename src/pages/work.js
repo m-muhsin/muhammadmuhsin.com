@@ -68,8 +68,8 @@ const WorkPage = () => (
         <p>Writing, Reviewing</p>
 
         <div className="project-technologies">
-          <span>WordPress</span> <span>Gutenberg</span> <span>React</span>{' '}
-          <span>React Native</span>
+          <span>React</span> <span>React Native</span> <span>WordPress</span>{' '}
+          <span>Gutenberg</span>
         </div>
       </div>
       <div className="work-project">
@@ -82,7 +82,7 @@ const WorkPage = () => (
         </a>
         <p>Writing</p>
         <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>Context API</span>
+          <span>React</span> <span>Gatsby</span>
         </div>
       </div>
     </section>

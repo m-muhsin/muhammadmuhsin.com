@@ -45,10 +45,13 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: #139fc9;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #139fc9;
 }
 abbr[title] {
   border-bottom: none;
@@ -691,6 +694,11 @@ pre tt:after {
 
 .work-logo {
   height: 60px;
+  object-fit: contain;
+}
+
+.work-logo:hover {
+  transform: scale(1.1);
 }
 
 .work-project {
@@ -734,23 +742,27 @@ pre tt:after {
 }
 
 .muhammad-photo {
-  display: none;
-  margin-top: 50px;
-}
-
-@media (min-width: 992px) {
-  .muhammad-photo {
-    display: block;
-  }
-}
-
-.muhammad-photo img {
   border-radius: 50%;
   width: 300px;
 }
 
-@media(min-width: 992px) {
-  .half-width {
-    width: 50%;
+@media (min-width: 992px) {
+  .width-40 {
+    width: 40%;
   }
+  .width-60 {
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-item .nav-active {
+  color: #139fc9;
+}
+
+.nav-item a:hover {
+  border-bottom: 1px solid #139fc9;
 }

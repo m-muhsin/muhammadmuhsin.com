@@ -33,11 +33,11 @@ const Header = ({ siteTitle }) => (
       </Link>
       <ul className="nav-menu" id="menu">
         <li className="nav-item">
-          <Link to="/work/">Work</Link>
+          <Link to="/work/" activeClassName="nav-active">Work</Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/contact/">Contact</Link>
+          <Link to="/contact/" activeClassName="nav-active">Contact</Link>
         </li>
 
         <li className="nav-item">
