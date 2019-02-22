@@ -44,12 +44,17 @@ const Testimonials = () => (
       <p className="testimonial-text">
         Muhammad is a real pleasure to work with. He is really kind, patient,
         and aspiring to find the best solution. I really appreciate his honest
-        desire to keep learning new skills. He is doing a great job taking us,
-        at Jatstudio, to the next level with React and GatsbyJS. I would not
-        hesitate to recommend working with Muhammad to anybody.
+        desire to keep learning new skills.{' '}
+        <strong>
+          He is doing a great job taking us, at Jatstudio, to the next level
+          with React and GatsbyJS.
+        </strong>{' '}
+        I would not hesitate to recommend working with Muhammad to anybody.
       </p>
-      <h3>Javier Llinás</h3>
-      <p>CEO, Jatstudio</p>
+      <cite className="testimonial-author">
+        <h3 style={{ marginBottom: 5 }}>Javier Llinás</h3>
+        <p>CEO, Jatstudio</p>
+      </cite>
       <img
         className="testimonial-logo"
         src={require('../images/jatstudio.svg')}
@@ -59,11 +64,14 @@ const Testimonials = () => (
     <blockquote className="quote">
       <p className="testimonial-text">
         Muhammad is an excellent, reliable author. He has a keen passion for all
-        things tech and is extremely knowledgeable about the web industry. A
+        things tech and is{' '}
+        <strong>extremely knowledgeable about the web industry.</strong> A
         pleasure to work with!
       </p>
-      <h3>Iris Lješnjanin</h3>
-      <p>Senior Editor, Smashing Magazine</p>
+      <cite className="testimonial-author">
+        <h3 style={{ marginBottom: 5 }}>Iris Lješnjanin</h3>
+        <p>Senior Editor, Smashing Magazine</p>
+      </cite>
       <img
         className="testimonial-logo"
         src={require('../images/smashing-magazine.svg')}
