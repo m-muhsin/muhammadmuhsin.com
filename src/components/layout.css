@@ -746,17 +746,23 @@ pre tt:after {
   width: 300px;
 }
 
+.width-40, .width-60 {
+  float: left;
+}
+
 @media (min-width: 992px) {
   .width-40 {
     width: 40%;
   }
   .width-60 {
     width: 60%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
+}
+
+.width-60 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-item .nav-active {

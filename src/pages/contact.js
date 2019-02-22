@@ -14,7 +14,7 @@ const ContactPage = () => (
         `react`,
       ]}
     />
-    <div style={{ display: 'flex' }}>
+    <div>
       <section className="contact width-40" id="contact">
         <div className="container">
           <h2 className="text-uppercase">Got a question?</h2>
