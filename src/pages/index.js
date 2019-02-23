@@ -23,8 +23,8 @@ const IndexPage = () => (
       <span role="img" aria-label="hi">
         👋
       </span>{' '}
-      I'm a freelance developer focusing on front-end technologies. I work with
-      React, React Native, WordPress, Gatsby, GraphQL and Next.js.
+      I'm a freelance developer currently focusing on front-end technologies. I
+      work with React, WordPress, Gatsby, Next.js and React Native.
       <br />
       Find out more about <Link to="/work">my work</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>

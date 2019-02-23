@@ -6,8 +6,8 @@ import SEO from '../components/seo'
 
 const WorkPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h2 style={{ marginBottom: 10 }}>The projects I've worked on so far</h2>
+    <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
+    <h2 style={{ marginBottom: 10 }}>Featured client work</h2>
     <p>
       I cannot show some of my best work here due to non disclosure agreements.
       I have worked with enterprise clients and built multi-lingual sites for
@@ -59,9 +59,7 @@ const WorkPage = () => (
       </div>
     </section>
 
-    <h2 className="projects-sectiont-title">
-      I have written for certain sites as well
-    </h2>
+    <h2 className="projects-sectiont-title">Writing</h2>
     <section className="projects-container">
       <div className="work-project">
         <a href="https://www.smashingmagazine.com/author/muhammad-muhsin/">
@@ -90,7 +88,7 @@ const WorkPage = () => (
       </div>
     </section>
 
-    <h2 className="projects-sectiont-title">Some of my open source projects</h2>
+    <h2 className="projects-sectiont-title">Featured open source projects</h2>
     <section className="projects-container">
       <div className="work-project open-source">
         <a
