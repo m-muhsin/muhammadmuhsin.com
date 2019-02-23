@@ -719,10 +719,11 @@ pre tt:after {
 .work-project {
   width: 360px;
   margin: 10px 10px 20px;
-  padding: 10px 20px;
+  padding: 15px 20px 10px;
   text-align: center;
-  box-shadow: 3px 3px 3px 3px #dadada;
-  border-radius: 5px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(16, 32, 32, 0.15) 0px 3px 6px 1px;
 }
 
 .work-project p {
@@ -736,6 +737,24 @@ pre tt:after {
   padding: 0 5px;
   margin: 0 1px 5px;
   border: 1px solid #8a8a8a;
+}
+
+.open-source {
+  background: linear-gradient(to right top, rgb(41, 214, 122), rgb(24, 145, 206)) rgb(255, 255, 255)
+}
+
+.open-source:hover .open-source-title{
+  text-decoration: underline;
+}
+
+.open-source-title {
+  font-size: 1em;
+  margin-bottom: 14px;
+}
+
+.open-source-desc {
+  font-size: 0.8em;
+  line-height: 1.2;
 }
 
 .form-field {
