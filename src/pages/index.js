@@ -40,7 +40,7 @@ const Testimonials = () => (
     <h2 style={{ marginTop: 20 }}>
       Folks have said good things about my work!
     </h2>
-    <blockquote className="quote">
+    <blockquote className="testimonial-box">
       <p className="testimonial-text">
         Muhammad is a real pleasure to work with. He is really kind, patient,
         and aspiring to find the best solution. I really appreciate his honest
@@ -61,7 +61,7 @@ const Testimonials = () => (
         alt="Jatstudio"
       />
     </blockquote>
-    <blockquote className="quote">
+    <blockquote className="testimonial-box">
       <p className="testimonial-text">
         Muhammad is an excellent, reliable author. He has a keen passion for all
         things tech and is{' '}

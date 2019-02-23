@@ -60,6 +60,10 @@ const WorkPage = () => (
     </section>
 
     <h2 className="projects-sectiont-title">Writing</h2>
+    <p>
+      I love to write and explain with words and code. I have been fortunate to
+      have been published on the following sites.
+    </p>
     <section className="projects-container">
       <div className="work-project">
         <a href="https://www.smashingmagazine.com/author/muhammad-muhsin/">
@@ -89,6 +93,10 @@ const WorkPage = () => (
     </section>
 
     <h2 className="projects-sectiont-title">Featured open source projects</h2>
+    <p>
+      I spend part of my time on open source work. Here are a few of those
+      projects.
+    </p>
     <section className="projects-container">
       <div className="work-project open-source">
         <a

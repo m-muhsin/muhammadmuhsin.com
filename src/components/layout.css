@@ -631,7 +631,7 @@ pre tt:after {
   flex-wrap: wrap;
 }
 
-.quote {
+.testimonial-box {
   max-width: 600px;
   margin: 30px auto;
   background-color: white;
@@ -639,17 +639,9 @@ pre tt:after {
   border-radius: 10px;
   box-shadow: rgba(16, 32, 32, 0.15) 0px 3px 6px 1px;
 }
-
-/* .quote:before {
-  content: '\F10D';
-  color: #139fc9;
-  font-family: 'FontAwesome';
-  font-size: 60px;
-  position: absolute;
-  z-index: -1;
-  margin-top: 20px;
-} */
-
+.testimonial-box:hover {
+  box-shadow: rgba(12, 28, 32, 0.15) 0px 1.25rem 4rem 0px;
+}
 .testimonial-logo {
   width: 200px;
 }
@@ -735,6 +727,10 @@ pre tt:after {
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(16, 32, 32, 0.15) 0px 3px 6px 1px;
+}
+
+.work-project:hover {
+  box-shadow: rgba(12, 28, 32, 0.15) 0px 1.25rem 4rem 0px;
 }
 
 .work-project p {
