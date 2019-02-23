@@ -71,8 +71,6 @@ const WorkPage = () => (
             alt="Smashing Magazine"
           />
         </a>
-        <p>Writing, Reviewing</p>
-
         <div className="project-technologies">
           <span>React</span> <span>React Native</span> <span>WordPress</span>{' '}
           <span>Gutenberg</span>
@@ -86,7 +84,6 @@ const WorkPage = () => (
             alt="Gatsby"
           />
         </a>
-        <p>Writing</p>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span>
         </div>
