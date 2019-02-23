@@ -716,6 +716,17 @@ pre tt:after {
   transform: scale(1.1);
 }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projects-sectiont-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .work-project {
   width: 360px;
   margin: 10px 10px 20px;
@@ -740,10 +751,15 @@ pre tt:after {
 }
 
 .open-source {
-  background: linear-gradient(to right top, rgb(41, 214, 122), rgb(24, 145, 206)) rgb(255, 255, 255)
+  background: linear-gradient(
+      to right top,
+      rgb(41, 214, 122),
+      rgb(24, 145, 206)
+    )
+    rgb(255, 255, 255);
 }
 
-.open-source:hover .open-source-title{
+.open-source:hover .open-source-title {
   text-decoration: underline;
 }
 

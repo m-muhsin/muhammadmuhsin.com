@@ -14,13 +14,7 @@ const WorkPage = () => (
       goverment organistaions. Here are some of my latests works I'm allowed to
       display.
     </p>
-    <section
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-      }}
-    >
+    <section className="projects-container">
       <div className="work-project">
         <a href="https://www.casefora.com/">
           <img
@@ -65,16 +59,10 @@ const WorkPage = () => (
       </div>
     </section>
 
-    <h2 style={{ marginTop: 20, marginBottom: 10 }}>
+    <h2 className="projects-sectiont-title">
       I have written for certain sites as well
     </h2>
-    <section
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-      }}
-    >
+    <section className="projects-container">
       <div className="work-project">
         <a href="https://www.smashingmagazine.com/author/muhammad-muhsin/">
           <img
@@ -105,16 +93,8 @@ const WorkPage = () => (
       </div>
     </section>
 
-    <h2 style={{ marginTop: 20, marginBottom: 10 }}>
-      Some of my open source projects
-    </h2>
-    <section
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-      }}
-    >
+    <h2 className="projects-sectiont-title">Some of my open source projects</h2>
+    <section className="projects-container">
       <div className="work-project open-source">
         <a
           href="https://github.com/m-muhsin/celestial"
@@ -145,7 +125,7 @@ const WorkPage = () => (
           href="https://github.com/laccadive-io/react-native-woocommerce-store"
           style={{ color: 'white', textAlign: 'left' }}
         >
-          <h3 className="open-source-title">react -native-woocommerce-store</h3>
+          <h3 className="open-source-title">react-native-woocommerce-store</h3>
           <p className="open-source-desc">
             A React Native app that fetches data from WooCommerce.
           </p>
