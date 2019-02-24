@@ -25,7 +25,7 @@ const ContactPage = () => (
             method="POST"
             data-netlify="true"
           >
-            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="contact" />
             <div className="form-field">
               <input type="text" name="name" placeholder="Name" />
             </div>
