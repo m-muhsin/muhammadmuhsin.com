@@ -11,7 +11,7 @@ const WorkPage = () => (
     <p>
       I cannot show some of my best work here due to non disclosure agreements.
       I have worked with enterprise clients and built multi-lingual sites for
-      goverment organistaions. Here are some of my latests works I'm allowed to
+      government organizations. Here are some of my latests works I'm allowed to
       display.
     </p>
     <section className="projects-container">
@@ -117,7 +117,7 @@ const WorkPage = () => (
         >
           <h3 className="open-source-title">woocommerce-next</h3>
           <p className="open-source-desc">
-            A Next.js (Server-side React) store that fetches fata from
+            A Next.js (Server-side React) app that fetches product fata from
             WooCommcere.
           </p>
         </a>
@@ -130,7 +130,32 @@ const WorkPage = () => (
         >
           <h3 className="open-source-title">react-native-woocommerce-store</h3>
           <p className="open-source-desc">
-            A React Native app that fetches data from WooCommerce.
+            A React Native app that fetches product data from WooCommerce.
+          </p>
+        </a>
+      </div>
+
+      <div className="work-project open-source">
+        <a
+          href="https://github.com/laccadive-io/testimonials-slider-block"
+          style={{ color: 'white', textAlign: 'left' }}
+        >
+          <h3 className="open-source-title">testimonials-slider-block</h3>
+          <p className="open-source-desc">
+            Allows you to add a testimonials slider block to the WordPress
+            Gutenberg Editor.
+          </p>
+        </a>
+      </div>
+
+      <div className="work-project open-source">
+        <a
+          href="https://github.com/m-muhsin/gatsby-dark-mode"
+          style={{ color: 'white', textAlign: 'left' }}
+        >
+          <h3 className="open-source-title">gatsby-dark-mode</h3>
+          <p className="open-source-desc">
+            Demo of how to use React Context API with Gatsby.
           </p>
         </a>
       </div>
