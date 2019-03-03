@@ -3,45 +3,36 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      margin: '0 auto 1.45rem',
-      maxWidth: 1200,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        padding: `0.5rem 1.0875rem`,
-      }}
-    >
-      <Link
-        to="/"
-        style={{
-          textTransform: 'uppercase',
-          textDecoration: `none`,
-        }}
-      >
+  <header className="main-header">
+    <div className="title-nav-container">
+      <Link to="/">
         <img
           src={require('../images/muhammad-muhsin-logo.svg')}
           alt="muhammad muhsin logo"
-          style={{
-            width: 180,
-            marginBottom: 0,
-          }}
+          className="title-logo"
         />
       </Link>
       <ul className="nav-menu" id="menu">
         <li className="nav-item">
-          <Link to="/work/" activeClassName="nav-active">Work</Link>
+          <Link to="/work/" activeClassName="nav-active">
+            Work
+          </Link>
         </li>
 
         <li className="nav-item">
-          <Link to="/contact/" activeClassName="nav-active">Contact</Link>
+          <Link to="/contact/" activeClassName="nav-active">
+            Contact
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a href="http://mtwoblog.com/">Blog</a>
+          <a
+            href="http://mtwoblog.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Blog ❯
+          </a>
         </li>
 
         <li style={{ display: 'none' }} className="nav-item dark-switch">

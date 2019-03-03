@@ -19,16 +19,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            maxWidth: 1200,
-            margin: '0 auto 1.45rem',
-            paddingTop: 0,
-            clear: 'right',
-          }}
-        >
-          <main style={{ padding: '0.5rem 1.0875rem' }}>{children}</main>
-          <footer style={{ padding: '0.5rem 1.0875rem', textAlign: 'center' }}>
+        <div className="inner-body">
+          <main className="main">{children}</main>
+          <footer className="site-footer">
             © Muhammad Muhsin <br /> {new Date().getFullYear()}, Built with{' '}
             <i className="fa fa-heart" /> and
             {` `}

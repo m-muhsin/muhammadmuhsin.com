@@ -17,9 +17,31 @@ const ContactPage = () => (
     <div style={{ display: 'block', clear: 'both' }}>
       <section className="contact width-40" id="contact">
         <div className="container">
-          <h2 className="text-uppercase">Got a question?</h2>
-          <p>Feel free to reach out to me via the form below!</p>
-          <form
+          <h1 className="text-uppercase">Contact Me</h1>
+          <p>
+            Thanks for your interest in talking to me! You can use the following
+            ways to get in touch:
+          </p>
+          <ul>
+            <li>
+              <strong>Email</strong> - Send me an email to{' '}
+              <a href="mailto:muhammad.muhseen@gmail.com">
+                muhammad.muhseen@gmail.com
+              </a>
+            </li>
+            <li>
+              <strong>Twitter</strong> - Feel free to send me a direct message{' '}
+              <a href="https://twitter.com/muhsinlk/">@muhsinlk</a>
+            </li>
+            <li>
+              <strong>Phone</strong> - You can call/text me if you need
+              something urgently at{' '}
+              <a href="tel:+94779044988" className="btn text-uppercase blue-bg">
+                +94 779 044 988
+              </a>
+            </li>
+          </ul>
+          {/* <form
             className="contact-form"
             name="contact"
             method="POST"
@@ -40,7 +62,7 @@ const ContactPage = () => (
                 Submit
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
       </section>
       <section className="social-container width-60">
@@ -64,10 +86,7 @@ const ContactPage = () => (
             link="https://www.linkedin.com/in/mmuhsin/"
             image="linkedin"
           />
-          <SocialLink
-            link="mailto:muhammad.muhseen@gmail.com?Subject=Hello%20Muhammad!"
-            image="gmail"
-          />
+          <SocialLink link="https://wa.me/94779044988" image="whatsapp" />
           <SocialLink link="http://mtwoblog.com/" image="m2blog" />
           <SocialLink
             link="https://www.smashingmagazine.com/author/muhammad-muhsin/"
