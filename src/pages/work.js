@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 const WorkPage = () => (
   <Layout>
     <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
-    <h2 style={{ marginBottom: 10 }}>Featured client work</h2>
+    <h2>Featured client work</h2>
     <p>
       I cannot show some of my best work here due to non disclosure agreements.
       I have worked with enterprise clients and built multi-lingual sites for
@@ -45,16 +45,16 @@ const WorkPage = () => (
         </div>
       </div>
       <div className="work-project">
-        <a href="https://www.techgrapher.com/">
+        <a href="https://www.minitreatslk.com/">
           <img
             className="work-logo"
-            src={require('../images/TechGrapher-logo.png')}
-            alt="Techgrapher"
+            src={require('../images/minitreats-logo.png')}
+            alt="Mini Treats"
           />
         </a>
         <p>Front-End Development</p>
         <div className="project-technologies">
-          <span>WordPress</span>
+          <span>Gatsby</span> <span>React</span>
         </div>
       </div>
     </section>
