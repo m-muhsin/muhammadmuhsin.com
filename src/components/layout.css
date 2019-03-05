@@ -527,7 +527,7 @@ li > ul {
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
-blockquote *:last-child {
+blockquote > *:last-child {
   margin-bottom: 0;
 }
 li *:last-child {
@@ -869,7 +869,7 @@ pre tt:after {
   margin-bottom: 0;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .title-nav-container {
     display: flex;
     flex-direction: column;
@@ -881,4 +881,16 @@ pre tt:after {
   .nav-menu {
     margin-bottom: 1rem;
   }
+}
+
+.contact-button {
+  border: 1px solid #3a3a3a;
+  color: #3a3a3a;
+  padding: 8px 12px;
+  font-size: 1.25em;
+}
+
+.contact-button:hover, .contact-button:focus, .contact-button:active {
+  background-color: #139fc9;
+  color: #fff;
 }

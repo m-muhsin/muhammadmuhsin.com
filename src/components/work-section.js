@@ -1,12 +1,7 @@
 import React from 'react'
-// import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-
-const WorkPage = () => (
-  <Layout>
-    <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
+export default () => (
+  <>
     <h2>Featured client work</h2>
     <p>
       I cannot show some of my best work here due to non disclosure agreements.
@@ -160,7 +155,5 @@ const WorkPage = () => (
         </a>
       </div>
     </section>
-  </Layout>
+  </>
 )
-
-export default WorkPage

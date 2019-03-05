@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import WorkSection from '../components/work-section'
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,23 @@ const IndexPage = () => (
         `react`,
       ]}
     />
+    <Intro />
+    <Testimonials />
+    <WorkSection />
+    <section>
+      <h2>Talk to me!</h2>
+      <p>I hope you are now interested in hiring me for your next project.</p>
+      <Link className="contact-button" to="/contact">
+        Contact >
+      </Link>
+    </section>
+  </Layout>
+)
+
+export default IndexPage
+
+const Intro = () => (
+  <>
     <h1 className="main-title">
       Full Stack Engineer, Writer, Speaker and Open Source Contributor
     </h1>
@@ -29,17 +47,39 @@ const IndexPage = () => (
       Find out more about <Link to="/work">my work</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>
-    <Testimonials />
-  </Layout>
+  </>
 )
-
-export default IndexPage
 
 const Testimonials = () => (
   <div className="testimonials">
     <h2 style={{ marginTop: 20 }}>
       Folks have said good things about my work!
     </h2>
+    <blockquote className="testimonial-box">
+      <p className="testimonial-text">
+        Muhammad is a creative and dedicated problem solver.{' '}
+        <strong>
+          He has experience with many different web technologies and is able to
+          address any problem with the appropriate technology
+        </strong>
+        . He's able to pick up new technologies very quick, such as GraphQL and
+        Gatsby, and produce great work with them quickly. He's a great
+        communicator and while he's great at solving problems on his own, he's
+        also great at collaborating. I enjoy working with Muhammad!
+      </p>
+      <cite className="testimonial-author">
+        <h3 style={{ marginBottom: 5 }}>Jason Bahl</h3>
+        <p>Creator, WPGraphQL</p>
+      </cite>
+      <img
+        style={{
+          width: 100,
+        }}
+        className="testimonial-logo"
+        src={require('../images/wpgraphql.png')}
+        alt="WPGraphQL"
+      />
+    </blockquote>
     <blockquote className="testimonial-box">
       <p className="testimonial-text">
         Muhammad is a real pleasure to work with. He is really kind, patient,
