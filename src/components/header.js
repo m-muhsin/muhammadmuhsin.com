@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            Blog ❯
+            Blog
           </a>
         </li>
 

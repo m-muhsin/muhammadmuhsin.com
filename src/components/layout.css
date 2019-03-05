@@ -717,7 +717,7 @@ pre tt:after {
   justify-content: center;
 }
 
-.projects-sectiont-title {
+.section-title {
   margin-top: 20px;
 }
 
@@ -857,6 +857,7 @@ pre tt:after {
 .site-footer {
   padding: 0.5rem 1.0875rem;
   text-align: center;
+  margin-top: 2em;
 }
 
 .title-nav-container {
@@ -893,4 +894,5 @@ pre tt:after {
 .contact-button:hover, .contact-button:focus, .contact-button:active {
   background-color: #139fc9;
   color: #fff;
+  border-color: #fff;
 }

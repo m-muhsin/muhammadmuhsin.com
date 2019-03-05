@@ -54,7 +54,7 @@ export default () => (
       </div>
     </section>
 
-    <h2 className="projects-sectiont-title">Writing</h2>
+    <h2 className="section-title">Writing</h2>
     <p>
       I love to write and explain with words and code. I have been fortunate to
       have been published on the following sites.
@@ -87,7 +87,7 @@ export default () => (
       </div>
     </section>
 
-    <h2 className="projects-sectiont-title">Featured open source projects</h2>
+    <h2 className="section-title">Featured open source projects</h2>
     <p>
       I spend part of my time on open source work. Here are a few of those
       projects.

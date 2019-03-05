@@ -19,13 +19,7 @@ const IndexPage = () => (
     <Intro />
     <Testimonials />
     <WorkSection />
-    <section>
-      <h2>Talk to me!</h2>
-      <p>I hope you are now interested in hiring me for your next project.</p>
-      <Link className="contact-button" to="/contact">
-        Contact >
-      </Link>
-    </section>
+    <Contact />
   </Layout>
 )
 
@@ -119,4 +113,20 @@ const Testimonials = () => (
       />
     </blockquote>
   </div>
+)
+
+const Contact = () => (
+  <section>
+    <h2 className="section-title">Talk to me!</h2>
+    <p>I hope you are now interested in hiring me for your next project.</p>
+    <div
+      style={{
+        textAlign: 'center',
+      }}
+    >
+      <Link className="contact-button" to="/contact">
+        Contact ➜
+      </Link>
+    </div>
+  </section>
 )
