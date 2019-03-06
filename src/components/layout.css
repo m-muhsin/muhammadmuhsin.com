@@ -865,9 +865,21 @@ pre tt:after {
   padding: 0.5rem 1.0875rem;
 }
 
+@media(max-width: 992px) {
+  .title-logo {
+    text-align: center;
+  }
+}
 .title-logo {
-  width: 180px;
   margin-bottom: 0;
+}
+
+.title-logo.monogram {
+  width: 100px;
+}
+
+.title-logo.type {
+  width: 160px;
 }
 
 @media (max-width: 500px) {

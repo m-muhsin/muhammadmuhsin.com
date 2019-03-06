@@ -7,9 +7,14 @@ const Header = ({ siteTitle }) => (
     <div className="title-nav-container">
       <Link to="/">
         <img
-          src={require('../images/muhammad-muhsin-logo.svg')}
+          src={require('../images/muhammad_monogram.svg')}
           alt="muhammad muhsin logo"
-          className="title-logo"
+          className="title-logo monogram"
+        />
+        <img
+          src={require('../images/muhammad_type.svg')}
+          alt="muhammad muhsin logo"
+          className="title-logo type"
         />
       </Link>
       <ul className="nav-menu" id="menu">
