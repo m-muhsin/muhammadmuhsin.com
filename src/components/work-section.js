@@ -95,6 +95,17 @@ export default () => (
     <section className="projects-container">
       <div className="work-project open-source">
         <a
+          href="https://github.com/zgordon/twentynineteen-gatsby-theme"
+          style={{ color: 'white', textAlign: 'left' }}
+        >
+          <h3 className="open-source-title">twentynineteen-gatsby-theme</h3>
+          <p className="open-source-desc">
+            A port of the Twenty Nineteen WordPress Theme over to Gatsby
+          </p>
+        </a>
+      </div>
+      <div className="work-project open-source">
+        <a
           href="https://github.com/m-muhsin/celestial"
           style={{ color: 'white', textAlign: 'left' }}
         >
@@ -120,12 +131,13 @@ export default () => (
 
       <div className="work-project open-source">
         <a
-          href="https://github.com/laccadive-io/react-native-woocommerce-store"
+          href="https://github.com/m-muhsin/woosesh-store"
           style={{ color: 'white', textAlign: 'left' }}
         >
-          <h3 className="open-source-title">react-native-woocommerce-store</h3>
+          <h3 className="open-source-title">woosesh-store</h3>
           <p className="open-source-desc">
-            A React Native app that fetches product data from WooCommerce.
+            A React Native app that fetches product data from WooCommerce and
+            uses Context API for cart management.
           </p>
         </a>
       </div>

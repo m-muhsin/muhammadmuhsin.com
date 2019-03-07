@@ -761,6 +761,11 @@ pre tt:after {
   text-decoration: underline;
 }
 
+.open-source .open-source-title {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
 .open-source-title {
   font-size: 1em;
   margin-bottom: 14px;
