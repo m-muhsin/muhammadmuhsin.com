@@ -893,6 +893,10 @@ pre tt:after {
   width: 160px;
 }
 
+.title-logo.full {
+  width: 300px;
+}
+
 @media (max-width: 500px) {
   .title-nav-container {
     display: flex;
