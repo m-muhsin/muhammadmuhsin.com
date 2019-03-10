@@ -31,14 +31,12 @@ const Intro = () => (
       Full Stack Engineer, Writer, Speaker and Open Source Contributor
     </h1>
     <p>
-      Hi!{' '}
+      Hi{' '}
       <span role="img" aria-label="hi">
         👋
       </span>{' '}
       I'm a freelance developer currently focusing on front-end technologies. I
-      work with React, WordPress, Gatsby, Next.js and React Native.
-      <br />
-      Find out more about <Link to="/work">my work</Link> or{' '}
+      work with React, WordPress, Gatsby, Next.js and React Native. Feel free to{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>
   </>
