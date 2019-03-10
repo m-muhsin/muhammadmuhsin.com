@@ -39,7 +39,7 @@ const Intro = () => (
       work with React, WordPress, Gatsby, Next.js and React Native.{' '}
     </p>
     <p>
-      Feel free to check out my <Link to="/contact">blog posts</Link> or{' '}
+      Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>
   </>
