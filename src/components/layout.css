@@ -849,10 +849,16 @@ pre tt:after {
 }
 
 .inner-body {
-  max-width: 1200px;
+  max-width: 42rem;
   margin: 0 auto 1.45rem;
   padding-top: 0;
   clear: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-body.home, .inner-body.contact {
+  max-width: 1200px;
 }
 
 .main {

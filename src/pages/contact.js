@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const ContactPage = () => (
-  <Layout>
+  <Layout location="contact">
     <SEO
       title="Contact"
       keywords={[

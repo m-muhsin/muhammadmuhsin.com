@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 import WorkSection from '../components/work-section'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout location="home">
     <SEO
       title="Home"
       keywords={[
@@ -36,7 +36,10 @@ const Intro = () => (
         👋
       </span>{' '}
       I'm a freelance developer currently focusing on front-end technologies. I
-      work with React, WordPress, Gatsby, Next.js and React Native. Feel free to{' '}
+      work with React, WordPress, Gatsby, Next.js and React Native.{' '}
+    </p>
+    <p>
+      Feel free to check out my <Link to="/contact">blog posts</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>
   </>
@@ -116,7 +119,10 @@ const Testimonials = () => (
 const Contact = () => (
   <section>
     <h2 className="section-title">Talk to me!</h2>
-    <p>I hope you are now interested in hiring me for your next project.</p>
+    <p>
+      I hope you are now interested in hiring me for your next project. You can
+      also contact me for writing and speaking opportunities.
+    </p>
     <div
       style={{
         textAlign: 'center',
