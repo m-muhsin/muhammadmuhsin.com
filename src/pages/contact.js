@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Headshot from '../components/headshot'
 
 const ContactPage = () => (
   <Layout location="contact">
@@ -41,36 +42,12 @@ const ContactPage = () => (
               </a>
             </li>
           </ul>
-          {/* <form
-            className="contact-form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-          >
-            <input type="hidden" name="contact" />
-            <div className="form-field">
-              <input type="text" name="name" placeholder="Name" />
-            </div>
-            <div className="form-field">
-              <input type="email" name="email" placeholder="Email" />
-            </div>
-            <div className="form-field">
-              <textarea name="message" placeholder="Message" />
-            </div>
-            <div className="form-field">
-              <button type="submit" className="submit-form">
-                Submit
-              </button>
-            </div>
-          </form> */}
         </div>
       </section>
       <section className="social-container width-60">
-        <img
-          src={require('../images/muhammad-muhsin.jpg')}
-          className="muhammad-photo"
-          alt="Muhammad"
-        />
+        <div className="muhammad-photo">
+          <Headshot className="muhammad-photo" />
+        </div>
         <div
           style={{
             maxWidth: 700,

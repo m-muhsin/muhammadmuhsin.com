@@ -53,8 +53,10 @@ const BlogArchive = props => {
         {pageNumber === 2 && <Link to={`/blog`}>Newer posts</Link>}
         {pageNumber > 2 && (
           <Link to={`/blog/page/${pageNumber - 1}`}>Newer posts</Link>
-        )}{' '}
-        <span>{pageNumber}</span>{' '}
+        )}
+        {'  '}
+        <span>Page {pageNumber}</span>
+        {'  '}
         {hasNextPage && (
           <Link to={`/blog/page/${pageNumber + 1}`}>Older posts</Link>
         )}

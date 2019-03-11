@@ -809,6 +809,11 @@ pre tt:after {
 .muhammad-photo {
   border-radius: 50%;
   width: 300px;
+  margin-bottom: 1em;
+}
+
+.muhammad-photo > .gatsby-image-wrapper {
+  border-radius: 50%;
 }
 
 .contact {
