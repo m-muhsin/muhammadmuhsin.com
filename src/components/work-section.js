@@ -2,14 +2,65 @@ import React from 'react'
 
 export default () => (
   <>
-    <h2>Featured client work</h2>
+    <h2>Cients</h2>
     <p>
-      I cannot show some of my best work here due to non disclosure agreements.
-      I have worked with enterprise clients and built multi-lingual sites for
-      government organizations. Here are some of my latests works I'm allowed to
-      display.
+      I have been working with big and small companies doing WordPress.
+      I cannot talk about some of my best work due to non disclosure agreements.
+       Here are some of my clients.
     </p>
     <section className="projects-container">
+      <div className="work-project">
+        <a href="https://www.learndash.com/">
+          <img
+            className="work-logo"
+            src={require('../images/LearnDash.png')}
+            alt="LearnDash"
+          />
+        </a>
+        <p>LearnDash</p>
+        <div className="project-technologies">
+          <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
+        </div>
+      </div>
+      <div className="work-project">
+        <a href="https://javascriptforwp.com/">
+          <img
+            className="work-logo"
+            src={require('../images/jsforwp.png')}
+            alt="JS for WP"
+          />
+        </a>
+        <p>JS for WP (Zac Gordon)</p>
+        <div className="project-technologies">
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+        </div>
+      </div>
+      <div className="work-project">
+        <a href="https://www.jatstudio.com/">
+          <img
+            className="work-logo"
+            src={require('../images/jatstudio.svg')}
+            alt="Jatstudio"
+          />
+        </a>
+        <p>Jatstudio</p>
+        <div className="project-technologies">
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+        </div>
+      </div>
+      {/* <div className="work-project">
+        <a href="https://www.casefora.com/">
+          <img
+            className="work-logo"
+            src={require('../images/simplur.svg')}
+            alt="Simplur"
+          />
+        </a>
+        <p>Simplur</p>
+        <div className="project-technologies">
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+        </div>
+      </div> */}
       <div className="work-project">
         <a href="https://www.casefora.com/">
           <img
@@ -18,13 +69,12 @@ export default () => (
             alt="Casefora"
           />
         </a>
-        <p>Front-End & Back-End Development</p>
+        <p>Casefora</p>
         <div className="project-technologies">
           <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
           <span>Elasticsearch</span>
         </div>
       </div>
-
       <div className="work-project">
         <a href="https://www.lexcampus.in/">
           <img
@@ -33,23 +83,10 @@ export default () => (
             alt="LexCampus"
           />
         </a>
-        <p>Front-End Development</p>
+        <p>LexCampus</p>
         <div className="project-technologies">
           <span>WordPress</span> <span>LearnDash</span>{' '}
           <span>React Native</span>
-        </div>
-      </div>
-      <div className="work-project">
-        <a href="https://www.minitreatslk.com/">
-          <img
-            className="work-logo"
-            src={require('../images/minitreats-logo.png')}
-            alt="Mini Treats"
-          />
-        </a>
-        <p>Front-End Development</p>
-        <div className="project-technologies">
-          <span>Gatsby</span> <span>React</span>
         </div>
       </div>
     </section>
@@ -83,6 +120,18 @@ export default () => (
         </a>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span>
+        </div>
+      </div>
+      <div className="work-project">
+        <a href="https://javascriptforwp.com/author/muhammad-muhseen/">
+          <img
+            className="work-logo"
+            src={require('../images/jsforwp.png')}
+            alt="JS for WP"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span>
         </div>
       </div>
     </section>

@@ -15,19 +15,22 @@ const BlogArchive = props => {
       <div>
         {nodes &&
           nodes.map(post => {
-            const { id, postId, title, content, excerpt, uri, author } = post
+            const { id, postId, title, content, excerpt, uri } = post
             const maxLength = 240 // maximum number of characters to extract
 
-            //trim the string to the maximum length
-            let subContent = content.substr(0, maxLength)
+            // getting the excerpt to a variable
+            let excerptText = excerpt
 
-            //re-trim if we are in the middle of a word
-            subContent = subContent
-              .substr(
-                0,
-                Math.min(subContent.length, subContent.lastIndexOf(' '))
-              )
-              .concat('...')
+            // if excerpt does not exist
+            if (!excerptText) {
+              // getting the first 240 characters off content
+              excerptText = content.substr(0, maxLength)
+
+              // so that a word is not chopped off halfway
+              excerptText = content
+                .substr(0, Math.min(excerptText.length, excerptText.lastIndexOf(" ")))
+                .concat("...")
+            }
             return (
               <article
                 className="post type-post status-publish format-standard hentry entry"
@@ -42,7 +45,7 @@ const BlogArchive = props => {
                 <div
                   className="entry-content"
                   dangerouslySetInnerHTML={{
-                    __html: subContent,
+                    __html: excerptText,
                   }}
                 />
               </article>

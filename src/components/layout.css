@@ -703,7 +703,8 @@ pre tt:after {
 }
 
 .work-logo {
-  height: 60px;
+  height: 80px;
+  width: 260px;
   object-fit: contain;
 }
 
