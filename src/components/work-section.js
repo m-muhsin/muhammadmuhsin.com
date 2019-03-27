@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => (
   <>
-    <h2>Cients</h2>
+    <h2>Trusted By</h2>
     <p>
       I have been working with big and small companies doing WordPress.
       I cannot talk about some of my best work due to non disclosure agreements.
@@ -136,7 +136,7 @@ export default () => (
       </div>
     </section>
 
-    <h2 className="section-title">Featured open source projects</h2>
+    <h2 className="section-title">Open Source</h2>
     <p>
       I spend part of my time on open source work. Here are a few of those
       projects.
@@ -172,7 +172,7 @@ export default () => (
         >
           <h3 className="open-source-title">woocommerce-next</h3>
           <p className="open-source-desc">
-            A Next.js (Server-side React) app that fetches product fata from
+            A Next.js (Server-side React) app that fetches product data from
             WooCommcere.
           </p>
         </a>
@@ -213,6 +213,31 @@ export default () => (
           <p className="open-source-desc">
             Demo of how to use React Context API with Gatsby.
           </p>
+        </a>
+      </div>
+    </section>
+
+    <h2 className="section-title">Featured On</h2>
+    <p>
+      I was fortunate to be featured on these publications for my work.
+    </p>
+    <section className="projects-container">
+      <div className="work-project">
+        <a href="https://wptavern.com/gatsby-wordpress-themes-project-partners-with-theme-shops-to-port-popular-themes-to-gatsby">
+          <img
+            className="work-logo"
+            src={require('../images/wp-tavern.png')}
+            alt="WP Tavern"
+          />
+        </a>
+      </div>
+      <div className="work-project">
+        <a href="https://poststatus.com/footnotes/muhammad-muhsin-wrote-a-tutorial-about/">
+          <img
+            className="work-logo"
+            src={require('../images/post-status.png')}
+            alt="Post Status"
+          />
         </a>
       </div>
     </section>
