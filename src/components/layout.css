@@ -929,3 +929,12 @@ pre tt:after {
   color: #fff;
   border-color: #fff;
 }
+
+/* Twitter embeds */
+.wp-block-embed-twitter {
+  margin: 10px 10px 20px;
+  padding: 15px 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 1px rgba(16,32,32,.15);
+}
