@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
+import SEO from '../../components/seo';
 
 const SinglePost = props => {
     const {
@@ -8,13 +9,14 @@ const SinglePost = props => {
 
     return (
         <Layout>
+            <SEO title={title} />
             <article
                 data-id={id}
                 id={`post-${postId}`}
                 className={`post-${postId} post type-post status-publish format-standard hentry category-react tag-accessibility tag-gatsby entry`}
             >
                 <header className="entry-header">
-                    <h1 className="entry-title">{title}</h1>
+                    <h1 className="entry-title" dangerouslySetInnerHTML={{ __html: title }} />
                     <div className="entry-meta" />
                     {/* .meta-info */}
                 </header>

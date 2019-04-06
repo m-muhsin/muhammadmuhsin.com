@@ -36,6 +36,7 @@ const BlogArchive = props => {
                 className="post type-post status-publish format-standard hentry entry"
                 data-id={id}
                 id={`post-preview-${postId}`}
+                key={postId}
               >
                 <header className="entry-header">
                   <Link to={`/blog/${uri}`}>
