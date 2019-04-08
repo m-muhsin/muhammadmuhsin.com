@@ -46,7 +46,7 @@ export default () => (
         </div>
       </div>
       <div className="work-project">
-        <a href="https://www.casefora.com/">
+        <a href="https://www.simplur.com/">
           <img
             className="work-logo"
             src={require('../images/simplur.svg')}
@@ -54,7 +54,7 @@ export default () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span> <span>WooCommerce</span>{' '}
         </div>
       </div>
       <div className="work-project">
