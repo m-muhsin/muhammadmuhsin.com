@@ -17,7 +17,6 @@ export default () => (
             alt="LearnDash"
           />
         </a>
-        <p>LearnDash</p>
         <div className="project-technologies">
           <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
         </div>
@@ -30,7 +29,6 @@ export default () => (
             alt="JS for WP"
           />
         </a>
-        <p>JS for WP (Zac Gordon)</p>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
         </div>
@@ -43,12 +41,11 @@ export default () => (
             alt="Jatstudio"
           />
         </a>
-        <p>Jatstudio</p>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
         </div>
       </div>
-      {/* <div className="work-project">
+      <div className="work-project">
         <a href="https://www.casefora.com/">
           <img
             className="work-logo"
@@ -56,11 +53,10 @@ export default () => (
             alt="Simplur"
           />
         </a>
-        <p>Simplur</p>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
         </div>
-      </div> */}
+      </div>
       <div className="work-project">
         <a href="https://www.casefora.com/">
           <img
@@ -69,7 +65,6 @@ export default () => (
             alt="Casefora"
           />
         </a>
-        <p>Casefora</p>
         <div className="project-technologies">
           <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
           <span>Elasticsearch</span>
@@ -83,7 +78,6 @@ export default () => (
             alt="LexCampus"
           />
         </a>
-        <p>LexCampus</p>
         <div className="project-technologies">
           <span>WordPress</span> <span>LearnDash</span>{' '}
           <span>React Native</span>

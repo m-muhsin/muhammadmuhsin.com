@@ -706,6 +706,11 @@ pre tt:after {
   height: 80px;
   width: 260px;
   object-fit: contain;
+  margin-bottom: 0;
+}
+
+.project-technologies {
+  padding-top: 10px;
 }
 
 .work-logo:hover {
