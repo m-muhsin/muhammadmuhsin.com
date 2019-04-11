@@ -4,12 +4,28 @@ import SEO from '../../components/seo';
 
 const SinglePost = props => {
     const {
-        pageContext: { id, postId, title, content }
+        pageContext: { id, postId, title, content, excerpt }
     } = props;
+
+    const maxLength = 240 // maximum number of characters to extract
+
+    // getting the excerpt to a variable
+    let excerptText = excerpt
+
+    // if excerpt does not exist
+    if (!excerptText) {
+      // getting the first 240 characters off content
+      excerptText = content.substr(0, maxLength)
+
+      // so that a word is not chopped off halfway
+      excerptText = content
+        .substr(0, Math.min(excerptText.length, excerptText.lastIndexOf(" ")))
+        .concat("...")
+    }
 
     return (
         <Layout>
-            <SEO title={title} />
+            <SEO title={title} description={excerptText} />
             <article
                 data-id={id}
                 id={`post-${postId}`}
