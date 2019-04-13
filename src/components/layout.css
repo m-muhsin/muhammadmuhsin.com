@@ -938,3 +938,7 @@ pre tt:after {
 img {
   margin-bottom: 0.5rem;
 }
+
+figcaption {
+  text-align: center;
+}
