@@ -934,3 +934,7 @@ pre tt:after {
   color: #fff;
   border-color: #fff;
 }
+
+img {
+  margin-bottom: 0.5rem;
+}
