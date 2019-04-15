@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import moment from "moment/moment"
 import DateIcon from "./icons/date"
 import CategoryIcon from "./icons/category"
