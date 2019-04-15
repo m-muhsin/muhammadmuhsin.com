@@ -1,7 +1,6 @@
 const axios = require('axios')
 const config = require('../config.js')
 const { PostTemplateFragment } = require('../src/templates/posts/data.js')
-const { BlogPreviewFragment } = require('../src/templates/posts/data.js')
 const postTemplate = require.resolve(`../src/templates/posts/single.js`)
 const blogTemplate = require.resolve(`../src/templates/posts/archive.js`)
 
@@ -33,14 +32,11 @@ query GET_POSTS($first:Int $after:String) {
             # This is the fragment used for the Post Template
             ...PostTemplateFragment
             
-            #This is the fragment used for the blog preview on archive pages
-            ...BlogPreviewFragment
         }
     }
 }
 # Here we make use of the imported fragments which are referenced above
 ${PostTemplateFragment}
-${BlogPreviewFragment}
 `
 
 /**

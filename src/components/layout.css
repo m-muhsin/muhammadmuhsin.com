@@ -942,3 +942,19 @@ img {
 figcaption {
   text-align: center;
 }
+
+h1.entry-title {
+  margin-bottom: 15px;
+}
+
+header.entry-header {
+  margin-bottom: 20px;
+}
+
+svg.svg-icon {
+  margin-right: 8px;
+}
+
+.posted-on time {
+  margin-right: 8px;
+}

@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from '../../components/seo';
+import PostHeaderMeta from '../../components/post-header-meta';
 
 const SinglePost = props => {
     const {
-        pageContext: { id, postId, title, content, excerpt }
+        pageContext: { id, postId, title, content, excerpt, categories, tags, date }
     } = props;
 
     const maxLength = 240 // maximum number of characters to extract
@@ -33,8 +34,11 @@ const SinglePost = props => {
             >
                 <header className="entry-header">
                     <h1 className="entry-title" dangerouslySetInnerHTML={{ __html: title }} />
-                    <div className="entry-meta" />
-                    {/* .meta-info */}
+                    <PostHeaderMeta
+                        date={date}
+                        categories={categories}
+                        tags={tags}
+                    />      
                 </header>
 
                 <div

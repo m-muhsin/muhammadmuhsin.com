@@ -4,24 +4,28 @@ const PostTemplateFragment = `
       postId
       title
       content
-    }
-`
-const BlogPreviewFragment = `
-fragment BlogPreviewFragment on Post {
-    id
-    postId
-    title
-    uri
-    date
-    excerpt
-    author {
-        name
-        avatar(size:50) {
-          url
+      uri
+      date
+      excerpt
+      author {
+          name
+          avatar(size:50) {
+            url
+          }
+      }
+      categories {
+        nodes {
+          name
+          slug
         }
+      }
+      tags {
+        nodes {
+          slug
+          name
+        }
+      }
     }
-}
 `
 
 module.exports.PostTemplateFragment = PostTemplateFragment
-module.exports.BlogPreviewFragment = BlogPreviewFragment
