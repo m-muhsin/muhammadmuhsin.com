@@ -958,3 +958,7 @@ svg.svg-icon {
 .posted-on time {
   margin-right: 8px;
 }
+
+.tags-links svg.svg-icon {
+  margin-left: 8px;
+}
