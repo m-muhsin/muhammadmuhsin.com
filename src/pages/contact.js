@@ -34,13 +34,13 @@ const ContactPage = () => (
               <strong>Twitter</strong> - Feel free to send me a direct message{' '}
               <a href="https://twitter.com/muhsinlk/">@muhsinlk</a>
             </li>
-            <li>
+            {/* <li>
               <strong>Phone</strong> - You can call/text me if you need
               something urgently at{' '}
               <a href="tel:+94779044988" className="btn text-uppercase blue-bg">
                 +94 779 044 988
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>
@@ -63,7 +63,7 @@ const ContactPage = () => (
             link="https://www.linkedin.com/in/mmuhsin/"
             image="linkedin"
           />
-          <SocialLink link="https://wa.me/94779044988" image="whatsapp" />
+          {/* <SocialLink link="https://wa.me/94779044988" image="whatsapp" /> */}
           <SocialLink link="http://mtwoblog.com/" image="m2blog" />
           <SocialLink
             link="https://www.smashingmagazine.com/author/muhammad-muhsin/"
@@ -73,6 +73,7 @@ const ContactPage = () => (
             link="https://www.instagram.com/m_muhsin/"
             image="instagram"
           />
+          <SocialLink link="https://medium.com/@muhsinlk" image="medium" />
           <SocialLink
             link="https://profiles.wordpress.org/mmuhsin/"
             image="wordpress"
