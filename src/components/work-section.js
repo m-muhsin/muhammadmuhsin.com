@@ -10,6 +10,18 @@ export default () => (
     </p>
     <section className="projects-container">
       <div className="work-project">
+        <a href="https://www.capbase.com/">
+          <img
+            className="work-logo"
+            src={require('../images/capbase.png')}
+            alt="Capbase"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>React</span> <span>GraphQL</span> <span>AWS</span>
+        </div>
+      </div>
+      <div className="work-project">
         <a href="https://www.learndash.com/">
           <img
             className="work-logo"
@@ -55,19 +67,6 @@ export default () => (
         </a>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span> <span>WordPress</span> <span>WooCommerce</span>{' '}
-        </div>
-      </div>
-      <div className="work-project">
-        <a href="https://www.casefora.com/">
-          <img
-            className="work-logo"
-            src={require('../images/CaseFora-logo.png')}
-            alt="Casefora"
-          />
-        </a>
-        <div className="project-technologies">
-          <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
-          <span>Elasticsearch</span>
         </div>
       </div>
       <div className="work-project">
