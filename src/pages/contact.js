@@ -65,15 +65,15 @@ const ContactPage = () => (
           />
           {/* <SocialLink link="https://wa.me/94779044988" image="whatsapp" /> */}
           <SocialLink link="http://mtwoblog.com/" image="m2blog" />
-          <SocialLink
+          {/* <SocialLink
             link="https://www.smashingmagazine.com/author/muhammad-muhsin/"
             image="smashing"
-          />
+          /> */}
           <SocialLink
             link="https://www.instagram.com/m_muhsin/"
             image="instagram"
           />
-          <SocialLink link="https://medium.com/@muhsinlk" image="medium" />
+          {/* <SocialLink link="https://medium.com/@muhsinlk" image="medium" /> */}
           <SocialLink
             link="https://profiles.wordpress.org/mmuhsin/"
             image="wordpress"
