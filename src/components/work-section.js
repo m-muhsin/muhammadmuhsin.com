@@ -4,11 +4,23 @@ export default () => (
   <>
     <h2>Trusted By</h2>
     <p>
-      I have been working with big and small companies doing WordPress.
+      I have been working with big and small companies doing React and WordPress.
       I cannot talk about some of my best work due to non disclosure agreements.
-       Here are some of my clients.
+      Here are some of them.
     </p>
     <section className="projects-container">
+      <div className="work-project">
+        <a href="https://www.rtcamp.com/">
+          <img
+            className="work-logo"
+            src={require('../images/rtCamp-Logo.png')}
+            alt="rtCamp"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>React</span> <span>WordPress</span> <span>VIP</span>
+        </div>
+      </div>
       <div className="work-project">
         <a href="https://www.capbase.com/">
           <img
@@ -127,6 +139,18 @@ export default () => (
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>
         </div>
       </div>
+      <div className="work-project">
+        <a href="https://blog.logrocket.com/author/muhammadmuhsin/">
+          <img
+            className="work-logo"
+            src={require('../images/logrocket.png')}
+            alt="LogRocket"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>React</span> <span>SSR</span>
+        </div>
+      </div>
     </section>
 
     <h2 className="section-title">Open Source</h2>
@@ -135,6 +159,17 @@ export default () => (
       projects.
     </p>
     <section className="projects-container">
+      <div className="work-project open-source">
+        <a
+          href="https://github.com/rtCamp/wp-decoupled"
+          style={{ color: 'white', textAlign: 'left' }}
+        >
+          <h3 className="open-source-title">wp-decoupled</h3>
+          <p className="open-source-desc">
+            An app using WordPress, WPGraphQL and Next.js.
+          </p>
+        </a>
+      </div>
       <div className="work-project open-source">
         <a
           href="https://github.com/zgordon/twentynineteen-gatsby-theme"
