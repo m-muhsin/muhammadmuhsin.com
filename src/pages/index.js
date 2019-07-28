@@ -3,7 +3,11 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import WorkSection from '../components/work-section'
+import Work from '../components/work'
+import Writing from '../components/writing'
+import Speaking from '../components/speaking'
+import OpenSource from '../components/open-source'
+import Featured from '../components/featured'
 
 const IndexPage = () => (
   <Layout location="home">
@@ -17,7 +21,11 @@ const IndexPage = () => (
       ]}
     />
     <Intro />
-    <WorkSection />
+    <Work />
+    <Writing />
+    <Speaking />
+    <OpenSource />
+    <Featured />
     <Testimonials />
     <Contact />
   </Layout>
