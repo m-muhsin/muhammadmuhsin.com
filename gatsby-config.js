@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Muhammd Muhsin`,
+        name: `Muhammad Muhsin`,
         short_name: `muhammad.dev`,
         start_url: `/`,
         background_color: `#139fc9`,
