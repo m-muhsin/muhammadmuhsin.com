@@ -962,3 +962,8 @@ svg.svg-icon {
 .tags-links svg.svg-icon {
   margin-left: 8px;
 }
+
+.talk-title {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
