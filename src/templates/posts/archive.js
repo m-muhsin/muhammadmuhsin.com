@@ -1,20 +1,18 @@
-import React from 'react'
+import React from "react"
 import { Link } from 'gatsby'
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-const BlogArchive = props => {
-  const {
-    pageContext: { nodes, pageNumber, hasNextPage },
-  } = props
-
+const BlogArchive = ({
+  pageContext: { nodes, pageNumber, hasNextPage }
+}) => {
   return (
     <Layout classNames="home blog hfeed">
       <SEO title="Blog" description="A collection of posts by Muhammad" />
       <h1>Blog</h1>
-      <div>
-        {nodes &&
-          nodes.map(post => {
+      <div id="blog">
+        {
+          nodes && nodes.map(post => {
             const { id, postId, title, content, excerpt, uri } = post
             const maxLength = 240 // maximum number of characters to extract
 

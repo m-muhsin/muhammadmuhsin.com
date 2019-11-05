@@ -1,31 +1,36 @@
 const PostTemplateFragment = `
-    fragment PostTemplateFragment on Post { 
-      id
-      postId
-      title
-      content
-      uri
-      date
-      excerpt
-      author {
-          name
-          avatar(size:50) {
-            url
-          }
-      }
-      categories {
-        nodes {
-          name
-          slug
-        }
-      }
-      tags {
-        nodes {
-          slug
-          name
-        }
+  fragment PostTemplateFragment on WPGraphQL_Post {
+    id
+    postId
+    title
+    excerpt
+    content
+    uri
+    date
+    categories {
+      nodes {
+        name
+        slug
       }
     }
+    tags {
+      nodes {
+        name
+        slug
+      }
+    }
+    featuredImage {
+      altText
+      uri
+      sourceUrl
+    }
+    author {
+      name
+      slug
+      avatar(size: 50) {
+        url
+      }
+    }
+  }
 `
-
 module.exports.PostTemplateFragment = PostTemplateFragment

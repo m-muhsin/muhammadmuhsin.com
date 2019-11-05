@@ -1,24 +1,24 @@
 import React from "react"
+// import { Link } from "gatsby"
 import Layout from "../../components/layout"
-import PostEntry from "../../components/post-entry"
 import SEO from "../../components/seo"
+import PostEntry from "../../components/post-entry"
 
-const TagArchive = ({
+const CategoryArchive = ({
   pageContext: { name, posts }
 }) => {
-
   return (
-    <Layout>
+    <Layout classNames="archive">
       <SEO
-        title={`Tag - ${name}`}
+        title={`Category - ${name}`}
         description={`A collection of posts from the ${name} category.`}
       />
       <section>
         <h1>
-          Tag Archive: <span>{name}</span>
+          Category Archives: <span>{name}</span>
         </h1>
         {
-          posts.nodes &&
+          posts && posts.nodes &&
           posts.nodes.map(post => <PostEntry key={post.id} post={post} />)
         }
       </section>
@@ -26,4 +26,4 @@ const TagArchive = ({
   )
 }
 
-export default TagArchive
+export default CategoryArchive
