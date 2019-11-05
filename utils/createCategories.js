@@ -53,7 +53,7 @@ module.exports = async ({ actions, graphql }) => {
         path: `/blog/category/${category.slug}`,
         component: categoryTemplate,
         context: {
-          category,
+          ...category,
         },
       })
     })

@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import moment from "moment/moment"
 import DateIcon from "./icons/date"
 import CategoryIcon from "./icons/category"
@@ -21,13 +21,13 @@ const PostHeadererMeta = ({ date, categories, tags }) => (
       <span className="screen-reader-text">Posted in: </span>
       {categories.nodes
         .map(category => (
-        //   <Link
-        //     key={category.name}
-        //     to={`/blog/category/${category.slug}`}
-        //     rel="category"
-        //   >
+          <Link
+            key={category.name}
+            to={`/blog/category/${category.slug}`}
+            rel="category"
+          >
             <span>{category.name}</span>
-        //   </Link>
+          </Link>
         ))
         .reduce((accu, elem) => {
           return accu === null ? [elem] : [...accu, ", ", elem]
@@ -38,9 +38,9 @@ const PostHeadererMeta = ({ date, categories, tags }) => (
       <span className="screen-reader-text">Tags: </span>
       {tags.nodes
         .map(tag => (
-        //   <Link key={tag.name} to={`/blog/tag/${tag.slug}`} rel="tag">
+          <Link key={tag.name} to={`/blog/tag/${tag.slug}`} rel="tag">
             <span>{tag.name}</span>
-        //   </Link>
+           </Link>
         ))
         .reduce((accu, elem) => {
           return accu === null ? [elem] : [...accu, ", ", elem]

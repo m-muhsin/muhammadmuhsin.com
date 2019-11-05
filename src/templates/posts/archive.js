@@ -54,13 +54,13 @@ const BlogArchive = ({
       <nav>
         {pageNumber === 2 && <Link to={`/blog`}>Newer posts</Link>}
         {pageNumber > 2 && (
-          <Link to={`/blog/page/${pageNumber - 1}`}>Newer posts</Link>
+          <Link to={`/blog/${pageNumber - 1}`}>Newer posts</Link>
         )}
         {'  '}
         <span>Page {pageNumber}</span>
         {'  '}
         {hasNextPage && (
-          <Link to={`/blog/page/${pageNumber + 1}`}>Older posts</Link>
+          <Link to={`/blog/${pageNumber + 1}`}>Older posts</Link>
         )}
       </nav>
     </Layout>
