@@ -51,6 +51,11 @@ const Intro = () => (
       Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>
+    <div style={{ textAlign: 'center' }}>
+      <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin" target="_blank" rel="noopener noreferrer">
+        <img style={{ width: 340 }} src={require('../images/Speaking.png')} alt="WordCamp US 2019 Speaker" />
+      </a>
+    </div>
   </>
 )
 
