@@ -4,16 +4,14 @@ export default () => (
   <>
     <h2>Trusted By</h2>
     <p>
-      I have been working with big and small companies doing React and WordPress.
-      I cannot talk about some of my best work due to non disclosure agreements.
-      Here are some of them.
+      I have been working with big and small companies doing WordPress and React. Here are some of them.
     </p>
     <section className="projects-container">
       <div className="work-project">
         <a href="https://www.rtcamp.com/">
           <img
             className="work-logo"
-            src={require('../images/rtCamp-Logo.png')}
+            src={require('../images/rtcamp-logo-black.svg')}
             alt="rtCamp"
           />
         </a>
@@ -81,21 +79,8 @@ export default () => (
           <span>React</span> <span>Gatsby</span> <span>WordPress</span> <span>WooCommerce</span>{' '}
         </div>
       </div>
-      <div className="work-project">
-        <a href="https://www.lexcampus.in/">
-          <img
-            className="work-logo"
-            src={require('../images/LexCampus-logo.png')}
-            alt="LexCampus"
-          />
-        </a>
-        <div className="project-technologies">
-          <span>WordPress</span> <span>LearnDash</span>{' '}
-          <span>React Native</span>
-        </div>
-      </div>
     </section>
 
-    
+
   </>
 )

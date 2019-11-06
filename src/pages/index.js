@@ -46,7 +46,7 @@ const Intro = () => (
       </span>{' '}
       I'm a software consultant focusing on front-end technologies. I
       work with React, WordPress, Gatsby, Next.js and React Native. 
-      I currently work as React Developer at rtCamp - the only WordPress VIP Agency in Asia.
+      I currently work remotely as Senior React Developer at rtCamp - a WordPress VIP Agency from India.
     </p>
     <p>
       Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
