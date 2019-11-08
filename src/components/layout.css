@@ -967,3 +967,8 @@ svg.svg-icon {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+
+.black-bold {
+  color: black;
+  font-weight: bold;
+}

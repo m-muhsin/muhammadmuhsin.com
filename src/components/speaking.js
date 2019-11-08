@@ -19,7 +19,7 @@ export default () => (
                 <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby and WordPress</h5>
                 <div className="project-technologies">
                     <span>Nov 8, 2019</span> 
-                    <span><a style={{ color: 'black', fontWeight: 'bold' }} href="https://2019.mumbai.wordcamp.org/register/">Tickets</a></span>
+                    <span><a className="black-bold" href="https://2019.mumbai.wordcamp.org/register/">Tickets</a></span>
                 </div>
             </div>
             <div className="work-project">
@@ -33,7 +33,7 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Using WordPress With Static Site Generators</h5>
                 <div className="project-technologies">
-                    <span>Nov 1, 2019</span> <span><a style={{ color: 'black', fontWeight: 'bold' }} href="https://www.slideshare.net/rtcamp/using-wordpress-with-static-site-generators-by-muhammad-muhsin-and-jason-bahl-wordcamp-us-2019">Slides</a></span>
+                    <span>Nov 1, 2019</span> <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/using-wordpress-with-static-site-generators-by-muhammad-muhsin-and-jason-bahl-wordcamp-us-2019">Slides</a></span>
                 </div>
             </div>
             <div className="work-project">
@@ -48,7 +48,7 @@ export default () => (
                 <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby and WordPress</h5>
                 <div className="project-technologies">
                     <span>Sep 25, 2019</span>
-                    {/* <span><a style={{ color: 'black', fontWeight: 'bold' }} href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span> */}
+                    {/* <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span> */}
                 </div>
             </div>
 
@@ -63,7 +63,7 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Server Side React for WordPress</h5>
                 <div className="project-technologies">
-                    <span>July 12, 2019</span> <span><a style={{ color: 'black', fontWeight: 'bold' }} href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span>
+                    <span>July 12, 2019</span> <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span>
                 </div>
             </div>
             <div className="work-project">
@@ -77,7 +77,7 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Building with Gatsby and WordPress</h5>
                 <div className="project-technologies">
-                    <span>July 12, 2019</span> <span><a style={{ color: 'black', fontWeight: 'bold' }} href="https://gatsbyjs-montreal-meetup.muhammad.dev">Slides</a></span>
+                    <span>June 1, 2019</span> <span><a className="black-bold" href="https://gatsbyjs-montreal-meetup.muhammad.dev">Slides</a></span>
                 </div>
             </div>
             <div className="work-project">
@@ -91,7 +91,7 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Creating a WooCommerce Mobile App with React Native</h5>
                 <div className="project-technologies">
-                    <span>October 18, 2018</span> <span><a style={{ color: 'black', fontWeight: 'bold' }} href="https://docs.google.com/presentation/d/1TKkt9M8RViageCS7whYPafjVdmLtgNQ2Bd9taCLjrLU/present">Slides</a></span>
+                    <span>October 18, 2018</span> <span><a className="black-bold" href="https://docs.google.com/presentation/d/1TKkt9M8RViageCS7whYPafjVdmLtgNQ2Bd9taCLjrLU/present">Slides</a></span>
                 </div>
             </div>
         </section>
