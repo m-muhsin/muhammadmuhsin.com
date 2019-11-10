@@ -7,7 +7,7 @@ export default () => (
             I also speak at conferences and meetups.
         </p>
         <section className="projects-container">
-            <div className="work-project">
+            {/* <div className="work-project">
                 <a href="https://2019.mumbai.wordcamp.org/speaker/muhammad-muhsin/">
                     <img
                         className="work-logo"
@@ -21,7 +21,7 @@ export default () => (
                     <span>Nov 8, 2019</span> 
                     <span><a className="black-bold" href="https://2019.mumbai.wordcamp.org/register/">Tickets</a></span>
                 </div>
-            </div>
+            </div> */}
             <div className="work-project">
                 <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin/">
                     <img
