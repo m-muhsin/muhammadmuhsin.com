@@ -33,6 +33,7 @@ export default () => (
                 <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby and WordPress</h5>
                 <div className="project-technologies">
                     <span>Sep 25, 2019</span>
+                    <span><a className="black-bold" href="https://wpsessions.com/wp-content/uploads/2019/09/Muhammad-Muhsin-Build-Your-Blazing-Fast-Site-With-Gatsby-and-WordPress.pdf">Slides</a></span>
                 </div>
             </div>
 
