@@ -7,21 +7,6 @@ export default () => (
             I also speak at conferences and meetups.
         </p>
         <section className="projects-container">
-            {/* <div className="work-project">
-                <a href="https://2019.mumbai.wordcamp.org/speaker/muhammad-muhsin/">
-                    <img
-                        className="work-logo"
-                        src={require('../images/wc-mumbai.png')}
-                        alt="WCUS 2019"
-                    />
-                    <h4 style={{ marginTop: 10, marginBottom: 10 }}>WordCamp Mumbai 2019</h4>
-                </a>
-                <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby and WordPress</h5>
-                <div className="project-technologies">
-                    <span>Nov 8, 2019</span> 
-                    <span><a className="black-bold" href="https://2019.mumbai.wordcamp.org/register/">Tickets</a></span>
-                </div>
-            </div> */}
             <div className="work-project">
                 <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin/">
                     <img
@@ -48,7 +33,6 @@ export default () => (
                 <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby and WordPress</h5>
                 <div className="project-technologies">
                     <span>Sep 25, 2019</span>
-                    {/* <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span> */}
                 </div>
             </div>
 
