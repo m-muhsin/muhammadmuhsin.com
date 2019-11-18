@@ -10,6 +10,7 @@ const Testimonials = () => (
         Muhammad is not only a talented React developer, he is a great person. 
         He communicates well, isn't afraid to ask questions, and is reliable. 
         Despite working in a different timezone he always attends business-critical meetings and works very well with his colleagues. 
+        &nbsp;
         <strong>
           Muhammad has my highest endorsement for any React-based development work.
         </strong>
@@ -71,7 +72,7 @@ const Testimonials = () => (
         alt="WPGraphQL"
       />
     </blockquote>
-    <blockquote className="testimonial-box">
+    {/* <blockquote className="testimonial-box">
       <p className="testimonial-text">
         Muhammad is a real pleasure to work with. He is really kind, patient,
         and aspiring to find the best solution. I really appreciate his honest
@@ -91,7 +92,7 @@ const Testimonials = () => (
         src={require('../images/jatstudio.svg')}
         alt="Jatstudio"
       />
-    </blockquote>
+    </blockquote> */}
     <blockquote className="testimonial-box">
       <p className="testimonial-text">
         Muhammad is an excellent, reliable author. He has a keen passion for all
