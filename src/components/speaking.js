@@ -18,7 +18,11 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Using WordPress With Static Site Generators</h5>
                 <div className="project-technologies">
-                    <span>Nov 1, 2019</span> <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/using-wordpress-with-static-site-generators-by-muhammad-muhsin-and-jason-bahl-wordcamp-us-2019">Slides</a></span>
+                    <span>Nov 1, 2019</span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/using-wordpress-with-static-site-generators-by-muhammad-muhsin-and-jason-bahl-wordcamp-us-2019">Slides</a></span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://wordpress.tv/2019/11/14/jason-bahl-muhammad-muhsin-using-wordpress-with-static-site-generators/">Video</a></span>
                 </div>
             </div>
             <div className="work-project">
@@ -48,7 +52,11 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Server Side React for WordPress</h5>
                 <div className="project-technologies">
-                    <span>July 12, 2019</span> <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span>
+                    <span>July 12, 2019</span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://www.slideshare.net/rtcamp/server-side-react-for-wordpress-by-muhammad-muhsin-the-javascript-for-wordpress-conference-jsforwpconf-12-jul-2019">Slides</a></span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://youtu.be/TkNH2QB5oDA">Video</a></span>
                 </div>
             </div>
             <div className="work-project">
@@ -62,7 +70,11 @@ export default () => (
                 </a>
                 <h5 className="talk-title">Building with Gatsby and WordPress</h5>
                 <div className="project-technologies">
-                    <span>June 1, 2019</span> <span><a className="black-bold" href="https://gatsbyjs-montreal-meetup.muhammad.dev">Slides</a></span>
+                    <span>June 1, 2019</span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://gatsbyjs-montreal-meetup.muhammad.dev">Slides</a></span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://youtu.be/t7KwexCFW9o">Video</a></span>
                 </div>
             </div>
             <div className="work-project">
