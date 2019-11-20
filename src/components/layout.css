@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 html {
-  background: #f9f9f9;
+  background: rgba(255, 255, 255, 1);
   color: #111;
   font-family: 'Lato', arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -621,6 +621,19 @@ pre tt:after {
   }
 }
 
+/* custom CSS */
+
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
+  font-family: 'Lora', serif;
+  line-height: 1.6;;
+}
+
+.blog p {
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
 .main-title {
   font-size: 2em;
   margin-bottom: 1.25em;
@@ -687,7 +700,6 @@ pre tt:after {
 }
 
 .testimonial-text {
-  /* margin-left: 60px; */
   padding: 10px 18px 0;
 }
 
@@ -971,4 +983,12 @@ svg.svg-icon {
 .black-bold {
   color: black;
   font-weight: bold;
+}
+
+figure.wp-block-image {
+  text-align: center;
+}
+
+header.entry-header, header.entry-header h2 {
+  margin-bottom: 12px;
 }

@@ -7,7 +7,7 @@ const BlogArchive = ({
   pageContext: { nodes, pageNumber, hasNextPage }
 }) => {
   return (
-    <Layout classNames="home blog hfeed">
+    <Layout classNames="blog">
       <SEO title="Blog" description="A collection of posts by Muhammad" />
       <h1>Blog</h1>
       <div id="blog">

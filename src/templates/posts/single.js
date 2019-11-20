@@ -25,7 +25,7 @@ const SinglePost = props => {
     }
 
     return (
-        <Layout>
+        <Layout classNames="blog">
             <SEO title={title} description={excerptText} />
             <article
                 data-id={id}
