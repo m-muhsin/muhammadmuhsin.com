@@ -43,7 +43,7 @@ export default function Search({ indices, collapse, hitsAsGrid }) {
     process.env.GATSBY_ALGOLIA_APP_ID,
     process.env.GATSBY_ALGOLIA_SEARCH_KEY
   )
-  console.log('indices',indices)
+
   useClickOutside(ref, () => setFocus(false))
   return (
     <InstantSearch
