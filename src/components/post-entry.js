@@ -35,7 +35,6 @@ const PostEntry = ({
     excerptText = getExcerpt(content)
   }
 
-  console.log({ featuredImage })
   excerptText = getExcerpt(excerpt)
   const img = featuredImage ? featuredImage.sourceUrl : ""
 
