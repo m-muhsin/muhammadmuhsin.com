@@ -624,7 +624,7 @@ pre tt:after {
 /* custom CSS */
 
 .blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
-  font-family: 'Lora', serif;
+  font-family: 'Lato', arial, sans-serif;
   line-height: 1.6;;
 }
 
