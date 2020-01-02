@@ -6,7 +6,7 @@ import CategoryIcon from "./icons/category"
 import TagIcon from "./icons/tag"
 
 const PostHeadererMeta = ({ date, categories, tags }) => (
-  <header className="entry-header">
+  <header className="entry-meta">
     <span className="posted-on">
       <DateIcon />
       <time

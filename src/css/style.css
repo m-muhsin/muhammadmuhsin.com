@@ -874,6 +874,7 @@ pre tt:after {
 header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide), .inner-body.blog .main > h1 {
   max-width: 42rem;
   margin: 0 auto 1.45rem;
+  padding: .5rem 1.0875rem;
 }
 
 .inner-body {
@@ -888,7 +889,7 @@ header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.ali
   margin: 0 auto;
 }
 
-.main {
+.inner-body.home .main, .inner-body.contact .main {
   padding: 0.5rem 1.0875rem;
 }
 
@@ -999,4 +1000,9 @@ figure.wp-block-image {
 
 header.entry-header, header.entry-header h2 {
   margin-bottom: 12px;
+}
+
+header.entry-meta {
+  font-size: 0.85rem;
+  margin-top: -12px;
 }

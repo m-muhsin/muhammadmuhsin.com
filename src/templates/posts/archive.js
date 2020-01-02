@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import PostHeaderMeta from '../../components/post-header-meta';
 
 const BlogArchive = ({
   pageContext: { nodes, pageNumber, hasNextPage }
@@ -13,7 +14,7 @@ const BlogArchive = ({
       <div id="blog">
         {
           nodes && nodes.map(post => {
-            const { id, postId, title, content, excerpt, uri } = post
+            const { id, postId, title, content, excerpt, uri, date, categories, tags } = post
             const maxLength = 240 // maximum number of characters to extract
 
             // getting the excerpt to a variable
@@ -40,6 +41,11 @@ const BlogArchive = ({
                   <Link to={`/blog/${uri}`}>
                     <h2 dangerouslySetInnerHTML={{ __html: title }} />
                   </Link>
+                  <PostHeaderMeta
+                      date={date}
+                      categories={categories}
+                      tags={tags}
+                  /> 
                 </header>
                 <div
                   className="entry-content"
