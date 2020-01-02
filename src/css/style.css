@@ -889,7 +889,7 @@ header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.ali
 }
 
 .main {
-  /* padding: 0.5rem 1.0875rem; */
+  padding: 0.5rem 1.0875rem;
 }
 
 .site-footer {
