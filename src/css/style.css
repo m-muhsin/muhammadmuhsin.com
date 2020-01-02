@@ -871,7 +871,7 @@ pre tt:after {
   max-width: 1200px;
 }
 
-header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide), .inner-body.blog .main > h1 {
   max-width: 42rem;
   margin: 0 auto 1.45rem;
 }
@@ -885,6 +885,7 @@ header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.ali
 
 .inner-body.home, .inner-body.contact {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main {
