@@ -4,11 +4,11 @@ export default () => (
     <>
         <h2 className="section-title">Featured On</h2>
         <p>
-        I was fortunate to be featured on these publications for my work.
+        I was fortunate to be featured on these publications for my work a few times.
         </p>
         <section className="projects-container">
         <div className="work-project">
-            <a href="https://wptavern.com/gatsby-wordpress-themes-project-partners-with-theme-shops-to-port-popular-themes-to-gatsby">
+            <a href="https://wptavern.com/?s=Muhammad+Muhsin">
             <img
                 className="work-logo"
                 src={require('../images/wp-tavern.png')}
@@ -17,7 +17,7 @@ export default () => (
             </a>
         </div>
         <div className="work-project">
-            <a href="https://poststatus.com/footnotes/muhammad-muhsin-wrote-a-tutorial-about/">
+            <a href="https://poststatus.com/?s=Muhammad+Muhsin">
             <img
                 className="work-logo"
                 src={require('../images/post-status.png')}

@@ -871,9 +871,12 @@ pre tt:after {
   max-width: 1200px;
 }
 
-.inner-body {
+header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
   max-width: 42rem;
   margin: 0 auto 1.45rem;
+}
+
+.inner-body {
   padding-top: 0;
   clear: right;
   display: flex;
@@ -885,7 +888,7 @@ pre tt:after {
 }
 
 .main {
-  padding: 0.5rem 1.0875rem;
+  /* padding: 0.5rem 1.0875rem; */
 }
 
 .site-footer {
