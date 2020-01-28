@@ -683,7 +683,8 @@ pre tt:after {
 }
 
 .nav-item a:hover,
-.nav-item a:focus. .nav-item a:active {
+.nav-item a:focus,
+.nav-item a:active {
   border-bottom: 1px solid;
 }
 
