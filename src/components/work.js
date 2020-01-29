@@ -56,18 +56,6 @@ export default () => (
         </div>
       </div>
       <div className="work-project">
-        <a href="https://www.jatstudio.com/">
-          <img
-            className="work-logo"
-            src={require('../images/jatstudio.svg')}
-            alt="Jatstudio"
-          />
-        </a>
-        <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
-        </div>
-      </div>
-      <div className="work-project">
         <a href="https://www.simplur.com/">
           <img
             className="work-logo"
@@ -79,8 +67,30 @@ export default () => (
           <span>React</span> <span>Gatsby</span> <span>WordPress</span> <span>WooCommerce</span>{' '}
         </div>
       </div>
+      <div className="work-project">
+        <a href="http://octaware.com/">
+          <img
+            className="work-logo"
+            src={require('../images/octaware_tech_logo_1.jpg')}
+            alt="Octaware Technologies"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>WordPress</span> <span>WooCommerce</span> <span>Integrations</span> {' '}
+        </div>
+      </div>
+      <div className="work-project">
+        <a href="https://www.jatstudio.com/">
+          <img
+            className="work-logo"
+            src={require('../images/jatstudio.svg')}
+            alt="Jatstudio"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+        </div>
+      </div>
     </section>
-
-
   </>
 )
