@@ -8,8 +8,8 @@ import TagIcon from "./icons/tag"
 const PostHeadererMeta = ({ date, categories = {}, tags = {}, readingTime }) => {
   let cookies = [];
   if (parseInt(readingTime)) {
-    let numOfCookies = readingTime/2;
-    for(let i= 0; i < numOfCookies; i++) {
+    let numOfCookies = readingTime / 2;
+    for (let i = 0; i < numOfCookies; i++) {
       cookies.push('🍪');
     }
   } else {
@@ -63,11 +63,10 @@ const PostHeadererMeta = ({ date, categories = {}, tags = {}, readingTime }) => 
         </span>
         : ''
       }
-      •&nbsp;
-      {cookies}
-      {readingTime ?
-        `${readingTime} minute read` :
-        ''
+      {readingTime &&
+        (
+          `• ${cookies.join('')} ${readingTime} min read`
+        )
       }
     </header>
   )
