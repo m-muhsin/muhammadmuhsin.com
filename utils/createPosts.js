@@ -25,9 +25,7 @@ const GET_POSTS = `
               # if we need to ask for more data
               endCursor
           } 
-          nodes {
-              uri
-              
+          nodes {              
               # This is the fragment used for the Post Template
               ...PostTemplateFragment
           }
@@ -163,7 +161,7 @@ module.exports = async ({ actions, graphql }) => {
     allPosts &&
       allPosts.map((post, index) => {
         createPage({
-          path: `/blog/${post.uri}/`,
+          path: `/blog/${post.slug}/`,
           component: postTemplate,
           context: {
             ...post,

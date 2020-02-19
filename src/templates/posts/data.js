@@ -6,7 +6,9 @@ const PostTemplateFragment = `
     excerpt
     content
     uri
+    slug
     date
+    readingTime
     categories {
       nodes {
         name

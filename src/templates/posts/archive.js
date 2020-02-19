@@ -14,7 +14,7 @@ const BlogArchive = ({
       <div id="blog">
         {
           nodes && nodes.map(post => {
-            const { id, postId, title, content, excerpt, uri, date, categories, tags } = post
+            const { id, postId, title, content, excerpt, slug, date, readingTime } = post
             const maxLength = 240 // maximum number of characters to extract
 
             // getting the excerpt to a variable
@@ -38,13 +38,12 @@ const BlogArchive = ({
                 key={postId}
               >
                 <header className="entry-header">
-                  <Link to={`/blog/${uri}`}>
+                  <Link to={`/blog/${slug}`}>
                     <h2 dangerouslySetInnerHTML={{ __html: title }} />
                   </Link>
                   <PostHeaderMeta
                       date={date}
-                      categories={categories}
-                      tags={tags}
+                      readingTime={readingTime}
                   /> 
                 </header>
                 <div
