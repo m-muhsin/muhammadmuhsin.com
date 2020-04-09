@@ -1007,3 +1007,8 @@ header.entry-meta {
   font-size: 0.85rem;
   margin-top: -12px;
 }
+
+.conf-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
