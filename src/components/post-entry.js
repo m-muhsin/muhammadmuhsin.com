@@ -15,7 +15,6 @@ const getExcerpt = text => {
 
 const PostEntry = ({
   post: {
-    id,
     postId,
     title,
     excerpt,
@@ -70,7 +69,7 @@ const PostEntry = ({
           </div>
         )
       }
-      <div className="post-excerpt">
+      <div className="entry-content">
         <p dangerouslySetInnerHTML={{ __html: excerptText }} />
         <p>
           <Link

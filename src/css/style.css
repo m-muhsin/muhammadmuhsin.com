@@ -872,7 +872,7 @@ pre tt:after {
   max-width: 1200px;
 }
 
-header.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide), .inner-body.blog .main > h1 {
+.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide), .inner-body.blog .main > h1 {
   max-width: 42rem;
   margin: 0 auto 1.45rem;
   padding: .5rem 1.0875rem;
@@ -969,7 +969,7 @@ h1.entry-title {
   margin-bottom: 15px;
 }
 
-header.entry-header {
+.entry-header {
   margin-bottom: 20px;
 }
 
@@ -999,7 +999,7 @@ figure.wp-block-image {
   text-align: center;
 }
 
-header.entry-header, header.entry-header h2 {
+.entry-header, .entry-header h2 {
   margin-bottom: 12px;
 }
 
