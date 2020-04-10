@@ -3,22 +3,16 @@ const tagTemplate = require.resolve("../src/templates/tags/archive")
 
 module.exports = async ({ actions, graphql }) => {
   const GET_TAGS = `
-    query GET_TAGS($first: Int $after: String) {
-      wpgraphql { 
-        tags(first: $first after: $after) {
-          pageInfo {
-            hasNextPage
-            endCursor
-          }
-          nodes {
-            id
-            name
-            tagId
-            slug
-            posts {
-              nodes {
-                ...PostTemplateFragment
-              }
+    query GET_TAGS {
+      allWpTag {
+        nodes {
+          id
+          name
+          databaseId
+          slug
+          posts {
+            nodes {
+              ...PostTemplateFragment
             }
           }
         }
@@ -28,26 +22,21 @@ module.exports = async ({ actions, graphql }) => {
   `
   const { createPage } = actions
   const allTags = []
-  const fetchTags = async variables =>
-    await graphql(GET_TAGS, variables).then(({ data }) => {
+  const fetchTags = async () =>
+    await graphql(GET_TAGS).then(({ data }) => {
       const {
-        wpgraphql: {
-          tags: {
-            nodes,
-            pageInfo: { hasNextPage, endCursor },
-          },
+        allWpTag: {
+          nodes,
         },
       } = data
       nodes.map(tag => {
         allTags.push(tag)
       })
-      if (hasNextPage) {
-        return fetchTags({ first: 100, after: endCursor })
-      }
+
       return allTags
     })
 
-  await fetchTags({ first: 100, after: null }).then(allTags => {
+  await fetchTags().then(allTags => {
     allTags.map(tag => {
       createPage({
         path: `/blog/tag/${tag.slug}`,

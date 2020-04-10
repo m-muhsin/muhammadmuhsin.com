@@ -1,12 +1,14 @@
 const PostTemplateFragment = `
-  fragment PostTemplateFragment on WPGraphQL_Post {
+  fragment PostTemplateFragment on WpPost {
     id
-    postId
+    databaseId
     title
     excerpt
     content
     uri
+    slug
     date
+    readingTime
     categories {
       nodes {
         name
@@ -27,7 +29,7 @@ const PostTemplateFragment = `
     author {
       name
       slug
-      avatar(size: 50) {
+      avatar {
         url
       }
     }

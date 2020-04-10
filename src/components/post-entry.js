@@ -15,8 +15,7 @@ const getExcerpt = text => {
 
 const PostEntry = ({
   post: {
-    id,
-    postId,
+    databaseId,
     title,
     excerpt,
     content,
@@ -40,7 +39,7 @@ const PostEntry = ({
 
   return (
     <article
-      id={`post-${postId}`}
+      id={`post-${databaseId}`}
     >
       <header className="entry-header">
         <h3 className="entry-title">
@@ -70,7 +69,7 @@ const PostEntry = ({
           </div>
         )
       }
-      <div className="post-excerpt">
+      <div className="entry-content">
         <p dangerouslySetInnerHTML={{ __html: excerptText }} />
         <p>
           <Link

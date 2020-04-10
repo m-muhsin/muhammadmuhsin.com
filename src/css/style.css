@@ -683,7 +683,8 @@ pre tt:after {
 }
 
 .nav-item a:hover,
-.nav-item a:focus. .nav-item a:active {
+.nav-item a:focus,
+.nav-item a:active {
   border-bottom: 1px solid;
 }
 
@@ -871,9 +872,13 @@ pre tt:after {
   max-width: 1200px;
 }
 
-.inner-body {
+.entry-header, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide), .inner-body.blog .main > h1 {
   max-width: 42rem;
   margin: 0 auto 1.45rem;
+  padding: .5rem 1.0875rem;
+}
+
+.inner-body {
   padding-top: 0;
   clear: right;
   display: flex;
@@ -882,10 +887,15 @@ pre tt:after {
 
 .inner-body.home, .inner-body.contact {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
-.main {
+.inner-body.home .main, .inner-body.contact .main {
   padding: 0.5rem 1.0875rem;
+}
+
+.main nav {
+  text-align: center;
 }
 
 .site-footer {
@@ -959,7 +969,7 @@ h1.entry-title {
   margin-bottom: 15px;
 }
 
-header.entry-header {
+.entry-header {
   margin-bottom: 20px;
 }
 
@@ -968,7 +978,7 @@ svg.svg-icon {
 }
 
 .posted-on time {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .tags-links svg.svg-icon {
@@ -989,6 +999,16 @@ figure.wp-block-image {
   text-align: center;
 }
 
-header.entry-header, header.entry-header h2 {
+.entry-header, .entry-header h2 {
   margin-bottom: 12px;
+}
+
+header.entry-meta {
+  font-size: 0.85rem;
+  margin-top: -12px;
+}
+
+.conf-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -8,13 +8,53 @@ export default () => (
         </p>
         <section className="projects-container">
             <div className="work-project">
+                <a href="https://www.facebook.com/events/d41d8cd9/nextjs-solving-your-react-problems-webinar/220330915878953/">
+                    <img
+                        className="work-logo"
+                        src={require('../images/Explorer-Dev-Community.png')}
+                        alt="Explorer Dev Community"
+                    />
+                    <h4 className="conf-title">Explorer Dev Community Meetup</h4>
+                </a>
+                <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby</h5>
+                <div className="project-technologies">
+                    <span>March 23, 2020</span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://docs.google.com/presentation/d/1vVOBYAVewrT4ezIh4GkQoo218ec-ckIeYMd8rQUIqaY/present">Slides</a></span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://youtu.be/MmMMMIvuPU8?t=2607">Video</a></span>
+                </div>
+            </div>
+            <div className="work-project">
+                <a href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin/">
+                    <img
+                        className="work-logo"
+                        src={require('../images/wcasia-2020-logo.png')}
+                        alt="WordCamp Asia 2020"
+                    />
+                    <h4 className="conf-title">
+                        WordCamp Asia 2020
+                        <br />
+                        <small>[Pop-Up Livestream]</small>
+                    </h4>
+                </a>
+                <h5 className="talk-title">Using WordPress With GraphQL</h5>
+                <div className="project-technologies">
+                    <span>February 22, 2020</span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://docs.google.com/presentation/d/1AQRQWVUX5NjnIJczgHRZIUDAVtQt7x45pBAFnHlk7rk/present">Slides</a></span>
+                    &nbsp;
+                    <span><a className="black-bold" href="https://www.crowdcast.io/e/22feb20WPstream/8">Video</a></span>
+                </div>
+            </div>
+            <div className="work-project">
                 <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin/">
                     <img
                         className="work-logo"
                         src={require('../images/wcus-2019-logo.png')}
                         alt="WCUS 2019"
                     />
-                    <h4 style={{ marginTop: 10, marginBottom: 10 }}>WordCamp US 2019</h4>
+                    <h4 className="conf-title">WordCamp US 2019</h4>
                 </a>
                 <h5 className="talk-title">Using WordPress With Static Site Generators</h5>
                 <div className="project-technologies">
@@ -32,7 +72,7 @@ export default () => (
                         src={require('../images/wordsesh.png')}
                         alt="WordSesh EMEA 2019"
                     />
-                    <h4 style={{ marginTop: 10, marginBottom: 10 }}>WordSesh EMEA 2019</h4>
+                    <h4 className="conf-title">WordSesh EMEA 2019</h4>
                 </a>
                 <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby and WordPress</h5>
                 <div className="project-technologies">
@@ -48,7 +88,7 @@ export default () => (
                         src={require('../images/2019-js-for-wp-conference-logo.png')}
                         alt="JS for WP Conf 2019"
                     />
-                    <h4 style={{ marginTop: 10, marginBottom: 10 }}>JS for WP Conf 2019</h4>
+                    <h4 className="conf-title">JS for WP Conf 2019</h4>
                 </a>
                 <h5 className="talk-title">Server Side React for WordPress</h5>
                 <div className="project-technologies">
@@ -66,7 +106,7 @@ export default () => (
                         src={require('../images/gatsby-icon.png')}
                         alt="Gatsby"
                     />
-                    <h4 style={{ marginTop: 10, marginBottom: 10 }}>GatsbyJS Montréal Meetup #1</h4>
+                    <h4 className="conf-title">GatsbyJS Montréal Meetup #1</h4>
                 </a>
                 <h5 className="talk-title">Building with Gatsby and WordPress</h5>
                 <div className="project-technologies">
@@ -84,7 +124,7 @@ export default () => (
                         src={require('../images/WooSesh-2018-Logo.png')}
                         alt="Gatsby"
                     />
-                    <h4 style={{ marginTop: 10, marginBottom: 10 }}>WooSesh 2018</h4>
+                    <h4 className="conf-title">WooSesh 2018</h4>
                 </a>
                 <h5 className="talk-title">Creating a WooCommerce Mobile App with React Native</h5>
                 <div className="project-technologies">

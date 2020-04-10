@@ -14,7 +14,7 @@ const TagArchive = ({
         description={`A collection of posts from the ${name} category.`}
       />
       <section>
-        <h1>
+        <h1 className="entry-header">
           Tag Archive: <span>{name}</span>
         </h1>
         {

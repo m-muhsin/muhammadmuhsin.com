@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import './layout.css'
+import '../css/style.css'
+import '../css/gutenberg.css'
+import '../css/gutenberg-more.css'
 
 const Layout = ({ children, location, classNames }) => (
   <StaticQuery

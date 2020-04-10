@@ -3,22 +3,16 @@ const categoryTemplate = require.resolve("../src/templates/categories/archive")
 
 module.exports = async ({ actions, graphql }) => {
   const GET_CATEGORIES = `
-    query GET_CATEGORIES($first: Int $after: String) {
-      wpgraphql { 
-        categories(first: $first after: $after) {
-          pageInfo {
-            hasNextPage
-            endCursor
-          }
-          nodes {
-            id
-            name
-            categoryId
-            slug
-            posts {
-              nodes {
-                ...PostTemplateFragment
-              }
+    query GET_CATEGORIES {
+      allWpCategory {
+        nodes {
+          id
+          name
+          databaseId
+          slug
+          posts {
+            nodes {
+              ...PostTemplateFragment
             }
           }
         }
@@ -28,26 +22,20 @@ module.exports = async ({ actions, graphql }) => {
   `
   const { createPage } = actions
   const allCategories = []
-  const fetchCategories = async variables =>
-    await graphql(GET_CATEGORIES, variables).then(({ data }) => {
+  const fetchCategories = async () =>
+    await graphql(GET_CATEGORIES).then(({ data }) => {
       const {
-        wpgraphql: {
-          categories: {
-            nodes,
-            pageInfo: { hasNextPage, endCursor },
-          },
+        allWpCategory: {
+          nodes,
         },
       } = data
       nodes.map(category => {
         allCategories.push(category)
       })
-      if (hasNextPage) {
-        return fetchCategories({ first: 100, after: endCursor })
-      }
       return allCategories
     })
 
-  await fetchCategories({ first: 100, after: null }).then(allCategories => {
+  await fetchCategories().then(allCategories => {
     allCategories.map(category => {
       createPage({
         path: `/blog/category/${category.slug}`,

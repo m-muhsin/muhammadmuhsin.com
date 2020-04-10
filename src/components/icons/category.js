@@ -2,8 +2,8 @@ import React from "react"
 export default () => (
   <svg
     className="svg-icon"
-    width="16"
-    height="16"
+    width="12"
+    height="12"
     aria-hidden="true"
     role="img"
     focusable="false"
