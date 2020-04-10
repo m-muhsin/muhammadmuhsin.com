@@ -5,7 +5,7 @@ import PostHeaderMeta from '../../components/post-header-meta';
 
 const SinglePost = props => {
     const {
-        pageContext: { id, postId, title, content, excerpt, categories, tags, date }
+        pageContext: { id, databaseId, title, content, excerpt, categories, tags, date }
     } = props;
 
     const maxLength = 240 // maximum number of characters to extract
@@ -29,8 +29,8 @@ const SinglePost = props => {
             <SEO title={title} description={excerptText} />
             <article
                 data-id={id}
-                id={`post-${postId}`}
-                className={`post-${postId} post type-post status-publish format-standard hentry category-react tag-accessibility tag-gatsby entry`}
+                id={`post-${databaseId}`}
+                className={`post-${databaseId} post type-post status-publish format-standard hentry category-react tag-accessibility tag-gatsby entry`}
             >
                 <header className="entry-header">
                     <h1 className="entry-title" dangerouslySetInnerHTML={{ __html: title }} />

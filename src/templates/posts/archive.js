@@ -14,7 +14,7 @@ const BlogArchive = ({
       <div id="blog">
         {
           nodes && nodes.map(post => {
-            const { id, postId, title, content, excerpt, slug, date, readingTime } = post
+            const { id, databaseId, title, content, excerpt, slug, date, readingTime } = post
             const maxLength = 240 // maximum number of characters to extract
 
             // getting the excerpt to a variable
@@ -34,8 +34,8 @@ const BlogArchive = ({
               <article
                 className="post type-post status-publish format-standard hentry entry"
                 data-id={id}
-                id={`post-preview-${postId}`}
-                key={postId}
+                id={`post-preview-${databaseId}`}
+                key={databaseId}
               >
                 <header className="entry-header">
                   <Link to={`/blog/${slug}`}>
