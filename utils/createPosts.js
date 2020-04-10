@@ -6,16 +6,10 @@ const GET_POSTS = `
   # Define our query variables
   query GET_POSTS {
       allWpPost {
-          # In response, we'll want pageInfo so we know if we need
-          # to fetch more posts or not.
-          pageInfo {
-              # If true, we need to ask for more data.
-              hasNextPage
-          } 
-          nodes {              
-              # This is the fragment used for the Post Template
-              ...PostTemplateFragment
-          }
+        nodes {              
+            # This is the fragment used for the Post Template
+            ...PostTemplateFragment
+        }
       }
   }
   # Here we make use of the imported fragments which are referenced above
@@ -84,7 +78,7 @@ module.exports = async ({ actions, graphql }) => {
        * Add config for the blogPage to the blogPage array
        * for creating later
        *
-       * @type {{path: string, component: string, context: {nodes: *, hasNextPage: *}}}
+       * @type {{path: string, component: string, context: {nodes: *}}}
        */
       blogPage = {
         path: blogPagePath,

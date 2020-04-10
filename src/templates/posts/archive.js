@@ -5,7 +5,7 @@ import SEO from "../../components/seo"
 import PostHeaderMeta from '../../components/post-header-meta';
 
 const BlogArchive = ({
-  pageContext: { nodes, pageNumber, hasNextPage }
+  pageContext: { nodes }
 }) => {
   return (
     <Layout classNames="blog">
@@ -56,18 +56,6 @@ const BlogArchive = ({
             )
           })}
       </div>
-      <nav>
-        {pageNumber === 2 && <Link to={`/blog`}>Newer posts</Link>}
-        {pageNumber > 2 && (
-          <Link to={`/blog/${pageNumber - 1}`}>Newer posts</Link>
-        )}
-        {'  '}
-        <span>Page {pageNumber}</span>
-        {'  '}
-        {hasNextPage && (
-          <Link to={`/blog/${pageNumber + 1}`}>Older posts</Link>
-        )}
-      </nav>
     </Layout>
   )
 }
