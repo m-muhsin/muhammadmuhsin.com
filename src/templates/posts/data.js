@@ -1,7 +1,7 @@
 const PostTemplateFragment = `
-  fragment PostTemplateFragment on WPGraphQL_Post {
+  fragment PostTemplateFragment on WpPost {
     id
-    postId
+    databaseId
     title
     excerpt
     content
@@ -29,7 +29,7 @@ const PostTemplateFragment = `
     author {
       name
       slug
-      avatar(size: 50) {
+      avatar {
         url
       }
     }

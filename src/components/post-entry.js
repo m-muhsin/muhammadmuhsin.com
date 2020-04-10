@@ -15,7 +15,7 @@ const getExcerpt = text => {
 
 const PostEntry = ({
   post: {
-    postId,
+    databaseId,
     title,
     excerpt,
     content,
@@ -39,7 +39,7 @@ const PostEntry = ({
 
   return (
     <article
-      id={`post-${postId}`}
+      id={`post-${databaseId}`}
     >
       <header className="entry-header">
         <h3 className="entry-title">

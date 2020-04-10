@@ -1,7 +1,7 @@
 const PageTemplateFragment = `
-  fragment PageTemplateFragment on WPGraphQL_Page {
+  fragment PageTemplateFragment on WpPage {
     id
-    pageId
+    databaseId
     title
     content
   }
