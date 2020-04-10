@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal Gatsby site of Muhammad Muhsin",
+  "version": "1.1.1",
+  "author": "Muhammad Muhsin <muhammad.muhseen@gmail.com>",
   "dependencies": {
     "axios": "^0.18.1",
     "gatsby": "^2.19.49",
@@ -13,7 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-source-filesystem": "^2.1.57",
-    "gatsby-source-graphql": "^2.1.35",
+    "gatsby-source-wordpress-experimental": "^0.0.28",
     "gatsby-transformer-sharp": "^2.3.19",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
