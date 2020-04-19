@@ -1,6 +1,11 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Search from "./search"
+
+const searchIndices = [
+  { name: `wp_mtwoblogsearchable_posts`, title: `Blog Posts`, hitComp: `PostHit` },
+]
 
 const isPartiallyActive = ({ isPartiallyCurrent }) =>
   isPartiallyCurrent ? { className: 'nav-active' } : null
@@ -39,10 +44,8 @@ const Header = ({ siteTitle }) => (
             Contact
           </Link>
         </li>
-        <li style={{ display: 'none' }} className="nav-item dark-switch">
-          switch
-        </li>
       </ul>
+      <Search collapse indices={searchIndices} />
     </div>
   </header>
 )
