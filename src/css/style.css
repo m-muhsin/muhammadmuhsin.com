@@ -1017,10 +1017,18 @@ header.entry-meta {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .speaking-box {
   display: block;
-  width: 400px;
+  width: 300px;
+  max-width: 100%;
   padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .speaking-box {
+    width: 400px;
+  }
 }
