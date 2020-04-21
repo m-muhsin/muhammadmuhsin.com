@@ -19,7 +19,7 @@ const SpeakingWCAsia = () => {
       placeholderImage: file(relativePath: { eq: "wcasia-speaker.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

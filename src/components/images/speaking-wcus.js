@@ -19,7 +19,7 @@ const SpeakingWCUS = () => {
       placeholderImage: file(relativePath: { eq: "wcus-speaker.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
