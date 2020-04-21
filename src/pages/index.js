@@ -9,6 +9,8 @@ import Speaking from '../components/speaking'
 import OpenSource from '../components/open-source'
 import Featured from '../components/featured'
 import Testimonials from '../components/testimonials'
+import SpeakingWCAsia from '../components/images/speaking-wcasia'
+import SpeakingWCUS from '../components/images/speaking-wcus'
 
 const IndexPage = () => (
   <Layout location="home">
@@ -37,27 +39,39 @@ export default IndexPage
 const Intro = () => (
   <>
     <h1 className="main-title">
-      Full Stack Engineer, Writer, Speaker and Open Source Contributor <span role="img" aria-label="programmer with laptop">👨‍💻</span>
+      Full Stack Engineer, Writer, Speaker and Open Source Contributor{' '}
+      <span role="img" aria-label="programmer with laptop">
+        👨‍💻
+      </span>
     </h1>
     <p>
       Hi there{' '}
       <span role="img" aria-label="hi">
         👋
       </span>{' '}
-      I'm a software consultant focusing on front-end technologies. I
-      work with React, WordPress, Gatsby, Next.js and React Native. 
-      I currently work remotely as Senior React Developer at rtCamp - a WordPress VIP Agency from India.
+      I'm a software consultant focusing on front-end technologies. I work with
+      React, WordPress, Gatsby, Next.js and React Native. I currently work
+      remotely as Senior React Developer at rtCamp - a WordPress VIP Agency from
+      India.
     </p>
     <p>
       Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>
-    <div style={{ textAlign: 'center' }}>
-      <a href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin" target="_blank" rel="noopener noreferrer">
-        <img style={{ width: 380, padding: 10 }} src={require('../images/ig-cover-speaker.png')} alt="WordCamp Asia 2020 Speaker" />
+    <div className="speaking-box-container">
+      <a
+        href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SpeakingWCAsia />
       </a>
-      <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin" target="_blank" rel="noopener noreferrer">
-        <img style={{ width: 380, padding: 10 }} src={require('../images/Speaking.png')} alt="WordCamp US 2019 Speaker" />
+      <a
+        href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SpeakingWCUS />
       </a>
     </div>
   </>
