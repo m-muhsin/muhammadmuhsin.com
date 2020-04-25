@@ -19,14 +19,10 @@ const PostEntry = ({
     title,
     excerpt,
     content,
-    uri,
-    author,
+    slug,
     date,
-    categories,
-    tags,
-    featuredImage,
+    readingTime
   },
-  post,
 }) => {
   let excerptText = ''
 
@@ -35,51 +31,21 @@ const PostEntry = ({
   }
 
   excerptText = getExcerpt(excerpt)
-  const img = featuredImage ? featuredImage.sourceUrl : ""
 
   return (
     <article
       id={`post-${databaseId}`}
     >
       <header className="entry-header">
-        <h3 className="entry-title">
-          <Link to={`/blog/${uri}`}>
-            <p dangerouslySetInnerHTML={{ __html: title }} />
-          </Link>
-        </h3>
+        <Link to={`/blog/${slug}`}>
+          <h2 dangerouslySetInnerHTML={{ __html: title }} />
+        </Link>
         <PostHeaderMeta
-          author={author}
-          date={date}
-          categories={categories}
-          tags={tags}
-        />
+            date={date}
+            readingTime={readingTime}
+        /> 
       </header>
-      {
-        featuredImage && (
-          <div className="post-image">
-            {" "}
-            <img
-              width={780}
-              height={568}
-              src={featuredImage.sourceUrl}
-              className="attachment-blog_image size-blog_image"
-              alt={featuredImage.altText || featuredImage.title}
-              sizes="(max-width: 780px) 100vw, 780px"
-            />
-          </div>
-        )
-      }
-      <div className="entry-content">
-        <p dangerouslySetInnerHTML={{ __html: excerptText }} />
-        <p>
-          <Link
-            className="btn btn-secondary understrap-read-more-link"
-            to={`/blog/${uri}`}
-          >
-            Read More…
-            </Link>
-        </p>
-      </div>
+      <div className="entry-content" dangerouslySetInnerHTML={{ __html: excerptText }} />
     </article>
   )
 }

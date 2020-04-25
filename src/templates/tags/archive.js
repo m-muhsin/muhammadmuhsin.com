@@ -8,7 +8,7 @@ const TagArchive = ({
 }) => {
 
   return (
-    <Layout>
+    <Layout classNames="blog archive">
       <SEO
         title={`Tag - ${name}`}
         description={`A collection of posts from the ${name} category.`}
