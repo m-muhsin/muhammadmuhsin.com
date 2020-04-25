@@ -1032,3 +1032,17 @@ header.entry-meta {
     width: 400px;
   }
 }
+
+blockquote {
+  border-color: #139fc9;
+  border-style: solid;
+  border-width: 0 0 0 0.2rem;
+  color: inherit;
+  font-size: 1em;
+  margin: 4rem 0;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+blockquote::before, blockquote::after {
+  content: "";
+}
