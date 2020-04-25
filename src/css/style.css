@@ -1046,3 +1046,20 @@ blockquote {
 blockquote::before, blockquote::after {
   content: "";
 }
+
+.text-center {
+  text-align: center;
+}
+
+.social-links-container {
+  max-width: 700;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  width: 100px;
+  display: inline-block;
+}

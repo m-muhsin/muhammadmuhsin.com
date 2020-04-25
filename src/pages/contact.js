@@ -41,15 +41,7 @@ const ContactPage = () => (
         <div className="muhammad-photo">
           <Headshot className="muhammad-photo" />
         </div>
-        <div
-          style={{
-            maxWidth: 700,
-            textAlign: 'center',
-            margin: 'auto',
-            marginTop: 10,
-            marginBottom: 10,
-          }}
-        >
+        <div className="social-links-container">
           <SocialLink link="https://github.com/m-muhsin/" image="github" />
           <SocialLink link="https://twitter.com/muhsinlk/" image="twitter" />
           <SocialLink
@@ -76,7 +68,7 @@ export default ContactPage
 
 const SocialLink = ({ link, image }) => (
   <a
-    style={{ width: 100, display: 'inline-block' }}
+    className="social-link"
     rel="noopener noreferrer"
     target="_blank"
     href={link}

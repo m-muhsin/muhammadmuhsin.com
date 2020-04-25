@@ -34,6 +34,18 @@ export default () => (
             </div>
         </div>
         <div className="work-project">
+            <a href="https://rtcamp.com/blog/author/muhammad-muhsin/">
+            <img
+                className="work-logo"
+                src={require('../images/rtcamp-logo-black.svg')}
+                alt="Gatsby"
+            />
+            </a>
+            <div className="project-technologies">
+            <span>Speaking</span> <span>Remote</span>
+            </div>
+        </div>
+        <div className="work-project">
             <a href="https://javascriptforwp.com/author/muhammad-muhseen/">
             <img
                 className="work-logo"

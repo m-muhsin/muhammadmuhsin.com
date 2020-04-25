@@ -44,15 +44,17 @@ const Intro = () => (
         👨‍💻
       </span>
     </h1>
-    <p>
-      Hi there{' '}
+    <h3>
+      Hello there{' '}
       <span role="img" aria-label="hi">
         👋
       </span>{' '}
-      I'm a software consultant focusing on front-end technologies. I work with
-      React, WordPress, Gatsby, Next.js and React Native. I currently work
-      remotely as Senior React Developer at rtCamp - a WordPress VIP Agency from
-      India.
+    </h3>
+    <p>
+      I'm a software engineer focusing on front-end technologies. I primarily
+      work with WordPress and React (Gatsby | Next.js). I currently work
+      remotely as Senior React Developer at rtCamp - a WordPress VIP Gold
+      Parnter Agency.
     </p>
     <p>
       Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
@@ -82,13 +84,9 @@ const Contact = () => (
     <h2 className="section-title">Talk to me!</h2>
     <p>
       I hope you are now interested in hiring me for your next project. You can
-      also contact me for writing and speaking opportunities.
+      also contact me for writing, speaking, and training opportunities.
     </p>
-    <div
-      style={{
-        textAlign: 'center',
-      }}
-    >
+    <div className="text-center">
       <Link className="contact-button" to="/contact">
         Contact ➜
       </Link>
