@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from '../../components/seo';
+import stripHtml from '../../utils/strip-html';
 import PostHeaderMeta from '../../components/post-header-meta';
 
 const SinglePost = props => {
@@ -26,7 +27,7 @@ const SinglePost = props => {
 
     return (
         <Layout classNames="blog">
-            <SEO title={title} description={excerptText} />
+            <SEO title={title} description={stripHtml(excerptText)} />
             <article
                 data-id={id}
                 id={`post-${databaseId}`}
