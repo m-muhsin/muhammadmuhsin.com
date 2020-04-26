@@ -39,9 +39,6 @@ const Header = ({ siteTitle }) => (
             Contact
           </Link>
         </li>
-        <li style={{ display: 'none' }} className="nav-item dark-switch">
-          switch
-        </li>
       </ul>
     </div>
   </header>
