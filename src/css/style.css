@@ -686,13 +686,13 @@ pre tt:after {
 
 .blog p {
   font-family: 'Lora', serif;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
 .main-title {
-  font-size: 2em;
-  margin-bottom: 1.25em;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .testimonials {
@@ -753,7 +753,7 @@ pre tt:after {
 }
 
 .nav-item.dark-switch {
-  margin-left: 4em;
+  margin-left: 4rem;
 }
 
 .testimonial-text {
@@ -1118,4 +1118,8 @@ blockquote::before, blockquote::after {
 .social-link {
   width: 100px;
   display: inline-block;
+}
+
+.comment-autor {
+  margin-bottom: .5rem;
 }
