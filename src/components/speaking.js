@@ -7,7 +7,7 @@ export default () => (
             I also speak at conferences and meetups.
         </p>
         <section className="projects-container">
-            <div className="work-project">
+            <div className="work">
                 <a href="https://www.facebook.com/events/d41d8cd9/nextjs-solving-your-react-problems-webinar/220330915878953/">
                     <img
                         className="work-logo"
@@ -25,7 +25,7 @@ export default () => (
                     <span><a className="black-bold" href="https://youtu.be/MmMMMIvuPU8?t=2607">Video</a></span>
                 </div>
             </div>
-            <div className="work-project">
+            <div className="work">
                 <a href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin/">
                     <img
                         className="work-logo"
@@ -47,7 +47,7 @@ export default () => (
                     <span><a className="black-bold" href="https://www.crowdcast.io/e/22feb20WPstream/8">Video</a></span>
                 </div>
             </div>
-            <div className="work-project">
+            <div className="work">
                 <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin/">
                     <img
                         className="work-logo"
@@ -65,7 +65,7 @@ export default () => (
                     <span><a className="black-bold" href="https://wordpress.tv/2019/11/14/jason-bahl-muhammad-muhsin-using-wordpress-with-static-site-generators/">Video</a></span>
                 </div>
             </div>
-            <div className="work-project">
+            <div className="work">
                 <a href="https://wordsesh.com/">
                     <img
                         className="work-logo"
@@ -81,7 +81,7 @@ export default () => (
                 </div>
             </div>
 
-            <div className="work-project">
+            <div className="work">
                 <a href="https://javascriptforwp.com/conference/">
                     <img
                         className="work-logo"
@@ -99,7 +99,7 @@ export default () => (
                     <span><a className="black-bold" href="https://youtu.be/TkNH2QB5oDA">Video</a></span>
                 </div>
             </div>
-            <div className="work-project">
+            <div className="work">
                 <a href="https://www.meetup.com/GatsbyJS-Montreal-Meetup/events/261575408/">
                     <img
                         className="work-logo"
@@ -117,7 +117,7 @@ export default () => (
                     <span><a className="black-bold" href="https://youtu.be/t7KwexCFW9o">Video</a></span>
                 </div>
             </div>
-            <div className="work-project">
+            <div className="work">
                 <a href="https://woosesh.com/">
                     <img
                         className="work-logo"

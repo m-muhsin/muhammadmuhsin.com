@@ -7,7 +7,7 @@ export default () => (
         I was fortunate to be featured on these publications for my work a few times.
         </p>
         <section className="projects-container">
-        <div className="work-project">
+        <div className="work">
             <a href="https://wptavern.com/?s=Muhammad+Muhsin">
             <img
                 className="work-logo"
@@ -16,7 +16,7 @@ export default () => (
             />
             </a>
         </div>
-        <div className="work-project">
+        <div className="work">
             <a href="https://poststatus.com/?s=Muhammad+Muhsin">
             <img
                 className="work-logo"

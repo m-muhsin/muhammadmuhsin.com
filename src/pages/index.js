@@ -45,18 +45,20 @@ const Intro = () => (
       </span>
     </h1>
     <h3>
-      Hello there{' '}
+      Hi there{' '}
       <span role="img" aria-label="hi">
         👋
       </span>{' '}
     </h3>
-    <p>
-      I'm a software engineer focusing on front-end technologies. I primarily
-      work with WordPress and React (Gatsby | Next.js). I currently work
-      remotely as Senior React Developer at rtCamp - a WordPress VIP Gold
-      Parnter Agency.
+    <p className="bigger-text">
+      I'm Muhammad, a software engineer focusing on front-end technologies. I
+      primarily work with WordPress and React (Gatsby | Next.js).
     </p>
-    <p>
+    <p className="bigger-text">
+      I currently work remotely as Senior React Developer at rtCamp - a
+      WordPress VIP Gold Parnter Agency.
+    </p>
+    <p className="bigger-text">
       Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
       <Link to="/contact">get in touch with me!</Link>
     </p>

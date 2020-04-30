@@ -8,7 +8,7 @@ export default () => (
             projects.
         </p>
         <section className="projects-container">
-            <div className="work-project open-source">
+            <div className="work open-source">
                 <a
                     href="https://github.com/rtCamp/wp-decoupled"
                     style={{ color: 'white', textAlign: 'left' }}
@@ -19,7 +19,7 @@ export default () => (
             </p>
                 </a>
             </div>
-            <div className="work-project open-source">
+            <div className="work open-source">
                 <a
                     href="https://github.com/zgordon/twentynineteen-gatsby-theme"
                     style={{ color: 'white', textAlign: 'left' }}
@@ -30,7 +30,7 @@ export default () => (
             </p>
                 </a>
             </div>
-            <div className="work-project open-source">
+            <div className="work open-source">
                 <a
                     href="https://github.com/m-muhsin/celestial"
                     style={{ color: 'white', textAlign: 'left' }}
@@ -42,7 +42,7 @@ export default () => (
                 </a>
             </div>
 
-            <div className="work-project open-source">
+            <div className="work open-source">
                 <a
                     href="https://github.com/m-muhsin/woocommerce-next"
                     style={{ color: 'white', textAlign: 'left' }}
@@ -55,7 +55,7 @@ export default () => (
                 </a>
             </div>
 
-            <div className="work-project open-source">
+            <div className="work open-source">
                 <a
                     href="https://github.com/m-muhsin/woosesh-store"
                     style={{ color: 'white', textAlign: 'left' }}
@@ -68,7 +68,7 @@ export default () => (
                 </a>
             </div>
 
-            <div className="work-project open-source">
+            <div className="work open-source">
                 <a
                     href="https://github.com/laccadive-io/testimonials-slider-block"
                     style={{ color: 'white', textAlign: 'left' }}

@@ -8,7 +8,7 @@ export default () => (
         have been published on the following sites.
         </p>
         <section className="projects-container">
-        <div className="work-project">
+        <div className="work">
             <a href="https://www.smashingmagazine.com/author/muhammad-muhsin/">
             <img
                 className="work-logo"
@@ -21,7 +21,7 @@ export default () => (
             <span>Gutenberg</span>
             </div>
         </div>
-        <div className="work-project">
+        <div className="work">
             <a href="https://www.gatsbyjs.org/contributors/muhammad-muhsin/">
             <img
                 className="work-logo"
@@ -33,7 +33,7 @@ export default () => (
             <span>React</span> <span>Gatsby</span>
             </div>
         </div>
-        <div className="work-project">
+        <div className="work">
             <a href="https://rtcamp.com/blog/author/muhammad-muhsin/">
             <img
                 className="work-logo"
@@ -45,7 +45,7 @@ export default () => (
             <span>Speaking</span> <span>Remote</span>
             </div>
         </div>
-        <div className="work-project">
+        <div className="work">
             <a href="https://javascriptforwp.com/author/muhammad-muhseen/">
             <img
                 className="work-logo"
@@ -57,7 +57,7 @@ export default () => (
             <span>React</span> <span>Gatsby</span> <span>WordPress</span>
             </div>
         </div>
-        <div className="work-project">
+        <div className="work">
             <a href="https://blog.logrocket.com/author/muhammadmuhsin/">
             <img
                 className="work-logo"

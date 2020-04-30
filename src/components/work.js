@@ -7,7 +7,7 @@ export default () => (
       I have been working with big and small companies doing WordPress and React. Here are some of them.
     </p>
     <section className="projects-container">
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.rtcamp.com/">
           <img
             className="work-logo"
@@ -19,7 +19,7 @@ export default () => (
           <span>React</span> <span>WordPress</span> <span>VIP</span>
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.capbase.com/">
           <img
             className="work-logo"
@@ -31,7 +31,7 @@ export default () => (
           <span>React</span> <span>GraphQL</span> <span>AWS</span>
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.learndash.com/">
           <img
             className="work-logo"
@@ -43,7 +43,7 @@ export default () => (
           <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://javascriptforwp.com/">
           <img
             className="work-logo"
@@ -55,7 +55,7 @@ export default () => (
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.simplur.com/">
           <img
             className="work-logo"
@@ -67,7 +67,7 @@ export default () => (
           <span>React</span> <span>Gatsby</span> <span>WordPress</span> <span>WooCommerce</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="http://octaware.com/">
           <img
             className="work-logo"
@@ -79,7 +79,7 @@ export default () => (
           <span>WordPress</span> <span>WooCommerce</span> <span>Integrations</span> {' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.jatstudio.com/">
           <img
             className="work-logo"
