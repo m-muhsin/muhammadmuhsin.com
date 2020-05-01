@@ -48,11 +48,12 @@ const ContactPage = () => (
             link="https://www.linkedin.com/in/mmuhsin/"
             image="linkedin"
           />
-          <SocialLink link="http://mtwoblog.com/" image="m2blog" />
           <SocialLink
             link="https://www.instagram.com/m_muhsin/"
             image="instagram"
           />
+          <SocialLink link="https://www.youtube.com/user/muhammadmuhseen/" image="youtube" />
+          <SocialLink link="http://mtwoblog.com/" image="m2blog" />
           <SocialLink
             link="https://profiles.wordpress.org/mmuhsin/"
             image="wordpress"
