@@ -1165,3 +1165,48 @@ blockquote::after {
   width: 100px;
   display: inline-block;
 }
+
+.jp-relatedposts {
+  max-width: 120rem;
+  margin: 1em auto;
+  width: calc(100% - 4rem);
+}
+
+.jp-relatedposts {
+  padding-top: 1em;
+  position: relative;
+  clear: both;
+}
+
+@media (min-width: 700px) {
+  .jp-relatedposts {
+    width: calc(75%);
+    margin: 0 auto;
+  }
+}
+
+.jp-relatedposts-grid {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.jp-relatedposts-grid article {
+  float: left;
+  width: 33%;
+  margin-bottom: 1em;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .jp-relatedposts-grid {
+    flex-direction: column;
+  }
+
+  .jp-relatedposts-grid article {
+    width: 100%;
+  }
+}

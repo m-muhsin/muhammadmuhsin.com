@@ -2,6 +2,7 @@ const PostTemplateFragment = `
   fragment PostTemplateFragment on WpPost {
     id
     databaseId
+    relatedPosts
     title
     excerpt
     content
