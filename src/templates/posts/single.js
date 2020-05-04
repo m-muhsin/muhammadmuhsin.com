@@ -66,7 +66,7 @@ const SinglePost = (props) => {
         <h3>Related</h3>
         <div className="jp-relatedposts-grid">
           {data?.allWpPost?.nodes?.map((post) => (
-            <article>
+            <article key={post.databaseId}>
               <Link to={`/blog/${post.slug}`}>
                 <h4 dangerouslySetInnerHTML={{ __html: post.title }} />
               </Link>
@@ -76,7 +76,7 @@ const SinglePost = (props) => {
         </div>
       </section>
 
-      <Comments />
+      <Comments id={id} />
     </Layout>
   )
 }
