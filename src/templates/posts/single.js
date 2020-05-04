@@ -4,6 +4,7 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import stripHtml from '../../utils/strip-html'
 import PostHeaderMeta from '../../components/post-header-meta'
+import Comments from '../../components/comments'
 
 const SinglePost = (props) => {
   const {
@@ -36,8 +37,6 @@ const SinglePost = (props) => {
       .concat('...')
   }
 
-  console.log('data', data)
-
   return (
     <Layout classNames="blog">
       <SEO title={title} description={stripHtml(excerptText)} />
@@ -62,11 +61,12 @@ const SinglePost = (props) => {
 
         <footer className="entry-footer" />
       </article>
+
       <section className="jp-relatedposts">
         <h3>Related</h3>
         <div className="jp-relatedposts-grid">
           {data?.allWpPost?.nodes?.map((post) => (
-            <article>
+            <article key={post.databaseId}>
               <Link to={`/blog/${post.slug}`}>
                 <h4 dangerouslySetInnerHTML={{ __html: post.title }} />
               </Link>
@@ -75,7 +75,8 @@ const SinglePost = (props) => {
           ))}
         </div>
       </section>
-      {/* #post-${ID} */}
+
+      <Comments id={id} databaseId={databaseId} />
     </Layout>
   )
 }
