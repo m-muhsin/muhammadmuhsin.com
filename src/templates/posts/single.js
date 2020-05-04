@@ -76,7 +76,7 @@ const SinglePost = (props) => {
         </div>
       </section>
 
-      <Comments id={id} />
+      <Comments id={id} databaseId={databaseId} />
     </Layout>
   )
 }
