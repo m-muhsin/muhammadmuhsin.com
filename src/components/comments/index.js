@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useQuery, useMutation } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
+import moment from 'moment/moment'
 
 const ADD_COMMENT = gql`
   mutation ADD_COMMENT(
@@ -32,7 +33,10 @@ const COMMENT_QUERY = gql`
       title
       comments {
         nodes {
+          id
           commentId
+          date
+          content
           author {
             ... on CommentAuthor {
               id
@@ -46,13 +50,12 @@ const COMMENT_QUERY = gql`
               name
             }
           }
-          content
-          date
           children {
             nodes {
               id
-              content
               commentId
+              date
+              content
               author {
                 ... on CommentAuthor {
                   id
@@ -113,22 +116,40 @@ const Comments = ({ id, databaseId }) => {
       {error && <p>Error: ${error.message}</p>}
       {queriedData?.post?.comments?.nodes?.length ? (
         <div>
-          {queriedData.post.comments.nodes.map((comment) => (
-            <div key={comment.commentId}>
-              <h4 className="comment-autor">{comment?.author?.name}</h4>
-              <p dangerouslySetInnerHTML={{ __html: comment?.content }} />
-              {comment?.children?.nodes?.map((childComment) => (
-                <div key={childComment.commentId}>
-                  <h4 className="comment-autor">
-                    {childComment?.author?.name}
-                  </h4>
-                  <p
-                    dangerouslySetInnerHTML={{ __html: childComment?.content }}
-                  />
+          {queriedData.post.comments.nodes.map((comment) => {
+
+            const formatted = `${moment(comment.date).format(
+              'MMMM Do YYYY'
+            )} at ${moment(comment.date).format('h:mm:ss a')}`
+
+            return (
+              <div key={comment.commentId}>
+                {comment?.author?.url ? (
+                  <a href={comment.author.url}>
+                    <h3 className="comment-autor">{comment?.author?.name}</h3>
+                  </a>
+                ) : (
+                  <h3 className="comment-autor">{comment?.author?.name}</h3>
+                )}
+                <div className="comment-metadata">
+                  <time className="comment-datetime">{formatted}</time>
                 </div>
-              ))}
-            </div>
-          ))}
+                <p dangerouslySetInnerHTML={{ __html: comment?.content }} />
+                {comment?.children?.nodes?.map((childComment) => (
+                  <div key={childComment.commentId}>
+                    <h4 className="comment-autor">
+                      {childComment?.author?.name}
+                    </h4>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: childComment?.content,
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            )
+          })}
         </div>
       ) : (
         <h5>This post does not have any comments</h5>
