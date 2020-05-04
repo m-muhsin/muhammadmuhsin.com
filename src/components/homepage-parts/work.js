@@ -1,17 +1,18 @@
 import React from 'react'
 
-export default () => (
+const Work = () => (
   <>
     <h2>Trusted By</h2>
     <p>
-      I have been working with big and small companies doing WordPress and React. Here are some of them.
+      I have been working with big and small companies doing WordPress and
+      React. Here are some of them.
     </p>
     <section className="projects-container">
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.rtcamp.com/">
           <img
             className="work-logo"
-            src={require('../images/rtcamp-logo-black.svg')}
+            src={require('../../images/rtcamp-logo-black.svg')}
             alt="rtCamp"
           />
         </a>
@@ -19,11 +20,11 @@ export default () => (
           <span>React</span> <span>WordPress</span> <span>VIP</span>
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.capbase.com/">
           <img
             className="work-logo"
-            src={require('../images/capbase.png')}
+            src={require('../../images/capbase.png')}
             alt="Capbase"
           />
         </a>
@@ -31,11 +32,11 @@ export default () => (
           <span>React</span> <span>GraphQL</span> <span>AWS</span>
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.learndash.com/">
           <img
             className="work-logo"
-            src={require('../images/LearnDash.png')}
+            src={require('../../images/LearnDash.png')}
             alt="LearnDash"
           />
         </a>
@@ -43,11 +44,11 @@ export default () => (
           <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://javascriptforwp.com/">
           <img
             className="work-logo"
-            src={require('../images/jsforwp.png')}
+            src={require('../../images/jsforwp.png')}
             alt="JS for WP"
           />
         </a>
@@ -55,35 +56,37 @@ export default () => (
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.simplur.com/">
           <img
             className="work-logo"
-            src={require('../images/simplur.svg')}
+            src={require('../../images/simplur.svg')}
             alt="Simplur"
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>WordPress</span> <span>WooCommerce</span>{' '}
+          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+          <span>WooCommerce</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="http://octaware.com/">
           <img
             className="work-logo"
-            src={require('../images/octaware_tech_logo_1.jpg')}
+            src={require('../../images/octaware_tech_logo_1.jpg')}
             alt="Octaware Technologies"
           />
         </a>
         <div className="project-technologies">
-          <span>WordPress</span> <span>WooCommerce</span> <span>Integrations</span> {' '}
+          <span>WordPress</span> <span>WooCommerce</span>{' '}
+          <span>Integrations</span>{' '}
         </div>
       </div>
-      <div className="work-project">
+      <div className="work">
         <a href="https://www.jatstudio.com/">
           <img
             className="work-logo"
-            src={require('../images/jatstudio.svg')}
+            src={require('../../images/jatstudio.svg')}
             alt="Jatstudio"
           />
         </a>
@@ -94,3 +97,5 @@ export default () => (
     </section>
   </>
 )
+
+export { Work }

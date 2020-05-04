@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import stripHtml from '../../utils/strip-html'
@@ -17,6 +18,7 @@ const SinglePost = (props) => {
       tags,
       date,
     },
+    data,
   } = props
 
   const maxLength = 240 // maximum number of characters to extract
@@ -59,9 +61,37 @@ const SinglePost = (props) => {
 
         <footer className="entry-footer" />
       </article>
+
+      <section className="jp-relatedposts">
+        <h3>Related</h3>
+        <div className="jp-relatedposts-grid">
+          {data?.allWpPost?.nodes?.map((post) => (
+            <article>
+              <Link to={`/blog/${post.slug}`}>
+                <h4 dangerouslySetInnerHTML={{ __html: post.title }} />
+              </Link>
+              <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+            </article>
+          ))}
+        </div>
+      </section>
+
       <Comments />
     </Layout>
   )
 }
+
+export const query = graphql`
+  query RelatedPosts($relatedPosts: [Int]) {
+    allWpPost(filter: { databaseId: { in: $relatedPosts } }) {
+      nodes {
+        databaseId
+        title
+        slug
+        excerpt
+      }
+    }
+  }
+`
 
 export default SinglePost
