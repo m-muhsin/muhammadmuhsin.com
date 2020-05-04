@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => (
+const Featured = () => (
     <>
         <h2 className="section-title">Featured On</h2>
         <p>
@@ -11,7 +11,7 @@ export default () => (
             <a href="https://wptavern.com/?s=Muhammad+Muhsin">
             <img
                 className="work-logo"
-                src={require('../images/wp-tavern.png')}
+                src={require('../../images/wp-tavern.png')}
                 alt="WP Tavern"
             />
             </a>
@@ -20,7 +20,7 @@ export default () => (
             <a href="https://poststatus.com/?s=Muhammad+Muhsin">
             <img
                 className="work-logo"
-                src={require('../images/post-status.png')}
+                src={require('../../images/post-status.png')}
                 alt="Post Status"
             />
             </a>
@@ -28,3 +28,5 @@ export default () => (
         </section>
     </>
 )
+
+export { Featured }
