@@ -455,11 +455,10 @@ tt:after {
 }
 
 .testimonial-box {
-  max-width: 900px;
+  max-width: 860px;
   margin: 2rem auto;
-  background-color: white;
+  background-color: #fff;
   padding: 10px;
-  border-radius: 10px;
 }
 
 @media (min-width: 992px) {
