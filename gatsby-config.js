@@ -3,6 +3,9 @@ module.exports = {
     title: `Muhammad Muhsin`,
     description: `Muhammad Muhsin | Full Stack Engineer, Writer, Speaker and Open Source Contributor.`,
     author: `@muhsinlk`,
+    url: "https://muhammad.dev", // No trailing slash allowed!
+    image: "https://muhammad.dev/icons/icon-512x512.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@muhsinlk",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
