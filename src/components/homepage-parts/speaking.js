@@ -1,4 +1,11 @@
 import React from 'react'
+import ExplorerDevCommunityLogo from './images/explorer-dev-community-logo';
+import WcAsia2020Logo from './images/wcasia-2020-logo';
+import WCUS2019Logo from './images/wcus-2019-logo';
+import WordSeshLogo from './images/wordsesh-logo';
+import JSforWPConf2019Logo from './images/js-for-wp-conference-logo';
+import GatsbyLogo from './images/gatsby-logo';
+import WooSeshLogo from './images/woosesh-logo';
 
 const Speaking = () => (
   <>
@@ -7,11 +14,7 @@ const Speaking = () => (
     <section className="projects-container">
       <div className="work">
         <a href="https://www.facebook.com/events/d41d8cd9/nextjs-solving-your-react-problems-webinar/220330915878953/">
-          <img
-            className="work-logo"
-            src={require('../../images/Explorer-Dev-Community.png')}
-            alt="Explorer Dev Community"
-          />
+          <ExplorerDevCommunityLogo className="work-logo" />
           <h4 className="conf-title">Explorer Dev Community Meetup</h4>
         </a>
         <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby</h5>
@@ -39,11 +42,7 @@ const Speaking = () => (
       </div>
       <div className="work">
         <a href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin/">
-          <img
-            className="work-logo"
-            src={require('../../images/wcasia-2020-logo.png')}
-            alt="WordCamp Asia 2020"
-          />
+          <WcAsia2020Logo />
           <h4 className="conf-title">
             WordCamp Asia 2020
             <br />
@@ -75,11 +74,7 @@ const Speaking = () => (
       </div>
       <div className="work">
         <a href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin/">
-          <img
-            className="work-logo"
-            src={require('../../images/wcus-2019-logo.png')}
-            alt="WCUS 2019"
-          />
+          <WCUS2019Logo />
           <h4 className="conf-title">WordCamp US 2019</h4>
         </a>
         <h5 className="talk-title">
@@ -109,11 +104,7 @@ const Speaking = () => (
       </div>
       <div className="work">
         <a href="https://wordsesh.com/">
-          <img
-            className="work-logo"
-            src={require('../../images/wordsesh.png')}
-            alt="WordSesh EMEA 2019"
-          />
+          <WordSeshLogo />
           <h4 className="conf-title">WordSesh EMEA 2019</h4>
         </a>
         <h5 className="talk-title">
@@ -134,11 +125,7 @@ const Speaking = () => (
 
       <div className="work">
         <a href="https://javascriptforwp.com/conference/">
-          <img
-            className="work-logo"
-            src={require('../../images/2019-js-for-wp-conference-logo.png')}
-            alt="JS for WP Conf 2019"
-          />
+          <JSforWPConf2019Logo />
           <h4 className="conf-title">JS for WP Conf 2019</h4>
         </a>
         <h5 className="talk-title">Server Side React for WordPress</h5>
@@ -163,11 +150,7 @@ const Speaking = () => (
       </div>
       <div className="work">
         <a href="https://www.meetup.com/GatsbyJS-Montreal-Meetup/events/261575408/">
-          <img
-            className="work-logo"
-            src={require('../../images/gatsby-icon.png')}
-            alt="Gatsby"
-          />
+          <GatsbyLogo />
           <h4 className="conf-title">GatsbyJS Montréal Meetup #1</h4>
         </a>
         <h5 className="talk-title">Building with Gatsby and WordPress</h5>
@@ -192,11 +175,7 @@ const Speaking = () => (
       </div>
       <div className="work">
         <a href="https://woosesh.com/">
-          <img
-            className="work-logo"
-            src={require('../../images/WooSesh-2018-Logo.png')}
-            alt="Gatsby"
-          />
+          <WooSeshLogo />
           <h4 className="conf-title">WooSesh 2018</h4>
         </a>
         <h5 className="talk-title">

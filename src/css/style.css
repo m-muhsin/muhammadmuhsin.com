@@ -1052,3 +1052,7 @@ label {
   justify-content: center;
   align-items: center;
 }
+
+.gatsby-image-wrapper picture img {
+  object-fit: contain !important;
+}
