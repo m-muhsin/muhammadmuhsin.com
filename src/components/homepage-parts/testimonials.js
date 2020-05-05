@@ -10,6 +10,7 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    customPaging: (i) => <span>{i + 1}</span>
   }
   return (
     <div className="testimonials">

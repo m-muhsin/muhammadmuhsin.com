@@ -553,7 +553,6 @@ cite.testimonial-author {
   padding: 15px 20px 10px;
   text-align: center;
   background-color: white;
-  border-radius: 10px;
 }
 
 .work:hover {
@@ -1054,4 +1053,13 @@ label {
 
 .gatsby-image-wrapper picture img {
   object-fit: contain !important;
+}
+
+.slick-dots span {
+  color: gray;
+}
+
+.slick-dots .slick-active span {
+  font-weight: bold;
+  color: black;
 }
