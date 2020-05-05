@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from "react-slick";
+import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
             </strong>
           </p>
           <cite className="testimonial-author">
-            <h3 style={{ marginBottom: 5 }}>Justin Ferriman</h3>
+            <h3>—Justin Ferriman</h3>
             <p>Co-founder, LearnDash</p>
           </cite>
           <img
@@ -50,7 +50,7 @@ const Testimonials = () => {
             pleasure to work with!
           </p>
           <cite className="testimonial-author">
-            <h3 style={{ marginBottom: 5 }}>Iris Lješnjanin</h3>
+            <h3>—Iris Lješnjanin</h3>
             <p>Senior Editor, Smashing Magazine</p>
           </cite>
           <img
@@ -74,7 +74,7 @@ const Testimonials = () => {
             development or educational work, I suggest you go for it!
           </p>
           <cite className="testimonial-author">
-            <h3 style={{ marginBottom: 5 }}>Zac Gordon</h3>
+            <h3>—Zac Gordon</h3>
             <p>Educator, JS for WP</p>
           </cite>
           <img
@@ -101,7 +101,7 @@ const Testimonials = () => {
             he's also great at collaborating. I enjoy working with Muhammad!
           </p>
           <cite className="testimonial-author">
-            <h3 style={{ marginBottom: 5 }}>Jason Bahl</h3>
+            <h3>—Jason Bahl</h3>
             <p>Creator, WPGraphQL</p>
           </cite>
           <img
@@ -111,6 +111,28 @@ const Testimonials = () => {
             className="testimonial-logo"
             src={require('../../images/wpgraphql.png')}
             alt="WPGraphQL"
+          />
+        </blockquote>
+
+        <blockquote className="testimonial-box">
+          <p className="testimonial-text">
+            Muhammad is a real pleasure to work with. He is really kind,
+            patient, and aspiring to find the best solution. I really appreciate
+            his honest desire to keep learning new skills.{' '}
+            <strong>
+              He is doing a great job taking us, at Jatstudio, to the next level
+              with React and GatsbyJS.
+            </strong>{' '}
+            I would not hesitate to recommend working with Muhammad to anybody.
+          </p>
+          <cite className="testimonial-author">
+            <h3>—Javier Llinás</h3>
+            <p>CEO, Jatstudio</p>
+          </cite>
+          <img
+            className="testimonial-logo"
+            src={require('../../images/jatstudio.svg')}
+            alt="Jatstudio"
           />
         </blockquote>
       </Slider>
