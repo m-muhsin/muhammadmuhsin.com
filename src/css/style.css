@@ -456,7 +456,7 @@ tt:after {
 
 .testimonial-box {
   max-width: 900px;
-  margin: 30px auto;
+  margin: 2rem auto;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
@@ -464,13 +464,11 @@ tt:after {
 
 @media (min-width: 992px) {
   .testimonial-box {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.75;
   }
 }
-.testimonial-box:hover {
-  box-shadow: rgba(12, 28, 32, 0.15) 0px 1.25rem 4rem 0px;
-}
+
 .testimonial-logo {
   width: 200px;
 }
@@ -1026,4 +1024,26 @@ label {
 .comment-metadata {
   margin-bottom: 0.5rem;
   color: #6d6d6d;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.slick-slide,
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list .slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

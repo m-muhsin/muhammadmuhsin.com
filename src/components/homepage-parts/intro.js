@@ -6,7 +6,7 @@ import SpeakingWCUS from '../../components/images/speaking-wcus'
 const Intro = () => (
   <>
     <h1 className="main-title">
-      Full Stack Engineer, Writer, Speaker and Open Source Contributor{' '}
+      Full Stack Engineer, Writer, Speaker, and Open Source Contributor{' '}
       <span role="img" aria-label="programmer with laptop">
         👨‍💻
       </span>

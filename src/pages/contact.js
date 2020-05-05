@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Headshot from '../components/headshot'
+import Headshot from '../components/images/headshot'
 
 const ContactPage = () => (
   <Layout location="contact">
