@@ -573,12 +573,7 @@ cite.testimonial-author {
 }
 
 .open-source {
-  background: linear-gradient(
-      to right top,
-      rgb(41, 214, 122),
-      rgb(24, 145, 206)
-    )
-    rgb(255, 255, 255);
+  background: linear-gradient(to right top, #13b6c9, #1386c9) #fff;
 }
 
 .open-source:hover .open-source-title {
