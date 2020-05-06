@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment/moment'
-import he from 'he'
 import CategoryIcon from './icons/category'
 import TagIcon from './icons/tag'
 import stripHtml from '../utils/strip-html'
@@ -25,8 +24,6 @@ const PostHeadererMeta = ({
 
   let twitterText = excerptText;
   twitterText = stripHtml(excerptText)
-  twitterText = he.decode(twitterText)
-  twitterText = twitterText.replace(/(\r\n|\n|\r)/gm, "");
   twitterText = `"${twitterText}" —`
 
   return (
