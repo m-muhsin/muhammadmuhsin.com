@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Footer from './footer'
 import '../css/style.css'
 import '../css/gutenberg.css'
 import '../css/gutenberg-more.css'
@@ -18,17 +19,12 @@ const Layout = ({ children, location, classNames }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className={`inner-body ${location} ${classNames}`}>
           <main className="main">{children}</main>
-          <footer className="site-footer">
-            © Muhammad Muhsin <br /> {new Date().getFullYear()}, Built with{' '}
-            <i className="fa fa-heart" /> and
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Footer />
         </div>
       </>
     )}
