@@ -21,8 +21,7 @@ const PostHeaderMeta = ({
     cookies = ['🍪']
   }
 
-  let twitterText = excerptText
-  twitterText = stripHtml(excerptText)
+  let twitterText = stripHtml(excerptText)
   twitterText = `"${twitterText}" —`
 
   return (

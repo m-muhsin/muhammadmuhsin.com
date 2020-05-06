@@ -1,6 +1,6 @@
 import stripHTML from './strip-html'
 
-export default function getExcerpt(excerpt, content) {
+export default function getExcerpt(excerpt, content, stripTags = false) {
   // maximum number of characters to extract
   const maxLength = 240
 
@@ -18,5 +18,5 @@ export default function getExcerpt(excerpt, content) {
       .concat('...')
   }
 
-  return stripHTML(excerptText)
+  return stripTags ? stripHTML(excerptText) : excerptText
 }
