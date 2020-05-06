@@ -5,12 +5,13 @@ import CategoryIcon from './icons/category'
 import TagIcon from './icons/tag'
 import stripHtml from '../utils/strip-html'
 
-const PostHeadererMeta = ({
+const PostHeaderMeta = ({
   date,
   categories = {},
   tags = {},
   readingTime,
   excerptText,
+  showTwitterShare = true,
 }) => {
   let cookies = []
   if (parseInt(readingTime)) {
@@ -22,7 +23,7 @@ const PostHeadererMeta = ({
     cookies = ['🍪']
   }
 
-  let twitterText = excerptText;
+  let twitterText = excerptText
   twitterText = stripHtml(excerptText)
   twitterText = `"${twitterText}" —`
 
@@ -76,18 +77,21 @@ const PostHeadererMeta = ({
         ''
       )}
       {readingTime && `• ${cookies.join('')} ${readingTime} min read`}
-      <a
-        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-        class="twitter-share-button"
-        data-text={twitterText}
-        data-via="muhsinlk"
-        data-size="large"
-        style={{ marginLeft: 16, marginBottom: -2 }}
-      >
-        Share on Twitter
-      </a>
+      {showTwitterShare ? (
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-text={twitterText}
+          data-via="muhsinlk"
+          style={{ marginLeft: 16, marginBottom: -2 }}
+        >
+          Share on Twitter
+        </a>
+      ) : (
+        ''
+      )}
     </header>
   )
 }
 
-export default PostHeadererMeta
+export default PostHeaderMeta

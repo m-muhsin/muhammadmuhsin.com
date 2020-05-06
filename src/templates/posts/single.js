@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import stripHtml from '../../utils/strip-html'
+import getExcerpt from '../../utils/get-excerpt'
 import PostHeaderMeta from '../../components/post-header-meta'
 import Comments from '../../components/comments'
 
@@ -21,21 +22,7 @@ const SinglePost = (props) => {
     data,
   } = props
 
-  const maxLength = 240 // maximum number of characters to extract
-
-  // getting the excerpt to a variable
-  let excerptText = excerpt
-
-  // if excerpt does not exist
-  if (!excerptText) {
-    // getting the first 240 characters off content
-    excerptText = content.substr(0, maxLength)
-
-    // so that a word is not chopped off halfway
-    excerptText = content
-      .substr(0, Math.min(excerptText.length, excerptText.lastIndexOf(' ')))
-      .concat('...')
-  }
+  const excerptText = getExcerpt(excerpt, content)
 
   return (
     <Layout classNames="blog">
