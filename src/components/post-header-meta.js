@@ -1,19 +1,33 @@
-import React from "react"
-import { Link } from "gatsby"
-import moment from "moment/moment"
-import CategoryIcon from "./icons/category"
-import TagIcon from "./icons/tag"
+import React from 'react'
+import { Link } from 'gatsby'
+import moment from 'moment/moment'
+import he from 'he'
+import CategoryIcon from './icons/category'
+import TagIcon from './icons/tag'
+import stripHtml from '../utils/strip-html'
 
-const PostHeadererMeta = ({ date, categories = {}, tags = {}, readingTime }) => {
-  let cookies = [];
+const PostHeadererMeta = ({
+  date,
+  categories = {},
+  tags = {},
+  readingTime,
+  excerptText,
+}) => {
+  let cookies = []
   if (parseInt(readingTime)) {
-    let numOfCookies = readingTime / 2;
+    let numOfCookies = readingTime / 2
     for (let i = 0; i < numOfCookies; i++) {
-      cookies.push('🍪');
+      cookies.push('🍪')
     }
   } else {
-    cookies = ['🍪'];
+    cookies = ['🍪']
   }
+
+  let twitterText = excerptText;
+  twitterText = stripHtml(excerptText)
+  twitterText = he.decode(twitterText)
+  twitterText = twitterText.replace(/(\r\n|\n|\r)/gm, "");
+  twitterText = `"${twitterText}" —`
 
   return (
     <header className="entry-meta">
@@ -26,12 +40,12 @@ const PostHeadererMeta = ({ date, categories = {}, tags = {}, readingTime }) => 
           {moment(date).format(`MMMM D, YYYY`)}
         </time>
       </span>
-      {categories?.nodes?.length ?
+      {categories?.nodes?.length ? (
         <span className="cat-links">
           <CategoryIcon />
           <span className="screen-reader-text">Posted in: </span>
           {categories.nodes
-            .map(category => (
+            .map((category) => (
               <Link
                 key={category.name}
                 to={`/blog/category/${category.slug}`}
@@ -41,32 +55,40 @@ const PostHeadererMeta = ({ date, categories = {}, tags = {}, readingTime }) => 
               </Link>
             ))
             .reduce((accu, elem) => {
-              return accu === null ? [elem] : [...accu, ", ", elem]
+              return accu === null ? [elem] : [...accu, ', ', elem]
             }, null)}
         </span>
-        : ''
-      }
-      {tags?.nodes?.length ?
+      ) : (
+        ''
+      )}
+      {tags?.nodes?.length ? (
         <span className="tags-links">
           <TagIcon />
           <span className="screen-reader-text">Tags: </span>
           {tags.nodes
-            .map(tag => (
+            .map((tag) => (
               <Link key={tag.name} to={`/blog/tag/${tag.slug}`} rel="tag">
                 <span>{tag.name}</span>
               </Link>
             ))
             .reduce((accu, elem) => {
-              return accu === null ? [elem] : [...accu, ", ", elem]
+              return accu === null ? [elem] : [...accu, ', ', elem]
             }, null)}
         </span>
-        : ''
-      }
-      {readingTime &&
-        (
-          `• ${cookies.join('')} ${readingTime} min read`
-        )
-      }
+      ) : (
+        ''
+      )}
+      {readingTime && `• ${cookies.join('')} ${readingTime} min read`}
+      <a
+        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+        class="twitter-share-button"
+        data-text={twitterText}
+        data-via="muhsinlk"
+        data-size="large"
+        style={{ marginLeft: 16, marginBottom: -2 }}
+      >
+        Share on Twitter
+      </a>
     </header>
   )
 }

@@ -50,7 +50,7 @@ const SinglePost = (props) => {
             className="entry-title"
             dangerouslySetInnerHTML={{ __html: title }}
           />
-          <PostHeaderMeta date={date} categories={categories} tags={tags} />
+          <PostHeaderMeta date={date} categories={categories} tags={tags} excerptText={excerptText} />
         </header>
 
         <div
