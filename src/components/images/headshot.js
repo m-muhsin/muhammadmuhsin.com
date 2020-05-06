@@ -17,16 +17,16 @@ const Headshot = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "muhammad-muhsin.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "muhammad-muhsin-2.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1024) {
+            fluid(maxWidth: 512) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Muhammad Muhsin" />}
   />
 )
 export default Headshot
