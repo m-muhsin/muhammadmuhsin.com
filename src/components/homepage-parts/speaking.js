@@ -18,7 +18,7 @@ const Speaking = () => (
           <h4 className="conf-title">Explorer Dev Community Meetup</h4>
         </a>
         <h5 className="talk-title">Build Your Blazing Fast Site With Gatsby</h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>March 23, 2020</span>
           &nbsp;
           <span>
@@ -50,7 +50,7 @@ const Speaking = () => (
           </h4>
         </a>
         <h5 className="talk-title">Using WordPress With GraphQL</h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>February 22, 2020</span>
           &nbsp;
           <span>
@@ -80,7 +80,7 @@ const Speaking = () => (
         <h5 className="talk-title">
           Using WordPress With Static Site Generators
         </h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>Nov 1, 2019</span>
           &nbsp;
           <span>
@@ -110,7 +110,7 @@ const Speaking = () => (
         <h5 className="talk-title">
           Build Your Blazing Fast Site With Gatsby and WordPress
         </h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>Sep 25, 2019</span>
           <span>
             <a
@@ -129,7 +129,7 @@ const Speaking = () => (
           <h4 className="conf-title">JS for WP Conf 2019</h4>
         </a>
         <h5 className="talk-title">Server Side React for WordPress</h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>July 12, 2019</span>
           &nbsp;
           <span>
@@ -154,7 +154,7 @@ const Speaking = () => (
           <h4 className="conf-title">GatsbyJS Montréal Meetup #1</h4>
         </a>
         <h5 className="talk-title">Building with Gatsby and WordPress</h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>June 1, 2019</span>
           &nbsp;
           <span>
@@ -181,7 +181,7 @@ const Speaking = () => (
         <h5 className="talk-title">
           Creating a WooCommerce Mobile App with React Native
         </h5>
-        <div className="project-technologies">
+        <div className="speaking-tags">
           <span>October 18, 2018</span>{' '}
           <span>
             <a

@@ -529,10 +529,6 @@ cite.testimonial-author {
   margin-bottom: 0;
 }
 
-.project-technologies {
-  padding-top: 10px;
-}
-
 .work-logo:hover {
   transform: scale(1.1);
 }
@@ -563,13 +559,20 @@ cite.testimonial-author {
   margin-bottom: 10px;
 }
 
-.project-technologies span {
-  font-size: 0.7em;
-  border-radius: 4px;
+.project-technologies {
+  padding-top: 10px;
+}
+
+.project-technologies span, .speaking-tags span {
+  font-size: .7em;
   display: inline-block;
   padding: 0 5px;
   margin: 0 1px 5px;
-  border: 1px solid #8a8a8a;
+  color: #777;
+}
+
+.project-technologies span:before {
+  content: '#';
 }
 
 .open-source {
