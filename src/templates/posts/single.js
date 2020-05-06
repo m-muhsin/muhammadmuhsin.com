@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import he from 'he'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import stripHtml from '../../utils/strip-html'
@@ -37,7 +38,25 @@ const SinglePost = (props) => {
             className="entry-title"
             dangerouslySetInnerHTML={{ __html: title }}
           />
-          <PostHeaderMeta date={date} categories={categories} tags={tags} excerptText={excerptText} />
+          <PostHeaderMeta
+            date={date}
+            categories={categories}
+            tags={tags}
+            excerptText={excerptText}
+          />
+          {data?.wpPost?.featuredImage?.sourceUrl ? (
+            <img
+              style={{ margin: 'auto' }}
+              src={data.wpPost.featuredImage.sourceUrl}
+              alt={
+                data?.wpPost?.featuredImage?.altText
+                  ? data.wpPost.featuredImage.altText
+                  : he.decode(title)
+              }
+            />
+          ) : (
+            ''
+          )}
         </header>
 
         <div
@@ -69,13 +88,19 @@ const SinglePost = (props) => {
 }
 
 export const query = graphql`
-  query RelatedPosts($relatedPosts: [Int]) {
+  query RelatedPosts($relatedPosts: [Int], $databaseId: Int) {
     allWpPost(filter: { databaseId: { in: $relatedPosts } }) {
       nodes {
         databaseId
         title
         slug
         excerpt
+      }
+    }
+    wpPost(databaseId: { eq: $databaseId }) {
+      featuredImage {
+        sourceUrl
+        altText
       }
     }
   }

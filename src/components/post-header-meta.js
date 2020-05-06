@@ -78,7 +78,7 @@ const PostHeaderMeta = ({
       {showTwitterShare ? (
         <a
           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          class="twitter-share-button"
+          className="twitter-share-button"
           data-text={twitterText}
           data-via="muhsinlk"
           style={{ marginLeft: 16, marginBottom: -2 }}

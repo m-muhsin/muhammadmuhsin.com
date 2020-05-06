@@ -27,7 +27,7 @@ const PostEntry = ({
         />
       </header>
       <div className="entry-content">
-        <p>{excerptText}</p>
+        <p dangerouslySetInnerHTML={{ __html: excerptText }} />
       </div>
     </article>
   )
