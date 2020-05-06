@@ -32,7 +32,7 @@ const ContactPage = () => (
             </li>
             <li>
               <strong>Twitter</strong> - Feel free to send me a direct message{' '}
-              <a href="https://twitter.com/muhsinlk/">@muhsinlk</a>
+              <a href="https://twitter.com/messages/compose?recipient_id=1166243450&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-screen-name="muhsinlk">Message @muhsinlk</a>
             </li>
           </ul>
         </div>
