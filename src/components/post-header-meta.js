@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment/moment'
-import CategoryIcon from './icons/category'
-import TagIcon from './icons/tag'
 import stripHtml from '../utils/strip-html'
 
 const PostHeaderMeta = ({
@@ -40,8 +38,8 @@ const PostHeaderMeta = ({
       </span>
       {categories?.nodes?.length ? (
         <span className="cat-links">
-          <CategoryIcon />
-          <span className="screen-reader-text">Posted in: </span>
+          {`• `}
+          <span className="screen-reader-text">Category: </span>
           {categories.nodes
             .map((category) => (
               <Link
@@ -61,12 +59,12 @@ const PostHeaderMeta = ({
       )}
       {tags?.nodes?.length ? (
         <span className="tags-links">
-          <TagIcon />
+          {` • `}
           <span className="screen-reader-text">Tags: </span>
           {tags.nodes
             .map((tag) => (
               <Link key={tag.name} to={`/blog/tag/${tag.slug}`} rel="tag">
-                <span>{tag.name}</span>
+                <span>#{tag.name}</span>
               </Link>
             ))
             .reduce((accu, elem) => {
