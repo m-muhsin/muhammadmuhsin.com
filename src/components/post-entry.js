@@ -26,9 +26,10 @@ const PostEntry = ({
           showTwitterShare={false}
         />
       </header>
-      <div className="entry-content">
-        <p dangerouslySetInnerHTML={{ __html: excerptText }} />
-      </div>
+      <div
+        className="entry-content"
+        dangerouslySetInnerHTML={{ __html: excerptText }}
+      />
     </article>
   )
 }
