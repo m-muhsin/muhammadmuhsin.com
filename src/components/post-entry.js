@@ -43,6 +43,7 @@ const PostEntry = ({
         <PostHeaderMeta
             date={date}
             readingTime={readingTime}
+            excerptText={excerptText}
         /> 
       </header>
       <div className="entry-content" dangerouslySetInnerHTML={{ __html: excerptText }} />
