@@ -563,8 +563,9 @@ cite.testimonial-author {
   padding-top: 10px;
 }
 
-.project-technologies span, .speaking-tags span {
-  font-size: .7em;
+.project-technologies span,
+.speaking-tags span {
+  font-size: 0.7em;
   display: inline-block;
   padding: 0 5px;
   margin: 0 1px 5px;
@@ -1065,4 +1066,8 @@ label {
 iframe.twitter-share-button {
   margin-left: 12px;
   margin-bottom: -4px;
+}
+
+body {
+  overflow-x: hidden;
 }
