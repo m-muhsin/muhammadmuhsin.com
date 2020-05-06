@@ -76,15 +76,17 @@ const PostHeaderMeta = ({
       )}
       {readingTime && `• ${cookies.join('')} ${readingTime} min read`}
       {showTwitterShare ? (
-        <a
-          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          className="twitter-share-button"
-          data-text={twitterText}
-          data-via="muhsinlk"
-          style={{ marginLeft: 16, marginBottom: -2 }}
-        >
-          Share on Twitter
-        </a>
+        <div className="twitter-share-button-container">
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            className="twitter-share-button"
+            data-text={twitterText}
+            data-via="muhsinlk"
+            data-size="large"
+          >
+            Share on Twitter
+          </a>
+        </div>
       ) : (
         ''
       )}
