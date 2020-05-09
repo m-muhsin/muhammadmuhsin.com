@@ -23,7 +23,7 @@ const Intro = () => (
     </p>
     <p className="bigger-text">
       I currently work remotely as Senior React Developer at rtCamp - a
-      WordPress VIP Gold Parnter Agency.
+      WordPress VIP Gold Partner Agency.
     </p>
     <p className="bigger-text">
       Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
