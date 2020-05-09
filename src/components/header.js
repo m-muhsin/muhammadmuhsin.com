@@ -32,6 +32,15 @@ const Header = ({ siteTitle }) => (
         </li>
         <li className="nav-item">
           <Link
+            to="/about/"
+            activeClassName="nav-active"
+            getProps={isPartiallyActive}
+          >
+            About
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
             to="/contact/"
             activeClassName="nav-active"
             getProps={isPartiallyActive}

@@ -98,6 +98,7 @@ module.exports = async ({ actions, graphql }) => {
             path: `/${page.slug}/`,
             component: pageTemplate,
             context: page,
+            databaseId: page.id,
           })
         }
       })

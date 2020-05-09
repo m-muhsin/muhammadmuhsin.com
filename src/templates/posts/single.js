@@ -26,12 +26,12 @@ const SinglePost = (props) => {
   const excerptText = getExcerpt(excerpt, content)
 
   return (
-    <Layout classNames="blog">
+    <Layout classNames="styled-text">
       <SEO title={title} description={stripHtml(excerptText)} />
       <article
         data-id={id}
         id={`post-${databaseId}`}
-        className={`post-${databaseId} post type-post status-publish format-standard hentry category-react tag-accessibility tag-gatsby entry`}
+        className={`post-${databaseId} post type-post status-publish format-standard hentry entry`}
       >
         <header className="entry-header">
           <h1

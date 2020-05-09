@@ -426,17 +426,17 @@ tt:after {
   }
 }
 
-.blog h1,
-.blog h2,
-.blog h3,
-.blog h4,
-.blog h5,
-.blog h6 {
+.styled-text h1,
+.styled-text h2,
+.styled-text h3,
+.styled-text h4,
+.styled-text h5,
+.styled-text h6 {
   font-family: 'Lato', arial, sans-serif;
   line-height: 1.6;
 }
 
-.blog p {
+.styled-text p {
   font-family: 'Lora', serif;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -649,7 +649,7 @@ cite.testimonial-author {
 .entry-header,
 .entry-content
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
-.inner-body.blog .main > h1 {
+.inner-body.styled-text .main > h1 {
   max-width: 42rem;
   margin: 0 auto 1.45rem;
   padding: 0.5rem 1.0875rem;
