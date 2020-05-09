@@ -10,9 +10,11 @@ const TagArchive = ({ pageContext: { name, posts } }) => (
       description={`A collection of posts from the ${name} tag.`}
     />
     <section>
-      <h1 className="entry-header">
-        Tag Archive: <span>{name}</span>
-      </h1>
+      <header className="entry-header">
+        <h1 className="entry-title">
+          Tag Archive: <span>{name}</span>
+        </h1>
+      </header>
       {posts.nodes &&
         posts.nodes.map((post) => <PostEntry key={post.id} post={post} />)}
     </section>

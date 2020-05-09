@@ -10,9 +10,13 @@ const CategoryArchive = ({ pageContext: { name, posts } }) => (
       title={`Category - ${name}`}
       description={`A collection of posts from the ${name} category.`}
     />
-    <h1>
-      Category Archives: <span>{name}</span>
-    </h1>
+
+    <header className="entry-header">
+      <h1 className="entry-title">
+        Category Archives: <span>{name}</span>
+      </h1>
+    </header>
+
     <section id="blog">
       {posts &&
         posts.nodes &&
