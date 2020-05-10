@@ -1076,6 +1076,12 @@ body {
   display: flex;
 }
 
-.twitter-share-button-container iframe, .twitter-share-button {
+.twitter-share-button-container iframe,
+.twitter-share-button {
   margin: 10px auto;
+}
+
+.gatsby-image-logo {
+  height: 80px;
+  width: 320px;
 }

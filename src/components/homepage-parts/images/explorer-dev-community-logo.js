@@ -16,7 +16,7 @@ const ExplorerDevCommunityImage = () => {
   `)
   return (
     <div className="">
-      <Img className="" style={{ height: 80, width: 320 }} fluid={data.placeholderImage.childImageSharp.fluid} alt="Explorer Dev Community" />
+      <Img className="gatsby-image-logo" fluid={data.placeholderImage.childImageSharp.fluid} alt="Explorer Dev Community" />
     </div>
   )
 }

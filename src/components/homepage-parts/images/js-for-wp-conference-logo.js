@@ -16,7 +16,7 @@ const JSforWPConf2019Logo = () => {
   `)
   return (
     <div className="">
-      <Img className="" style={{ height: 80, width: 320 }} fluid={data.placeholderImage.childImageSharp.fluid} alt="JS for WP Conf 2019" />
+      <Img className="gatsby-image-logo" fluid={data.placeholderImage.childImageSharp.fluid} alt="JS for WP Conf 2019" />
     </div>
   )
 }

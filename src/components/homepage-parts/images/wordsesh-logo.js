@@ -16,7 +16,7 @@ const WordSeshLogo = () => {
   `)
   return (
     <div className="">
-      <Img className="" style={{ height: 80, width: 320 }} fluid={data.placeholderImage.childImageSharp.fluid} alt="WordSesh EMEA 2019" />
+      <Img className="gatsby-image-logo" fluid={data.placeholderImage.childImageSharp.fluid} alt="WordSesh EMEA 2019" />
     </div>
   )
 }

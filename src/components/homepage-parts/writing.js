@@ -1,4 +1,7 @@
 import React from 'react'
+import GatsbyLogo from './images/gatsby-logo'
+import JSforWPLogo from './images/js-for-wp-logo'
+import LogRocketLogo from './images/logrocket-logo'
 
 const Writing = () => (
   <>
@@ -23,11 +26,7 @@ const Writing = () => (
       </div>
       <div className="work">
         <a href="https://www.gatsbyjs.org/contributors/muhammad-muhsin/">
-          <img
-            className="work-logo"
-            src={require('../../images/gatsby-icon.png')}
-            alt="Gatsby"
-          />
+          <GatsbyLogo className="work-logo" />
         </a>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span>
@@ -47,11 +46,7 @@ const Writing = () => (
       </div>
       <div className="work">
         <a href="https://javascriptforwp.com/author/muhammad-muhseen/">
-          <img
-            className="work-logo"
-            src={require('../../images/jsforwp.png')}
-            alt="JS for WP"
-          />
+          <JSforWPLogo className="work-logo" />
         </a>
         <div className="project-technologies">
           <span>React</span> <span>Gatsby</span> <span>WordPress</span>
@@ -59,11 +54,7 @@ const Writing = () => (
       </div>
       <div className="work">
         <a href="https://blog.logrocket.com/author/muhammadmuhsin/">
-          <img
-            className="work-logo"
-            src={require('../../images/logrocket.png')}
-            alt="LogRocket"
-          />
+        <LogRocketLogo className="work-logo" />
         </a>
         <div className="project-technologies">
           <span>React</span> <span>SSR</span>
