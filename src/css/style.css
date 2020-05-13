@@ -1099,3 +1099,9 @@ ul.pagination li {
 ul.pagination li.active {
   font-weight: bold;
 }
+
+button.search-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+}
