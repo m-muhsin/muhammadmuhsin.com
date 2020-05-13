@@ -22,11 +22,13 @@
     "graphql-tag": "^2.10.1",
     "he": "^1.2.0",
     "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.15",
     "moment": "^2.25.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "react-paginate": "^6.3.2",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1"
   },

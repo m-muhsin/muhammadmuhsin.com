@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import he from 'he'
+
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import stripHtml from '../../utils/strip-html'
@@ -43,27 +43,14 @@ const SinglePost = (props) => {
             categories={categories}
             tags={tags}
             excerptText={excerptText}
+            featuredImage={data.wpPost.featuredImage}
           />
-          {data?.wpPost?.featuredImage?.sourceUrl ? (
-            <img
-              style={{ margin: 'auto' }}
-              src={data.wpPost.featuredImage.sourceUrl}
-              alt={
-                data?.wpPost?.featuredImage?.altText
-                  ? data.wpPost.featuredImage.altText
-                  : he.decode(title)
-              }
-            />
-          ) : (
-            ''
-          )}
         </header>
 
         <div
           className="entry-content"
           dangerouslySetInnerHTML={{ __html: content }}
         />
-        {/* .entry-content */}
 
         <footer className="entry-footer" />
       </article>
@@ -88,6 +75,13 @@ const SinglePost = (props) => {
 }
 
 export const query = graphql`
+  fragment Thumbnail on File {
+    childImageSharp {
+      fluid(maxWidth: 500) {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
   query RelatedPosts($relatedPosts: [Int], $databaseId: Int) {
     allWpPost(filter: { databaseId: { in: $relatedPosts } }) {
       nodes {
@@ -99,7 +93,9 @@ export const query = graphql`
     }
     wpPost(databaseId: { eq: $databaseId }) {
       featuredImage {
-        sourceUrl
+        remoteFile {
+          ...Thumbnail
+        }
         altText
       }
     }

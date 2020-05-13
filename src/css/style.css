@@ -792,7 +792,6 @@ figure.wp-block-image {
 
 header.entry-meta {
   font-size: 0.85rem;
-  margin-top: -12px;
 }
 
 .conf-title {
@@ -1084,4 +1083,19 @@ body {
 .gatsby-image-logo {
   height: 80px;
   width: 320px;
+}
+
+ul.pagination {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.pagination li {
+  padding: 1rem;
+}
+
+ul.pagination li.active {
+  font-weight: bold;
 }
