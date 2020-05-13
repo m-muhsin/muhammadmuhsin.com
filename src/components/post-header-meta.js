@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import moment from 'moment/moment'
+
 import stripHtml from '../utils/strip-html'
 
 const PostHeaderMeta = ({
@@ -10,6 +12,7 @@ const PostHeaderMeta = ({
   readingTime,
   excerptText,
   showTwitterShare = true,
+  featuredImage = {},
 }) => {
   let cookies = []
   if (parseInt(readingTime)) {
@@ -27,10 +30,9 @@ const PostHeaderMeta = ({
   return (
     <header className="entry-meta">
       <span className="posted-on">
-        {/* <DateIcon /> */}
         <time
           className="entry-date published updated"
-          dateTime="2019-02-25T17:37:06+00:00"
+          dateTime={moment(date).format('YYYY-MM-DDTHH:mm:ssZ')}
         >
           {moment(date).format(`MMMM D, YYYY`)}
         </time>
@@ -89,6 +91,11 @@ const PostHeaderMeta = ({
       ) : (
         ''
       )}
+      {!!featuredImage &&
+        !!featuredImage.remoteFile &&
+        !!featuredImage.remoteFile.childImageSharp && (
+          <Img fluid={featuredImage.remoteFile.childImageSharp.fluid} alt={featuredImage.altText} />
+        )}
     </header>
   )
 }

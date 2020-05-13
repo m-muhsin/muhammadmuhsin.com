@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
             activeClassName="nav-active"
             getProps={isPartiallyActive}
           >
-            Blog
+            Articles
           </Link>
         </li>
         <li className="nav-item">
