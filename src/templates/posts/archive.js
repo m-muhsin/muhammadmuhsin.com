@@ -66,6 +66,7 @@ export const query = graphql`
       sort: { fields: date, order: DESC }
     ) {
       nodes {
+        id
         uri
         title
         excerpt
