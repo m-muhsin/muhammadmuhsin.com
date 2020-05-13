@@ -1105,3 +1105,10 @@ button.search-btn {
   border: none;
   font-size: 1rem;
 }
+
+button.search-x-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  padding-top: 4px;
+}
