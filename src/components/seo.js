@@ -1,15 +1,17 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, image }) {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const image = image || data?.site?.siteMetadata?.image
+
         return (
           <Helmet
             htmlAttributes={{
@@ -23,8 +25,16 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription,
               },
               {
+                name: `image`,
+                content: image,
+              },
+              {
                 property: `og:title`,
                 content: title,
+              },
+              {
+                name: `og:image`,
+                content: image,
               },
               {
                 name: `twitter:card`,
@@ -71,12 +81,14 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
+  image: '',
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
+  image: PropTypes.string,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 }
@@ -90,6 +102,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        image
       }
     }
   }
