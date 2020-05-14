@@ -59,11 +59,11 @@ export const query = graphql`
       }
     }
   }
-  query HomePage($offset: Int!, $perPage: Int!) {
+  query PostsArchive($offset: Int!, $perPage: Int!) {
     allWpPost(
       limit: $perPage
       skip: $offset
-      filter: { nodeType: { in: ["Post", "Page", "Alot"] } }
+      filter: { nodeType: { in: ["Post"] } }
       sort: { fields: date, order: DESC }
     ) {
       nodes {
@@ -76,12 +76,6 @@ export const query = graphql`
         slug
         date
         readingTime
-        featuredImage {
-          remoteFile {
-            ...Thumbnail
-          }
-          altText
-        }
       }
     }
   }
