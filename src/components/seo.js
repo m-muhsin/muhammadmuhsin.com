@@ -23,16 +23,8 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription,
               },
               {
-                name: `image`,
-                content: data.site.siteMetadata.image,
-              },
-              {
                 property: `og:title`,
                 content: title,
-              },
-              {
-                name: `og:image`,
-                content: data.site.siteMetadata.image,
               },
               {
                 name: `twitter:card`,
@@ -79,14 +71,12 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-  image: null,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
-  image: PropTypes.string,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 }
@@ -100,7 +90,6 @@ const detailsQuery = graphql`
         title
         description
         author
-        image
       }
     }
   }

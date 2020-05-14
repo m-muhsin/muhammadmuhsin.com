@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import striptags from 'striptags'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import stripHtml from '../../utils/strip-html'
 import getExcerpt from '../../utils/get-excerpt'
 import PostHeaderMeta from '../../components/post-header-meta'
 import Comments from '../../components/comments'
@@ -27,7 +27,7 @@ const SinglePost = (props) => {
 
   return (
     <Layout classNames="styled-text">
-      <SEO title={title} description={stripHtml(excerptText)} />
+      <SEO title={title} description={striptags(excerptText)} image={data?.wpPost?.featuredImage?.sourceUrl} />
       <article
         data-id={id}
         id={`post-${databaseId}`}
@@ -96,6 +96,7 @@ export const query = graphql`
         remoteFile {
           ...Thumbnail
         }
+        sourceUrl
         altText
       }
     }

@@ -33,6 +33,7 @@ const BlogArchive = ({ pageContext, data }) => (
               const path = page === 1 ? `/blog/` : `/blog/${page}/`
               navigate(path)
             }}
+            ariaLabelBuilder={(number) => `page ${number}`}
             disableInitialCallback
             breakLabel={'...'}
             breakClassName={'break-me'}
@@ -58,15 +59,16 @@ export const query = graphql`
       }
     }
   }
-  query HomePage($offset: Int!, $perPage: Int!) {
+  query PostsArchive($offset: Int!, $perPage: Int!) {
     allWpPost(
       limit: $perPage
       skip: $offset
-      filter: { nodeType: { in: ["Post", "Page", "Alot"] } }
+      filter: { nodeType: { in: ["Post"] } }
       sort: { fields: date, order: DESC }
     ) {
       nodes {
         id
+        databaseId
         uri
         title
         excerpt
@@ -74,12 +76,6 @@ export const query = graphql`
         slug
         date
         readingTime
-        featuredImage {
-          remoteFile {
-            ...Thumbnail
-          }
-          altText
-        }
       }
     }
   }

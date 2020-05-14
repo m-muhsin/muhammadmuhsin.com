@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import moment from 'moment/moment'
-
-import stripHtml from '../utils/strip-html'
+import striptags from 'striptags'
 
 const PostHeaderMeta = ({
   date,
@@ -24,7 +23,7 @@ const PostHeaderMeta = ({
     cookies = ['🍪']
   }
 
-  let twitterText = stripHtml(excerptText)
+  let twitterText = striptags(excerptText)
   twitterText = `"${twitterText}" —`
 
   return (

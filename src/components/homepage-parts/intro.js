@@ -26,12 +26,13 @@ const Intro = () => (
       WordPress VIP Gold Partner Agency.
     </p>
     <p className="bigger-text">
-      Feel free to check out my <Link to="/blog">blog posts</Link> or{' '}
-      <Link to="/contact">get in touch with me!</Link>
+      Feel free to check out my <Link className="text-link" to="/blog">blog posts</Link> or{' '}
+      <Link className="text-link" to="/contact">get in touch with me!</Link>
     </p>
     <div className="speaking-box-container">
       <a
         href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin"
+        aria-label="WordCamp Asia 2020 Speaker Muhammad Muhsin"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -39,6 +40,7 @@ const Intro = () => (
       </a>
       <a
         href="https://2019.us.wordcamp.org/speaker/muhammad-muhsin"
+        aria-label="WordCamp US 2019 Speaker Muhammad Muhsin"
         target="_blank"
         rel="noopener noreferrer"
       >
