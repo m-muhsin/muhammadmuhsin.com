@@ -1100,6 +1100,12 @@ button.search-btn:focus {
   z-index: 20;
 }
 
+@media (min-width: 500px) {
+  .search-form {
+    margin-top: 6px;
+  }
+}
+
 .search-form.show {
   visibility: visible;
 }
