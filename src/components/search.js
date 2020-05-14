@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { Link } from 'gatsby'
 import { useQuery } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
 
@@ -6,8 +7,10 @@ const GET_COMMENTS = gql`
   query SearchPostsQuery($searchTerm: String!) {
     posts(where: { search: $searchTerm }) {
       nodes {
-        id
+        databaseId
         title
+        slug
+        excerpt
       }
     }
   }
@@ -18,12 +21,6 @@ const Search = () => {
   const [searchKey, setSearchKey] = useState('')
   const [showSearchBar, setShowSearchBar] = useState(false)
   const [showSearchResults, setShowSearchResults] = useState(false)
-
-  const { data: queriedData } = useQuery(GET_COMMENTS, {
-    variables: { searchTerm: searchKey },
-  })
-
-  console.log('queriedData', queriedData)
 
   useEffect(() => {
     if (showSearchBar) {
@@ -89,28 +86,67 @@ const Search = () => {
           ✕
         </button>
       </form>
+      {!!showSearchResults && (
+        <SearchResults
+          showSearchResults={showSearchResults}
+          searchKey={searchKey}
+        />
+      )}
+    </>
+  )
+}
+
+const SearchResults = ({ showSearchResults, searchKey }) => {
+  const { data: queriedData } = useQuery(GET_COMMENTS, {
+    variables: { searchTerm: searchKey },
+  })
+  return (
+    <div
+      style={{
+        backgroundColor: 'white',
+        position: 'absolute',
+        marginTop: 50,
+        left: 0,
+        width: '100%',
+        minHeight: 400,
+        zIndex: 10,
+        display: showSearchResults ? 'block' : 'none',
+      }}
+    >
       <div
         style={{
-          backgroundColor: 'gray',
-          position: 'absolute',
-          marginTop: 50,
-          left: 0,
-          width: '100%',
-          minHeight: 400,
-          zIndex: 10,
-          display: showSearchResults ? 'block' : 'none',
+          backgroundColor: '#f1f1f1',
+          width: '1170px',
+          maxWidth: '100%',
+          margin: 'auto',
+          padding: `2rem 2rem 1rem`,
         }}
       >
-        Search results
+        <h3>Search results</h3>
         <div>
           {!!searchKey &&
             queriedData?.posts?.nodes &&
             queriedData.posts.nodes.map((post) => (
-              <h4 dangerouslySetInnerHTML={{ __html: post.title }} />
+              <Link
+                data-id={`post-${post.databaseId}`}
+                key={`post-${post.databaseId}`}
+                style={{
+                  textTransform: 'none',
+                }}
+                to={`/blog/${post.slug}`}
+              >
+                <h4
+                  style={{
+                    color: 'black',
+                  }}
+                  dangerouslySetInnerHTML={{ __html: post.title }}
+                />
+                <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+              </Link>
             ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
