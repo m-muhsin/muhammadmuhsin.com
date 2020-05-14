@@ -584,7 +584,8 @@ cite.testimonial-author {
 }
 
 .nav-item .nav-active {
-  color: #139fc9;
+  color: #0C5F79;
+  font-weight: bold;
 }
 
 .nav-item a:hover {

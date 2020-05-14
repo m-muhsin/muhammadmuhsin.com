@@ -67,6 +67,7 @@ export const query = graphql`
     ) {
       nodes {
         id
+        databaseId
         uri
         title
         excerpt
