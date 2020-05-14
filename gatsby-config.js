@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Muhammad Muhsin`,
-    description: `Muhammad Muhsin | Full Stack Engineer, Writer, Speaker and Open Source Contributor.`,
-    author: `@muhsinlk`,
-    url: "https://muhammad.dev", // No trailing slash allowed!
-    image: "https://muhammad.dev/icons/icon-512x512.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@muhsinlk",
+    title: 'Muhammad Muhsin',
+    description:
+      'Muhammad Muhsin | Full Stack Engineer, Writer, Speaker and Open Source Contributor.',
+    author: '@muhsinlk',
+    url: 'https://muhammad.dev', // No trailing slash allowed!
+    image: 'https://muhammad.dev/icons/icon-512x512.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@muhsinlk',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,9 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress-experimental`,
       options: {
-        url:
-          process.env.WPGRAPHQL_URL ||
-          `https://mtwoblog.com/graphql`,
+        url: process.env.WPGRAPHQL_URL || `https://mtwoblog.com/graphql`,
         verbose: true,
         schema: {
           queryDepth: 5,
