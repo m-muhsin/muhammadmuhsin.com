@@ -14,33 +14,32 @@ import {
   Contact,
 } from '../components/homepage-parts'
 
-const IndexPage = ({ data }) =>
-  console.log('data', data) && (
-    <Layout location="home">
-      <SEO
-        title="muhammad.dev"
-        description={
-          data.site.siteMetadata.description ||
-          `Muhammad Muhsin's space on the web`
-        }
-        image={data.site.siteMetadata.image}
-        keywords={[
-          `muhammad muhsin`,
-          `full stack developer`,
-          `wordpress`,
-          `react`,
-        ]}
-      />
-      <Intro />
-      <Work />
-      <Writing />
-      <Speaking />
-      <OpenSource />
-      <Featured />
-      <Testimonials />
-      <Contact />
-    </Layout>
-  )
+const IndexPage = ({ data }) => (
+  <Layout location="home">
+    <SEO
+      title="muhammad.dev"
+      description={
+        data.site.siteMetadata.description ||
+        `Muhammad Muhsin's space on the web`
+      }
+      image={data.site.siteMetadata.image}
+      keywords={[
+        `muhammad muhsin`,
+        `full stack developer`,
+        `wordpress`,
+        `react`,
+      ]}
+    />
+    <Intro />
+    <Work />
+    <Writing />
+    <Speaking />
+    <OpenSource />
+    <Featured />
+    <Testimonials />
+    <Contact />
+  </Layout>
+)
 
 export const query = graphql`
   query HomeSEOQuery {
