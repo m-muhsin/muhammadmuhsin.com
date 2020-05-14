@@ -27,7 +27,7 @@ const SinglePost = (props) => {
 
   return (
     <Layout classNames="styled-text">
-      <SEO title={title} description={striptags(excerptText)} image={data.wpPost.featuredImage.sourceUrl} />
+      <SEO title={title} description={striptags(excerptText)} image={data?.wpPost?.featuredImage?.sourceUrl} />
       <article
         data-id={id}
         id={`post-${databaseId}`}
