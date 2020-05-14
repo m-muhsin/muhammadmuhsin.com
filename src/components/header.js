@@ -14,11 +14,6 @@ const Header = ({ siteTitle }) => (
           alt="muhammad muhsin logo"
           className="title-logo full"
         />
-        {/* <img
-          src={require('../images/muhammad_type.svg')}
-          alt="muhammad muhsin logo"
-          className="title-logo type"
-        /> */}
       </Link>
       <ul className="nav-menu" id="menu">
         <li className="nav-item">

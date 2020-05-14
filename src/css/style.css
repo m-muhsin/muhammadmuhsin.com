@@ -9,7 +9,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
-    font-display: swap;
+  font-display: swap;
 }
 /* latin */
 @font-face {
@@ -21,7 +21,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
-    font-display: swap;
+  font-display: swap;
 }
 
 html {
@@ -50,9 +50,11 @@ summary {
 }
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
   text-decoration: none;
-  color: #139fc9;
+  color: #0c5f79;
+}
+a.text-link {
+  border-bottom: 1px solid;
 }
 a:active,
 a:hover {
@@ -584,7 +586,7 @@ cite.testimonial-author {
 }
 
 .nav-item .nav-active {
-  color: #0C5F79;
+  color: #0c5f79;
   font-weight: bold;
 }
 
@@ -1049,4 +1051,14 @@ ul.pagination li {
 
 ul.pagination li.active {
   font-weight: bold;
+}
+
+header a {
+  color: #139fc9;
+}
+
+header a:active,
+header a:hover {
+  outline-width: 0;
+  color: #0c5f79;
 }
