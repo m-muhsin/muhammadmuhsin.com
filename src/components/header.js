@@ -2,6 +2,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import Search from './search'
+
 const isPartiallyActive = ({ isPartiallyCurrent }) =>
   isPartiallyCurrent ? { className: 'nav-active' } : null
 
@@ -16,6 +18,9 @@ const Header = ({ siteTitle }) => (
         />
       </Link>
       <ul className="nav-menu" id="menu">
+        <li className="nav-item">
+          <Search />
+        </li>
         <li className="nav-item">
           <Link
             to="/blog/"
