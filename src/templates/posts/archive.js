@@ -33,6 +33,7 @@ const BlogArchive = ({ pageContext, data }) => (
               const path = page === 1 ? `/blog/` : `/blog/${page}/`
               navigate(path)
             }}
+            ariaLabelBuilder={(number) => `page ${number}`}
             disableInitialCallback
             breakLabel={'...'}
             breakClassName={'break-me'}

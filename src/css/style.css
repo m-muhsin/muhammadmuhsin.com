@@ -1053,6 +1053,10 @@ ul.pagination li.active {
   font-weight: bold;
 }
 
+ul.pagination li.active a {
+  border-bottom: 1px solid;
+}
+
 header a {
   color: #139fc9;
 }
