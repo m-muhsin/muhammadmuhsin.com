@@ -10,7 +10,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
       render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description
-        const image = image || data?.site?.siteMetadata?.image
+        const seoImage = image || data?.site?.siteMetadata?.image
 
         return (
           <Helmet
@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
               },
               {
                 name: `image`,
-                content: image,
+                content: seoImage,
               },
               {
                 property: `og:title`,
@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
               },
               {
                 name: `og:image`,
-                content: image,
+                content: seoImage,
               },
               {
                 name: `twitter:card`,
