@@ -448,9 +448,9 @@ tt:after {
   color: #666;
 }
 
-.nav-item a:hover,
-.nav-item a:focus,
-.nav-item a:active {
+.nav-item > a:hover,
+.nav-item > a:focus,
+.nav-item > a:active {
   border-bottom: 1px solid;
 }
 
@@ -590,10 +590,6 @@ cite.testimonial-author {
   font-weight: bold;
 }
 
-.nav-item a:hover {
-  border-bottom: 1px solid #139fc9;
-}
-
 .main-header {
   margin: 0 auto 1.45rem;
   max-width: 1200px;
@@ -629,6 +625,12 @@ cite.testimonial-author {
 .inner-body.home .main,
 .inner-body.contact .main {
   padding: 0.5rem 1.0875rem;
+}
+
+@media (max-width: 500px) {
+  main.main {
+    margin-top: 0.5rem;
+  }
 }
 
 .main nav {
@@ -1057,6 +1059,7 @@ button.search-btn {
   background: transparent;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 button.search-x-btn {
@@ -1064,6 +1067,10 @@ button.search-x-btn {
   border: none;
   font-size: 1rem;
   padding-top: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 9px;
+  top: 5px;
 }
 ul.pagination li.active a {
   border-bottom: 1px solid;
@@ -1077,4 +1084,53 @@ header a:active,
 header a:hover {
   outline-width: 0;
   color: #0c5f79;
+}
+
+button.search-btn:hover,
+button.search-btn:focus {
+  transform: scale(1.3);
+}
+
+.search-form {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 4px;
+  width: 320px;
+  z-index: 20;
+}
+
+.search-form.show {
+  visibility: visible;
+}
+
+.search-form input {
+  height: 32px;
+}
+
+.search-results-container {
+  background-color: white;
+  position: absolute;
+  padding-top: 50px;
+  left: 0;
+  width: 100%;
+  min-height: 400px;
+  z-index: 10;
+  display: none;
+}
+
+.search-results-container.show {
+  display: block;
+}
+
+.search-results {
+  background-color: #f1f1f1;
+  width: 1170px;
+  max-width: 100%;
+  margin: auto;
+  padding: 2rem 2rem 1rem;
+}
+
+.search-results a {
+  text-transform: none;
 }

@@ -3,7 +3,8 @@ import { Link } from 'gatsby'
 import { useQuery } from '@apollo/react-hooks'
 import gql from 'graphql-tag'
 
-const GET_COMMENTS = gql`
+// The GraphQL query that will be sent to Apollo.
+const SEARCH_POSTS_QUERY = gql`
   query SearchPostsQuery($searchTerm: String!) {
     posts(where: { search: $searchTerm }) {
       nodes {
@@ -16,32 +17,35 @@ const GET_COMMENTS = gql`
   }
 `
 
+// The main Search Component.
 const Search = () => {
+  // Taking a reference to the input element.
   const inputEl = useRef(null)
+
+  // Storing the search term, and the two show states.
   const [searchKey, setSearchKey] = useState('')
   const [showSearchBar, setShowSearchBar] = useState(false)
   const [showSearchResults, setShowSearchResults] = useState(false)
 
+  // To ensure the input element is in focus when the search bar appears.
   useEffect(() => {
     if (showSearchBar) {
       inputEl.current.focus()
     }
   })
 
+  // Show/hide the search form.
   const toggleSearchForm = () => {
     setShowSearchBar(!showSearchBar)
   }
 
-  const toggleShowSearchResults = (event) => {
+  // Show/hide the search results.
+  const toggleShowSearchResults = () => {
     setSearchKey(inputEl.current.value)
-    if (searchKey.length > 0) {
-      setShowSearchResults(true)
-    }
-    if (searchKey.length === 0) {
-      setShowSearchResults(false)
-    }
+    setShowSearchResults(() => (searchKey.length > 0 ? true : false))
   }
 
+  // Event when the close x button is clicked.
   const onCloseSearchBar = () => {
     inputEl.current.value = ''
     setShowSearchResults(false)
@@ -57,32 +61,14 @@ const Search = () => {
       </button>
       <form
         onSubmit={(e) => e.preventDefault()}
-        style={{
-          visibility: showSearchBar ? 'visible' : 'hidden',
-          position: 'absolute',
-          marginTop: 4,
-          marginLeft: 4,
-          width: 320,
-        }}
+        className={`search-form ${showSearchBar ? 'show' : ''}`}
       >
         <input
-          style={{
-            height: 32,
-          }}
           ref={inputEl}
           type="text"
           onChange={(event) => toggleShowSearchResults(event)}
         />
-        <button
-          style={{
-            cursor: 'pointer',
-            position: 'absolute',
-            right: 9,
-            top: 5,
-          }}
-          className="search-x-btn"
-          onClick={() => onCloseSearchBar()}
-        >
+        <button className="search-x-btn" onClick={() => onCloseSearchBar()}>
           ✕
         </button>
       </form>
@@ -96,32 +82,18 @@ const Search = () => {
   )
 }
 
+// The Search Results component.
 const SearchResults = ({ showSearchResults, searchKey }) => {
-  const { data: queriedData } = useQuery(GET_COMMENTS, {
+  // Fetching the search data from WPGraphQL via Apollo.
+  const { data: queriedData } = useQuery(SEARCH_POSTS_QUERY, {
     variables: { searchTerm: searchKey },
   })
+
   return (
     <div
-      style={{
-        backgroundColor: 'white',
-        position: 'absolute',
-        marginTop: 50,
-        left: 0,
-        width: '100%',
-        minHeight: 400,
-        zIndex: 10,
-        display: showSearchResults ? 'block' : 'none',
-      }}
+      className={`search-results-container ${showSearchResults ? 'show' : ''}`}
     >
-      <div
-        style={{
-          backgroundColor: '#f1f1f1',
-          width: '1170px',
-          maxWidth: '100%',
-          margin: 'auto',
-          padding: `2rem 2rem 1rem`,
-        }}
-      >
+      <div className="search-results">
         <h3>Search results</h3>
         <div>
           {!!searchKey &&
@@ -130,17 +102,9 @@ const SearchResults = ({ showSearchResults, searchKey }) => {
               <Link
                 data-id={`post-${post.databaseId}`}
                 key={`post-${post.databaseId}`}
-                style={{
-                  textTransform: 'none',
-                }}
                 to={`/blog/${post.slug}`}
               >
-                <h4
-                  style={{
-                    color: 'black',
-                  }}
-                  dangerouslySetInnerHTML={{ __html: post.title }}
-                />
+                <h4 dangerouslySetInnerHTML={{ __html: post.title }} />
                 <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
               </Link>
             ))}
