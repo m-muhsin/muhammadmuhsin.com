@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import SpeakingWCAsia from '../../components/images/speaking-wcasia'
-import SpeakingWCUS from '../../components/images/speaking-wcus'
+import SpeakingWCAsia from './images/speaking-wcasia'
+import SpeakingWCUS from './images/speaking-wcus'
+import DecoupledBlogLogo from './images/decoupled-blog-logo'
 
 const Intro = () => (
   <>
@@ -26,10 +27,25 @@ const Intro = () => (
       WordPress VIP Gold Partner Agency.
     </p>
     <p className="bigger-text">
-      Feel free to check out my <Link className="text-link" to="/blog">blog posts</Link> or{' '}
-      <Link className="text-link" to="/contact">get in touch with me!</Link>
+      Feel free to check out my{' '}
+      <Link className="text-link" to="/blog">
+        blog posts
+      </Link>{' '}
+      or{' '}
+      <Link className="text-link" to="/contact">
+        get in touch with me!
+      </Link>
     </p>
     <div className="speaking-box-container">
+      <a
+        href="https://decoupled.blog"
+        aria-label="Decoubled Blog"
+        title="Visit Decoubled Blog"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <DecoupledBlogLogo />
+      </a>
       <a
         href="https://2020.asia.wordcamp.org/speaker/muhammad-muhsin"
         aria-label="WordCamp Asia 2020 Speaker Muhammad Muhsin"
