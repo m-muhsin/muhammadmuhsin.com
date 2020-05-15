@@ -525,7 +525,7 @@ cite.testimonial-author {
 }
 
 .project-technologies span:before {
-  content: '#';
+  content: '• ';
 }
 
 .open-source {
