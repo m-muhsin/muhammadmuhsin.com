@@ -12,7 +12,7 @@ const TagArchive = ({ pageContext: { name, posts } }) => (
     <section>
       <header className="entry-header">
         <h1 className="entry-title">
-          Tag Archive: <span>{name}</span>
+          Tag - <span>{name}</span>
         </h1>
       </header>
       {posts.nodes &&

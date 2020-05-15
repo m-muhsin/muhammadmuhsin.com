@@ -8,7 +8,7 @@ import PostEntry from '../../components/post-entry'
 
 const BlogArchive = ({ pageContext, data }) => (
   <Layout classNames="blog">
-    <SEO title="Blog" description="A collection of posts by Muhammad" />
+    <SEO title="Articles" description="A collection of posts by Muhammad" />
     <header className="entry-header">
       <h1 className="entry-title">Blog</h1>
     </header>

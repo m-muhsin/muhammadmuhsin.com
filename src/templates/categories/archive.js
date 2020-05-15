@@ -13,7 +13,7 @@ const CategoryArchive = ({ pageContext: { name, posts } }) => (
 
     <header className="entry-header">
       <h1 className="entry-title">
-        Category Archives: <span>{name}</span>
+        Category - <span>{name}</span>
       </h1>
     </header>
 
