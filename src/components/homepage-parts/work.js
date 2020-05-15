@@ -17,7 +17,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>WordPress</span> <span>VIP</span>
+          <span>Publishing</span> <span>Media</span> <span>eCommerce</span>
         </div>
       </div>
       <div className="work">
@@ -29,7 +29,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>GraphQL</span> <span>AWS</span>
+          <span>Startups</span> <span>Finance</span>
         </div>
       </div>
       <div className="work">
@@ -41,7 +41,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>Redux</span> <span>WordPress</span>{' '}
+          <span>eLearning</span>
         </div>
       </div>
       <div className="work">
@@ -53,7 +53,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+          <span>Education</span> <span>Tooling</span>
         </div>
       </div>
       <div className="work">
@@ -65,8 +65,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
-          <span>WooCommerce</span>{' '}
+          <span>eCommerce</span> <span>Events</span>
         </div>
       </div>
       <div className="work">
@@ -78,8 +77,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>WordPress</span> <span>WooCommerce</span>{' '}
-          <span>Integrations</span>{' '}
+          <span>eCommerce</span> <span>Adventure</span>
         </div>
       </div>
       <div className="work">
@@ -91,7 +89,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>React</span> <span>Gatsby</span> <span>WordPress</span>{' '}
+          <span>Tooling</span> <span>Agency</span>
         </div>
       </div>
     </section>
