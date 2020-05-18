@@ -12,15 +12,15 @@ const Intro = () => (
         👨‍💻
       </span>
     </h1>
-    <h3>
-      Hi there{' '}
+    <h4>
+      Hi, my name is Muhammad Muhsin{' '}
       <span role="img" aria-label="hi">
         👋
-      </span>{' '}
-    </h3>
+      </span>
+    </h4>
     <p className="bigger-text">
-      I'm Muhammad, a software engineer focusing on front-end technologies. I
-      primarily work with WordPress and React (Gatsby | Next.js).
+      I am a software engineer focusing on front-end technologies. I primarily
+      work with WordPress and React (Gatsby | Next.js).
     </p>
     <p className="bigger-text">
       I currently work remotely as Senior React Developer at rtCamp - a

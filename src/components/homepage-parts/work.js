@@ -4,8 +4,8 @@ const Work = () => (
   <>
     <h2>Trusted By</h2>
     <p>
-      I have been working with big and small companies doing WordPress and
-      React. Here are some of them.
+      I have been working with various companies doing WordPress and React. Here
+      are some of them.
     </p>
     <section className="projects-container">
       <div className="work">
@@ -17,19 +17,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>Publishing</span> <span>Media</span> <span>eCommerce</span>
-        </div>
-      </div>
-      <div className="work">
-        <a href="https://www.capbase.com/">
-          <img
-            className="work-logo"
-            src={require('../../images/capbase.png')}
-            alt="Capbase"
-          />
-        </a>
-        <div className="project-technologies">
-          <span>Startups</span> <span>Finance</span>
+          <span>Publishing</span> <span>eCommerce</span>
         </div>
       </div>
       <div className="work">
@@ -45,6 +33,18 @@ const Work = () => (
         </div>
       </div>
       <div className="work">
+        <a href="https://www.capbase.com/">
+          <img
+            className="work-logo"
+            src={require('../../images/capbase.png')}
+            alt="Capbase"
+          />
+        </a>
+        <div className="project-technologies">
+          <span>Startups</span>
+        </div>
+      </div>
+      <div className="work">
         <a href="https://javascriptforwp.com/">
           <img
             className="work-logo"
@@ -53,7 +53,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>Education</span> <span>Tooling</span>
+          <span>Education</span>
         </div>
       </div>
       <div className="work">
@@ -65,7 +65,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>eCommerce</span> <span>Events</span>
+          <span>eCommerce</span>
         </div>
       </div>
       <div className="work">
@@ -77,7 +77,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>eCommerce</span> <span>Adventure</span>
+          <span>eCommerce</span>
         </div>
       </div>
       <div className="work">
@@ -89,7 +89,7 @@ const Work = () => (
           />
         </a>
         <div className="project-technologies">
-          <span>Tooling</span> <span>Agency</span>
+          <span>Tooling</span>
         </div>
       </div>
     </section>

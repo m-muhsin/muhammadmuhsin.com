@@ -10,13 +10,12 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    customPaging: (i) => <span>{i + 1}</span>
+    customPaging: (i) => <span>{i + 1}</span>,
   }
   return (
     <div className="testimonials">
-      <h2 style={{ marginTop: 20 }}>
-        Folks have said good things about my work!
-      </h2>
+      <h2 style={{ marginTop: 20 }}>Testimonials</h2>
+      <p>Folks I worked with have said some good things.</p>
 
       <Slider {...settings}>
         <blockquote className="testimonial-box">
