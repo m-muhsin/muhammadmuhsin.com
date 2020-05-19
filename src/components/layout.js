@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import Footer from './footer'
-import '../css/style.css'
+import '../css/style.scss'
 import '../css/gutenberg.css'
 import '../css/gutenberg-more.css'
 
