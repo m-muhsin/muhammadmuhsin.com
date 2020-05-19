@@ -1,6 +1,8 @@
 import React from 'react'
 import SEO from '../components/seo'
 
+import '../css/eid.scss'
+
 const EidPage = () => (
   <div className="eid">
     <SEO title="Eid Mubarak" keywords={[`Eid Mubarak`, `Muhammad Muhsin`]} />
