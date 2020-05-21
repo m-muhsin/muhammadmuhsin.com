@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 const JSforWPLogo = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "jsforwp.png" }) {
+      placeholderImage: file(relativePath: { eq: "js-for-wp-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid_tracedSVG

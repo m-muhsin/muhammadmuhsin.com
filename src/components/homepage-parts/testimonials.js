@@ -83,7 +83,7 @@ const Testimonials = () => {
               maxHeight: 100,
             }}
             className="testimonial-logo"
-            src={require('../../images/jsforwp.png')}
+            src={require('../../images/js-for-wp-logo.png')}
             alt="JS for WP"
           />
         </blockquote>

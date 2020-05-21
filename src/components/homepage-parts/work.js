@@ -48,7 +48,7 @@ const Work = () => (
         <a href="https://javascriptforwp.com/">
           <img
             className="work-logo"
-            src={require('../../images/jsforwp.png')}
+            src={require('../../images/js-for-wp-logo.png')}
             alt="JS for WP"
           />
         </a>
