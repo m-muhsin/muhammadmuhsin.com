@@ -1,11 +1,15 @@
 import React from 'react'
 import SEO from '../components/seo'
 
-import '../css/eid.scss'
+import '../styles/eid.scss'
 
 const EidPage = () => (
   <div className="eid">
-    <SEO title="Eid Mubarak" keywords={[`Eid Mubarak`, `Muhammad Muhsin`]} />
+    <SEO
+      title="Eid Mubarak"
+      keywords={[`Eid Mubarak`, `Muhammad Muhsin`]}
+      description="Eid Mubarak to you and your loved ones!"
+    />
     <div className="moon" />
 
     <div id="stars-group-1"></div>

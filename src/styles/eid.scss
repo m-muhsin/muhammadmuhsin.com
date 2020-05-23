@@ -15,12 +15,11 @@
 .eid {
   display: flex;
   background-color: rgb(10, 28, 83);
-  // background-color: #200a53;
-  // background-color: rgb(39, 18, 115);
   width: 100vw;
   height: 100vh;
 }
 
+// https://codepen.io/kikiki_kiki/pen/eRZxNJ
 .moon {
   position: absolute;
   display: block;
@@ -53,6 +52,7 @@
   text-align: center;
 }
 
+// https://codepen.io/Jayoung2019/pen/vbXeMb
 @function generate-random-stars($screen-width, $color, $density) {
   $h-shadow: random($screen-width);
   $v-shadow: random($screen-width);
