@@ -3,24 +3,31 @@ import { Link } from 'gatsby'
 import SpeakingWCAsia from './images/speaking-wcasia'
 import SpeakingWCUS from './images/speaking-wcus'
 import DecoupledBlogLogo from './images/decoupled-blog-logo'
+import Headshot from '../../components/images/headshot'
 
 const Intro = () => (
   <>
-    <h1 className="main-title">
-      Full Stack Engineer, Writer, Speaker, and Open Source Contributor{' '}
-      <span role="img" aria-label="programmer with laptop">
-        👨‍💻
-      </span>
-    </h1>
-    <h4>
-      Hi, my name is Muhammad Muhsin{' '}
-      <span role="img" aria-label="hi">
-        👋
-      </span>
-    </h4>
+    <section class="intro">
+      <div className="muhammad-photo muhammad-photo--home">
+        <Headshot className="muhammad-photo muhammad-photo--home" />
+      </div>
+      <div>
+        <h1 className="main-title">Hi, I'm Muhammad Muhsin.</h1>
+        <h3>
+          Full Stack Engineer, Writer, Speaker, and Open Source Contributor.
+        </h3>
+      </div>
+    </section>
     <p className="bigger-text">
-      I am a software engineer focusing on front-end technologies. I primarily
-      work with WordPress and React (Gatsby | Next.js).
+      I mostly work with WordPress and React. I love the{' '}
+      <a
+        href="https://jamstack.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: '#00c7b7' }}
+      >
+        JAMstack
+      </a>!
     </p>
     <p className="bigger-text">
       I currently work remotely as Senior React Developer at rtCamp - a

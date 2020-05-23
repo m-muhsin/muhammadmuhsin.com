@@ -7,6 +7,7 @@ const EidPage = () => (
   <div className="eid">
     <SEO
       title="Eid Mubarak"
+      image="https://mtwoblog.com/wp-content/uploads/2020/05/Screen-Shot-2020-05-23-at-17.03.07.png"
       keywords={[`Eid Mubarak`, `Muhammad Muhsin`]}
       description="Eid Mubarak to you and your loved ones!"
     />

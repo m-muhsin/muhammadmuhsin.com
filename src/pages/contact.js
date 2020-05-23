@@ -2,7 +2,6 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Headshot from '../components/images/headshot'
 
 const ContactPage = () => (
   <Layout location="contact">
@@ -32,33 +31,49 @@ const ContactPage = () => (
             </li>
             <li>
               <strong>Twitter</strong> - Feel free to send me a direct message{' '}
-              <a href="https://twitter.com/messages/compose?recipient_id=1166243450&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-screen-name="muhsinlk">Message @muhsinlk</a>
+              <a
+                href="https://twitter.com/messages/compose?recipient_id=1166243450&ref_src=twsrc%5Etfw"
+                class="twitter-dm-button"
+                data-screen-name="muhsinlk"
+              >
+                Message @muhsinlk
+              </a>
+            </li>
+            <li>
+              <strong>Clarity.fm</strong> - You can{' '}
+              <a href="https://clarity.fm/mmuhsin/">
+                schedule a call with me to pick my brain{' '}
+              </a>
             </li>
           </ul>
         </div>
       </section>
       <section className="social-container width-60">
-        <div className="muhammad-photo">
-          <Headshot className="muhammad-photo" />
-        </div>
         <div className="social-links-container">
-          <SocialLink link="https://github.com/m-muhsin/" image="github" />
-          <SocialLink link="https://twitter.com/muhsinlk/" image="twitter" />
+          <SocialLink link="https://github.com/m-muhsin/" image="github.png" />
+          <SocialLink
+            link="https://twitter.com/muhsinlk/"
+            image="twitter.png"
+          />
+          <SocialLink link="https://clarity.fm/mmuhsin/" image="clarity.jpg" />
           <SocialLink
             link="https://www.linkedin.com/in/mmuhsin/"
-            image="linkedin"
+            image="linkedin.png"
           />
           <SocialLink
             link="https://www.instagram.com/m_muhsin/"
-            image="instagram"
+            image="instagram.png"
           />
-          <SocialLink link="https://www.youtube.com/user/muhammadmuhseen/" image="youtube" />
-          <SocialLink link="http://mtwoblog.com/" image="m2blog" />
+          <SocialLink
+            link="https://www.youtube.com/user/muhammadmuhseen/"
+            image="youtube.png"
+          />
+          <SocialLink link="http://mtwoblog.com/" image="m2blog.png" />
           <SocialLink
             link="https://profiles.wordpress.org/mmuhsin/"
-            image="wordpress"
+            image="wordpress.png"
           />
-          <SocialLink link="https://noti.st/m-muhsin" image="notist" />
+          <SocialLink link="https://noti.st/m-muhsin" image="notist.png" />
         </div>
       </section>
     </div>
@@ -77,7 +92,7 @@ const SocialLink = ({ link, image }) => (
     <img
       style={{ width: 65, height: 65, textAlign: 'center' }}
       alt={image}
-      src={require(`../images/${image}.png`)}
+      src={require(`../images/${image}`)}
     />
   </a>
 )
