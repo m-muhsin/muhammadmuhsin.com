@@ -20,18 +20,16 @@ const Intro = () => (
     </section>
     <p className="bigger-text">
       I mostly work with WordPress and React. I love the{' '}
-      <a
-        href="https://jamstack.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: '#00c7b7' }}
-      >
-        JAMstack
-      </a>!
+      <a href="https://jamstack.org/" target="_blank" rel="noopener noreferrer">
+        <strong>Jamstack</strong> and advocating for it!
+      </a>
     </p>
     <p className="bigger-text">
-      I currently work remotely as Senior React Developer at rtCamp - a
-      WordPress VIP Gold Partner Agency.
+      I am an{' '}
+      <a href="https://rtcamp.com/" target="_blank" rel="noopener noreferrer">
+        rtCamper
+      </a>{' '}
+      and a Senior React Developer.
     </p>
     <p className="bigger-text">
       Feel free to check out my{' '}
