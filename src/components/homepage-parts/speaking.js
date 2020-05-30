@@ -1,11 +1,11 @@
 import React from 'react'
-import ExplorerDevCommunityLogo from './images/explorer-dev-community-logo';
-import WcAsia2020Logo from './images/wcasia-2020-logo';
-import WCUS2019Logo from './images/wcus-2019-logo';
-import WordSeshLogo from './images/wordsesh-logo';
-import JSforWPConf2019Logo from './images/js-for-wp-conference-logo';
-import GatsbyLogo from './images/gatsby-logo';
-import WooSeshLogo from './images/woosesh-logo';
+import ExplorerDevCommunityLogo from './images/explorer-dev-community-logo'
+import WcAsia2020Logo from './images/wcasia-2020-logo'
+import WCUS2019Logo from './images/wcus-2019-logo'
+import WordSeshLogo from './images/wordsesh-logo'
+import JSforWPConf2019Logo from './images/js-for-wp-conference-logo'
+import GatsbyLogo from './images/gatsby-logo'
+import WooSeshLogo from './images/woosesh-logo'
 
 const Speaking = () => (
   <>
@@ -63,10 +63,7 @@ const Speaking = () => (
           </span>
           &nbsp;
           <span>
-            <a
-              className="black-bold"
-              href="https://www.crowdcast.io/e/22feb20WPstream/8"
-            >
+            <a className="black-bold" href="https://youtu.be/BZ2ygmwykVc">
               Video
             </a>
           </span>
@@ -118,6 +115,12 @@ const Speaking = () => (
               href="https://wpsessions.com/wp-content/uploads/2019/09/Muhammad-Muhsin-Build-Your-Blazing-Fast-Site-With-Gatsby-and-WordPress.pdf"
             >
               Slides
+            </a>
+            &nbsp;
+          </span>
+          <span>
+            <a className="black-bold" href="https://youtu.be/gajqok9IlUE">
+              Video
             </a>
           </span>
         </div>
@@ -189,6 +192,12 @@ const Speaking = () => (
               href="https://docs.google.com/presentation/d/1TKkt9M8RViageCS7whYPafjVdmLtgNQ2Bd9taCLjrLU/present"
             >
               Slides
+            </a>
+          </span>
+          &nbsp;
+          <span>
+            <a className="black-bold" href="https://youtu.be/FQU6yr-5KzY">
+              Video
             </a>
           </span>
         </div>
