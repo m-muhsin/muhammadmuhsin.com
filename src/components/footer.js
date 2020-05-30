@@ -11,7 +11,10 @@ const Footer = () => (
         Follow @muhsinlk
       </a>
     </div>
-    © Muhammad Muhsin, {new Date().getFullYear()}
+    <a href="https://www.gatsbyjs.org/" style={{ color: '#8a4baf' }}>
+      Built with <span role="img" aria-label="love">♥️</span> and Gatsby!
+    </a>
+    <div>© Muhammad Muhsin, {new Date().getFullYear()}</div>
   </footer>
 )
 

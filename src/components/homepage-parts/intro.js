@@ -19,10 +19,11 @@ const Intro = () => (
       </div>
     </section>
     <p className="bigger-text">
-      I mostly work with WordPress and React. I love the{' '}
+      I mostly work with React and WordPress. I love the{' '}
       <a href="https://jamstack.org/" target="_blank" rel="noopener noreferrer">
-        <strong>Jamstack</strong> and advocating for it!
-      </a>
+        <strong>Jamstack</strong>
+      </a>{' '}
+      and advocating for it!
     </p>
     <p className="bigger-text">
       I am an{' '}
