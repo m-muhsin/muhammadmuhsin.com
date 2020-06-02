@@ -10,7 +10,7 @@ const Footer = () => (
       Follow @muhsinlk
     </a>
     <hr style={{ borderStyle: 'dashed' }} />
-    On the shoulders of{' '}
+    Thanks to{' '}
     <a href="https://www.gatsbyjs.org/" style={{ color: '#8a4baf' }}>
       Gatsby
     </a>
