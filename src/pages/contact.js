@@ -55,6 +55,12 @@ const ContactPage = () => (
             link="https://twitter.com/muhsinlk/"
             image="twitter.png"
           />
+           <SocialLink
+            link="https://dev.to/mmuhsin"
+            image="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+            absoulteImgUrl={true}
+            alt="Muhammad Muhsin's DEV Profile"
+          />
           <SocialLink link="https://clarity.fm/mmuhsin/" image="clarity.jpg" />
           <SocialLink
             link="https://www.linkedin.com/in/mmuhsin/"
@@ -82,7 +88,7 @@ const ContactPage = () => (
 
 export default ContactPage
 
-const SocialLink = ({ link, image }) => (
+const SocialLink = ({ link, image, absoulteImgUrl, alt }) => (
   <a
     className="social-link"
     rel="noopener noreferrer"
@@ -91,8 +97,8 @@ const SocialLink = ({ link, image }) => (
   >
     <img
       style={{ width: 65, height: 65, textAlign: 'center' }}
-      alt={image}
-      src={require(`../images/${image}`)}
+      alt={alt ?? image}
+      src={ absoulteImgUrl ? image : require(`../images/${image}`)}
     />
   </a>
 )
