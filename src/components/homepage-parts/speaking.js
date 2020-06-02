@@ -6,12 +6,42 @@ import WordSeshLogo from './images/wordsesh-logo'
 import JSforWPConf2019Logo from './images/js-for-wp-conference-logo'
 import GatsbyLogo from './images/gatsby-logo'
 import WooSeshLogo from './images/woosesh-logo'
+import WPCCLogo from './images/wpcc-logo'
 
 const Speaking = () => (
   <>
     <h2 className="section-title">Speaking</h2>
     <p>I also speak at conferences and meetups.</p>
     <section className="projects-container">
+    <div className="work">
+        <a href="https://wpcouchcon.com/">
+          <WPCCLogo className="work-logo" />
+          <h4 className="conf-title">WPCouchCon</h4>
+        </a>
+        <h5 className="talk-title">WordPress & Gatsby: Full Speed Ahead</h5>
+        <div className="speaking-tags">
+          <span>May 31, 2020</span>
+          &nbsp;
+          <span>
+            <a
+              className="black-bold"
+              href="https://docs.google.com/presentation/d/1zhEq0y_ITBUGDePy5Wt3-7KAOEirGauM1myeLQGPtek/present"
+            >
+              Slides
+            </a>
+          </span>
+          &nbsp;
+          <span>
+            <a
+              className="black-bold"
+              href="https://www.crowdcast.io/e/wpcouchcon/9"
+            >
+              Video
+            </a>
+          </span>
+        </div>
+      </div>
+      
       <div className="work">
         <a href="https://www.facebook.com/events/d41d8cd9/nextjs-solving-your-react-problems-webinar/220330915878953/">
           <ExplorerDevCommunityLogo className="work-logo" />
