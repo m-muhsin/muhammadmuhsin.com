@@ -14,7 +14,7 @@ const Speaking = () => (
     <p>I also speak at conferences and meetups.</p>
     <section className="projects-container">
     <div className="work">
-        <a href="https://wpcouchcon.com/">
+        <a href="https://wpcouchcon.com/wordpress-gatsby-full-speed-ahead-with-muhammad-muhsin/">
           <WPCCLogo className="work-logo" />
           <h4 className="conf-title">WPCouchCon</h4>
         </a>
