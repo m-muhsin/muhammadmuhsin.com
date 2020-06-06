@@ -464,7 +464,12 @@ section.intro {
 }
 
 .nav-item a {
-  padding: 5px 10px;
+  padding: 5px;
+
+  @media screen and (min-width: 600px) {
+    padding: 5px 10px;
+  }
+
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -716,19 +721,29 @@ cite.testimonial-author {
   }
 }
 
-.contact-button {
+.contact-button,
+.pagination-nav-button {
   border: 1px solid #3a3a3a;
+  background-color: white;
   color: #3a3a3a;
   padding: 8px 12px;
   font-size: 1.25em;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #139fc9;
+    color: #fff;
+    border-color: #fff;
+  }
 }
 
-.contact-button:hover,
-.contact-button:focus,
-.contact-button:active {
-  background-color: #139fc9;
-  color: #fff;
-  border-color: #fff;
+.pagination-nav-button {
+  font-size: 0.75em;
+}
+
+a[role="button"] {
+  cursor: pointer;
 }
 
 img {
@@ -1078,6 +1093,7 @@ body {
 
 ul.pagination {
   list-style: none;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1132,8 +1148,12 @@ button.search-btn:focus {
   position: absolute;
   margin-top: 2px;
   margin-left: 4px;
-  width: 320px;
+  width: 16rem;
   z-index: 20;
+
+  @media screen and (min-width: 600px) { 
+    width: 17.25rem;
+  }
 }
 
 @media (min-width: 500px) {

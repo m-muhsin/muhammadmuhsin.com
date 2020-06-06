@@ -21,11 +21,11 @@ const BlogArchive = ({ pageContext, data }) => (
         <nav>
           <ReactPaginate
             previousLabel={
-              pageContext?.page !== 1 && <button>Previous page</button>
+              pageContext?.page !== 1 && <button className="pagination-nav-button">← Previous page</button>
             }
             nextLabel={
               pageContext?.totalPages !== pageContext.page && (
-                <button>Next page</button>
+                <button className="pagination-nav-button">Next page →</button>
               )
             }
             onPageChange={({ selected }) => {
