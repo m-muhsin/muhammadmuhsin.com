@@ -24,9 +24,9 @@ const ContactPage = () => (
           </p>
           <ul>
             <li>
-              <strong>Email</strong> - Send me an email to{' '}
-              <a href="mailto:muhammad.muhseen@gmail.com">
-                muhammad.muhseen@gmail.com
+              <strong>Email</strong> - {' '}
+              <a href="mailto:muhammad@hey.com" style={{ fontSize: '1.5rem' }}>
+                muhammad@hey.com
               </a>
             </li>
             <li>
