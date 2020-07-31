@@ -15,25 +15,35 @@ const GET_COMMENTS = gql`
           date
           content
           author {
-            node {
+            ... on CommentAuthor {
               id
               email
               name
               url
             }
+            ... on User {
+              id
+              email
+              name
+            }
           }
-          replies {
+          children {
             nodes {
               id
               commentId
               date
               content
               author {
-                node {
+                ... on CommentAuthor {
                   id
                   email
                   name
                   url
+                }
+                ... on User {
+                  id
+                  email
+                  name
                 }
               }
             }
@@ -49,39 +59,32 @@ const CommentsList = ({ id }) => {
     variables: { id },
   })
 
-  if (queriedData?.post?.comments?.nodes?.length > 0) {
-    let copiedComments = [ ...queriedData.post.comments.nodes ]
-    copiedComments = copiedComments.reverse()
-    return (
-      <div className="comments">
-        <h2>Comments</h2>
-        <div>
-          {copiedComments.map((comment) => {
-            const formatted = `${moment(comment.date).format(
-              'MMMM Do YYYY'
-            )} at ${moment(comment.date).format('h:mm:ss a')}`
+  return queriedData?.post?.comments?.nodes?.length ? (
+    <div className="comments">
+      <h2>Comments</h2>
+      <div>
+        {queriedData.post.comments.nodes.map((comment) => {
+          const formatted = `${moment(comment.date).format(
+            'MMMM Do YYYY'
+          )} at ${moment(comment.date).format('h:mm:ss a')}`
 
-            return (
-              <div key={comment.commentId}>
-                {comment?.author?.url ? (
-                  <a href={comment.author.url}>
-                    <h3 className="comment-autor">
-                      {comment?.author?.node?.name}
-                    </h3>
-                  </a>
-                ) : (
-                  <h3 className="comment-autor">
-                    {comment?.author?.node?.name}
-                  </h3>
-                )}
-                <div className="comment-metadata">
-                  <time className="comment-datetime">{formatted}</time>
-                </div>
-                <p dangerouslySetInnerHTML={{ __html: comment?.content }} />
-                {/* {comment?.replies?.nodes?.map((childComment) => (
+          return (
+            <div key={comment.commentId}>
+              {comment?.author?.url ? (
+                <a href={comment.author.url}>
+                  <h3 className="comment-autor">{comment?.author?.name}</h3>
+                </a>
+              ) : (
+                <h3 className="comment-autor">{comment?.author?.name}</h3>
+              )}
+              <div className="comment-metadata">
+                <time className="comment-datetime">{formatted}</time>
+              </div>
+              <p dangerouslySetInnerHTML={{ __html: comment?.content }} />
+              {comment?.children?.nodes?.map((childComment) => (
                 <div key={childComment.commentId}>
                   <h4 className="comment-autor">
-                    {childComment?.author?.node?.name}
+                    {childComment?.author?.name}
                   </h4>
                   <p
                     dangerouslySetInnerHTML={{
@@ -89,16 +92,15 @@ const CommentsList = ({ id }) => {
                     }}
                   />
                 </div>
-              ))} */}
-              </div>
-            )
-          })}
-        </div>
+              ))}
+            </div>
+          )
+        })}
       </div>
-    )
-  } else {
-    return ''
-  }
+    </div>
+  ) : (
+    ''
+  )
 }
 
 export default CommentsList

@@ -55,7 +55,7 @@ export const query = graphql`
   fragment Thumbnail on File {
     childImageSharp {
       fluid(maxWidth: 500) {
-        tracedSVG
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }

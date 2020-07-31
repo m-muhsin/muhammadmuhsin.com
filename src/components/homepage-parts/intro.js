@@ -7,7 +7,7 @@ import Headshot from '../../components/images/headshot'
 
 const Intro = () => (
   <>
-    <section className="intro">
+    <section class="intro">
       <div className="muhammad-photo muhammad-photo--home">
         <Headshot className="muhammad-photo muhammad-photo--home" />
       </div>

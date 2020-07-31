@@ -34,20 +34,18 @@ export const query = graphql`
   fragment Thumbnail on File {
     childImageSharp {
       fluid(maxWidth: 500) {
-        tracedSVG
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
   query PageFeaturedImage($databaseId: Int) {
     wpPage(databaseId: { eq: $databaseId }) {
       featuredImage {
-        node {
-          remoteFile {
-            ...Thumbnail
-          }
-          sourceUrl
-          altText
+        remoteFile {
+          ...Thumbnail
         }
+        sourceUrl
+        altText
       }
     }
   }
