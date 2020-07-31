@@ -27,7 +27,7 @@ const SinglePost = (props) => {
 
   return (
     <Layout classNames="styled-text">
-      <SEO title={title} description={striptags(excerptText)} image={data?.wpPost?.featuredImage?.sourceUrl} />
+      <SEO title={title} description={striptags(excerptText)} image={data?.wpPost?.featuredImage?.node?.sourceUrl} />
       <article
         data-id={id}
         id={`post-${databaseId}`}
@@ -78,7 +78,7 @@ export const query = graphql`
   fragment Thumbnail on File {
     childImageSharp {
       fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid_tracedSVG
+        tracedSVG
       }
     }
   }
@@ -93,11 +93,13 @@ export const query = graphql`
     }
     wpPost(databaseId: { eq: $databaseId }) {
       featuredImage {
-        remoteFile {
-          ...Thumbnail
+        node {
+          remoteFile {
+            ...Thumbnail
+          }
+          sourceUrl
+          altText
         }
-        sourceUrl
-        altText
       }
     }
   }
