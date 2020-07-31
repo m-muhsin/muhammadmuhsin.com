@@ -23,15 +23,20 @@ const PostTemplateFragment = `
       }
     }
     featuredImage {
-      altText
-      uri
-      sourceUrl
+      node {
+        altText
+        uri
+        sourceUrl
+      }
     }
     author {
-      name
-      slug
-      avatar {
-        url
+      node {
+        id
+        name
+        slug
+        avatar {
+          url
+        }
       }
     }
   }
