@@ -91,9 +91,14 @@ const PostHeaderMeta = ({
         ''
       )}
       {!!featuredImage &&
-        !!featuredImage.remoteFile &&
-        !!featuredImage.remoteFile.childImageSharp && (
-          <Img fluid={featuredImage.remoteFile.childImageSharp.fluid} alt={featuredImage.altText} />
+        !!featuredImage.node &&
+        !!featuredImage.node.localFile &&
+        !!featuredImage.node.localFile.childImageSharp && (
+          <Img
+            
+            fluid={featuredImage.node.localFile.childImageSharp.fluid}
+            alt={featuredImage.node.altText}
+          />
         )}
     </header>
   )

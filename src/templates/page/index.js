@@ -8,14 +8,15 @@ import SEO from '../../components/seo'
 
 const SinglePage = ({ pageContext, data }) => (
   <Layout classNames="styled-text">
-    <SEO title={pageContext.title} description={pageContext.title} image={data?.wpPage?.featuredImage?.sourceUrl} />
+    <SEO title={pageContext.title} description={pageContext.title} image={data?.wpPage?.featuredImage?.node?.sourceUrl} />
     <article className="post type-page status-publish format-standard hentry entry">
       <header className="entry-header">
         <h1 className="entry-title">{he.decode(pageContext.title)}</h1>
         {data?.wpPage?.featuredImage &&
-        !!data.wpPage.featuredImage.remoteFile &&
-        !!data.wpPage.featuredImage.remoteFile.childImageSharp && (
-          <Img fluid={data.wpPage.featuredImage.remoteFile.childImageSharp.fluid} alt={data.wpPage.featuredImage.altText} />
+        !!data.wpPage.featuredImage.node &&
+        !!data.wpPage.featuredImage.node.localFile &&
+        !!data.wpPage.featuredImage.node.localFile.childImageSharp && (
+          <Img fluid={data.wpPage.featuredImage.node.localFile.childImageSharp.fluid} alt={data.wpPage.featuredImage.node.altText} />
         )}
       </header>
 
@@ -31,21 +32,23 @@ const SinglePage = ({ pageContext, data }) => (
 )
 
 export const query = graphql`
-  fragment Thumbnail on File {
-    childImageSharp {
-      fluid(maxWidth: 500) {
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
+fragment PageThumbnail on File {
+  childImageSharp {
+    fluid(maxWidth: 700) {
+      ...GatsbyImageSharpFluid_tracedSVG
     }
   }
+}
   query PageFeaturedImage($databaseId: Int) {
     wpPage(databaseId: { eq: $databaseId }) {
       featuredImage {
-        remoteFile {
-          ...Thumbnail
+        node {
+          localFile {
+            ...PageThumbnail
+          }
+          sourceUrl
+          altText
         }
-        sourceUrl
-        altText
       }
     }
   }
