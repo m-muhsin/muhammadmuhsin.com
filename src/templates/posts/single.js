@@ -75,10 +75,10 @@ const SinglePost = (props) => {
 }
 
 export const query = graphql`
-  fragment Thumbnail on File {
+  fragment PostThumbnail on File {
     childImageSharp {
-      fluid(maxWidth: 500) {
-        tracedSVG
+      fluid(maxWidth: 700) {
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
@@ -94,8 +94,8 @@ export const query = graphql`
     wpPost(databaseId: { eq: $databaseId }) {
       featuredImage {
         node {
-          remoteFile {
-            ...Thumbnail
+          localFile {
+            ...PostThumbnail
           }
           sourceUrl
           altText
