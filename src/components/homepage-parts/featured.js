@@ -12,13 +12,8 @@ const Featured = () => (
     </p>
     <section className="projects-container">
       <div className="work">
-        <a href="https://css-tricks.com/gatsby-and-wordpress/">
+        <a href="https://css-tricks.com/?s=Muhammad+Muhsin">
           <CSSTricksLogo className="work-logo" />
-        </a>
-      </div>
-      <div className="work">
-        <a href="https://www.learndash.com/best-wordpress-lms-plugin/">
-          <LearnDashLogo className="work-logo" />
         </a>
       </div>
       <div className="work">
@@ -29,6 +24,11 @@ const Featured = () => (
       <div className="work">
         <a href="https://poststatus.com/?s=Muhammad+Muhsin">
           <PostStatusLogo className="work-logo" />
+        </a>
+      </div>
+      <div className="work">
+        <a href="https://www.learndash.com/best-wordpress-lms-plugin/">
+          <LearnDashLogo className="work-logo" />
         </a>
       </div>
     </section>
