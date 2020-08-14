@@ -3,6 +3,8 @@ import WPTavernLogo from './images/wp-tavern-logo'
 import PostStatusLogo from './images/post-status-logo'
 import LearnDashLogo from './images/learndash-logo'
 import CSSTricksLogo from './images/css-tricks-logo'
+import ShifterLogo from './images/shifter-logo'
+import WPGraphQL from './images/wpgraphql-logo'
 
 const Featured = () => (
   <>
@@ -29,6 +31,16 @@ const Featured = () => (
       <div className="work">
         <a href="https://www.learndash.com/best-wordpress-lms-plugin/">
           <LearnDashLogo className="work-logo" />
+        </a>
+      </div>
+      <div className="work">
+        <a href="https://www.getshifter.io/blog/were-going-to-wordcamp-us-and-wordcamp-tokyo">
+          <ShifterLogo className="work-logo" />
+        </a>
+      </div>
+      <div className="work">
+        <a href="https://www.wpgraphql.com/2019/03/19/wpgraphql-gatsby-tutorial/">
+          <WPGraphQL className="work-logo" />
         </a>
       </div>
     </section>

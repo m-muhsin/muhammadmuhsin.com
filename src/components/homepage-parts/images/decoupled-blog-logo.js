@@ -16,7 +16,7 @@ const DecoupledBlogLogo = () => {
   `)
   return (
     <div className="speaking-box">
-      <Img className="speaking-img" fluid={data.placeholderImage.childImageSharp.fluid} alt="Gatsby" />
+      <Img className="speaking-img" fluid={data.placeholderImage.childImageSharp.fluid} alt="Decoupled.Blog" />
     </div>
   )
 }

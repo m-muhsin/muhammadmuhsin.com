@@ -6982,10 +6982,10 @@ gatsby-source-filesystem@^2.3.23:
     valid-url "^1.0.9"
     xstate "^4.11.0"
 
-gatsby-source-wordpress-experimental@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-wordpress-experimental/-/gatsby-source-wordpress-experimental-1.2.3.tgz#8bdae4db35bde7399caa21d8eda70cf09088baa9"
-  integrity sha512-AU+4JTZ9W7Dbam3eMdxNLNi9HzYZpNl+oL8+KT3Ia60uz71XITT2qjZU94/duR/R6WJaamQis0am/TpVdD4EHA==
+gatsby-source-wordpress-experimental@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/gatsby-source-wordpress-experimental/-/gatsby-source-wordpress-experimental-1.3.6.tgz#2d6d294200454275d40c064b85abc5ebf0d3b9bc"
+  integrity sha512-7NPsU5PKiikO+MgQN8L6FWp6CdCniWXN+UlFfmW9mBGd6NQpskMJC9sbmPyq00qAhVHjv+/QStqr8AM8FddfNQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.1"
     "@babel/plugin-proposal-private-methods" "^7.10.1"
