@@ -8,18 +8,52 @@ import JSforWPConf2020 from './images/js-for-wp-2020'
 import GatsbyLogo from './images/gatsby-logo'
 import WooSeshLogo from './images/woosesh-logo'
 import WPCCLogo from './images/wpcc-logo'
+import ColomboWordPressLogo from './images/cmb-wp-logo'
 
 const Speaking = () => (
   <>
     <h2 className="section-title">Speaking</h2>
     <p>I also speak at conferences and meetups.</p>
     <section className="projects-container">
-    <div className="work">
+      <div className="work">
+        <a href="https://javascriptforwp.com/conference/">
+          <ColomboWordPressLogo className="work-logo" />
+          <h4 className="conf-title">Colombo WordPress Meetup – August 2020</h4>
+        </a>
+        <h5 className="talk-title">
+          WordPress on the Jamstack
+        </h5>
+        <div className="speaking-tags">
+          <span>August 15, 2020</span>
+          &nbsp;
+          <span>
+            <a
+              className="black-bold"
+              href="https://docs.google.com/presentation/d/1_CnN8lO0VbtvIWPX1AX2UDEWXoT9MSqrd6sqhroyiKg/present"
+            >
+              Slides
+            </a>
+          </span>
+          &nbsp;
+          <span>
+            <a
+              className="black-bold"
+              href="https://drive.google.com/file/d/1uiGTtNt7OY2NZQpuP4Wn7F-jM3DtV8_W/view"
+            >
+              Video
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <div className="work">
         <a href="https://javascriptforwp.com/conference/">
           <JSforWPConf2020 className="work-logo" />
           <h4 className="conf-title">JS for WP Conf 2020</h4>
         </a>
-        <h5 className="talk-title">Blazing Fast eCommerce with Gatsby, WordPress, and WooCommerce</h5>
+        <h5 className="talk-title">
+          Blazing Fast eCommerce with Gatsby, WordPress, and WooCommerce
+        </h5>
         <div className="speaking-tags">
           <span>July 10, 2020</span>
           &nbsp;
@@ -45,7 +79,7 @@ const Speaking = () => (
 
       <div className="work">
         <a href="https://wpcouchcon.com/wordpress-gatsby-full-speed-ahead-with-muhammad-muhsin/">
-            <WPCCLogo className="work-logo" />
+          <WPCCLogo className="work-logo" />
           <h4 className="conf-title">WPCouchCon</h4>
         </a>
         <h5 className="talk-title">WordPress & Gatsby: Full Speed Ahead</h5>
