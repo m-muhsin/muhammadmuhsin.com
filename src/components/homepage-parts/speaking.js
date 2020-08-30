@@ -38,7 +38,7 @@ const Speaking = () => (
           <span>
             <a
               className="black-bold"
-              href="https://drive.google.com/file/d/1uiGTtNt7OY2NZQpuP4Wn7F-jM3DtV8_W/view"
+              href="https://youtu.be/BK76yrIuU-k"
             >
               Video
             </a>
@@ -157,7 +157,7 @@ const Speaking = () => (
           </span>
           &nbsp;
           <span>
-            <a className="black-bold" href="https://youtu.be/BZ2ygmwykVc">
+            <a className="black-bold" href="https://wordpress.tv/2020/06/01/muhammad-muhsin-using-wordpress-with-graphql/">
               Video
             </a>
           </span>

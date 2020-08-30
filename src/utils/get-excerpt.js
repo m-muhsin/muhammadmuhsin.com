@@ -10,7 +10,7 @@ export default function getExcerpt(excerpt, content, stripTags = false) {
   // if excerpt does not exist
   if (!excerptText) {
     // getting the first 240 characters off content
-    excerptText = content.substr(0, maxLength)
+    excerptText = content.substr(0, maxLength).replace(/(\r\n|\n|\r)/gm, "");
 
     // so that a word is not chopped off halfway
     excerptText = content

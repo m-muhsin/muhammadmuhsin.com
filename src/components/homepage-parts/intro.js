@@ -30,7 +30,7 @@ const Intro = () => (
       <a href="https://rtcamp.com/" target="_blank" rel="noopener noreferrer">
         rtCamper
       </a>{' '}
-      and a Senior React Developer.
+      and a Senior React Engineer.
     </p>
     <p className="bigger-text">
       Feel free to check out my{' '}
